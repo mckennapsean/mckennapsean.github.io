@@ -176,7 +176,12 @@ jQuery(function() {
   var ids = [];
   
   $nav_a.each(function() {
-    ids.push(jQuery(this).attr('href').substring(2));
+    var href = jQuery(this).attr('href');
+    
+    if (href[1] != '#')
+      return;
+    
+    ids.push(href.substring(2));
   });
   
   jQuery.n33_scrollzer(ids, { pad: 200, lastHack: true });
