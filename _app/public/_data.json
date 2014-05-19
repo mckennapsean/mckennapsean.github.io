@@ -31,35 +31,41 @@
       "link": "projects/compariSeq/"
     }
   },
-  "code": {
+  "coding": {
     "codeExamples": {
-      "name": "",
+      "tag": "",
       "image": "",
+      "imageAlt": "",
       "link": ""
     },
     "netiquette": {
-      "name": "",
+      "tag": "",
       "image": "",
+      "imageAlt": "",
       "link": ""
     },
     "rayTracer": {
-      "name": "",
+      "tag": "",
       "image": "",
+      "imageAlt": "",
       "link": ""
     },
     "woodShader": {
-      "name": "",
+      "tag": "",
       "image": "",
+      "imageAlt": "",
       "link": ""
     },
     "setoGram": {
-      "name": "",
+      "tag": "",
       "image": "",
+      "imageAlt": "",
       "link": ""
     },
     "mvhpc": {
-      "name": "",
+      "tag": "",
       "image": "",
+      "imageAlt": "",
       "link": ""
     }
   }
