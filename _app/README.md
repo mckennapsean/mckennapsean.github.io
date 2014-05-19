@@ -9,6 +9,6 @@ this project is under the Creative Commons Attribution license.
 
 ## Credit
 
-[AJ](n33.co)
+[AJ](http://n33.co)
 for the [Prologue template](http://html5up.net/prologue)
 from [HTML5 UP](http://html5up.net/)
