@@ -1,0 +1,66 @@
+{
+  "projects": {
+    "setVis": {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    "designActivityFramework": {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    "compariSeq": {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    "cybersecurityRedesign": {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    "socialMediaVirality": {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    "sCorrPlot": {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  },
+  "code": {
+    "codeExamples": {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    "netiquette": {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    "rayTracer": {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    "woodShader": {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    "setoGram": {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    "mvhpc": {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  }
+}
