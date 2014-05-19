@@ -1,99 +1,98 @@
 <!-- Main -->
 <div id="main">
-
+  
   <!-- Intro -->
   <section id="top" class="one">
   <div class="container">
-
+  
     <a href="http://ineedchemicalx.deviantart.com/art/Moonscape-381829905" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-
+    
+    <!-- About -->
+    <section id="about" class="one">
+    
     <header>
-      <h2 class="alt">This is <strong>Prologue</strong>. A <a href="http://html5up.net/license">free</a>, fully responsive<br />
-      site template by <a href="http://html5up.net">HTML5 UP</a>.</h2>
+      <h2 class="alt">Hello, I'm <strong><a href="mailto:<%= email %>">Sean McKenna</a></strong>.</h2>
     </header>
     
-    <p>Ligula scelerisque justo sem accumsan diam quis. Vitae natoque dictum 
-    etiam semper magnis enim feugiat convallis convallis egestas rhoncus ridiculus 
-    in quis risus curabitur tempor. Orci penatibus quisque laoreet condimentum 
-    sollicitudin accumsan elementum.</p>
+    <p>
+      While pursuing a Ph.D. in Visualization under the guidance of
+      <a href="http://www.cs.utah.edu/~miriah/">Dr. Miriah Meyer</a>,
+      I work closely with collaborators in their respective fields
+      to tackle the challenges they face with visualizing their data.
+    </p>
 
     <footer>
-      <a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+    <div class="row">
+      <div class="-3u 3u">
+        <p>
+          <a href="cv/">My CV &nbsp; <span class="fa fa-file solo"></span></a>
+        </p>
+      </div>
+      <div class="3u">
+        <%- partial("_shared/social-media") %>
+      </div>
+    </div>
     </footer>
 
   </div>
   </section>
+  </section>
     
-  <!-- Portfolio -->
-  <section id="portfolio" class="two">
+  <!-- Projects -->
+  <section id="projects" class="two">
   <div class="container">
 
     <header>
-      <h2>Portfolio</h2>
+      <h2>Projects</h2>
     </header>
     
-    <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-    egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-    Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis 
-    fusce hendrerit lacus ridiculus.</p>
-  
     <div class="row">
-      <div class="4u">
-        <article class="item">
-          <a href="http://ineedchemicalx.deviantart.com/art/A-million-suns-384369739" class="image full">
-            <img src="images/pic02.jpg" alt="" />
-          </a>
-          <header>
-            <h3>Ipsum Feugiat</h3>
-          </header>
-        </article>
-        <article class="item">
-          <a href="http://ineedchemicalx.deviantart.com/art/Mind-is-a-clear-stage-375431607" class="image full">
-            <img src="images/pic03.jpg" alt="" />
-          </a>
-          <header>
-            <h3>Rhoncus Semper</h3>
-          </header>
-        </article>
-      </div>
-      <div class="4u">
-        <article class="item">
-          <a href="http://ineedchemicalx.deviantart.com/art/You-really-got-me-345249340" class="image full">
-            <img src="images/pic04.jpg" alt="" />
-          </a>
-          <header>
-            <h3>Magna Nullam</h3>
-          </header>
-        </article>
-        <article class="item">
-          <a href="http://ineedchemicalx.deviantart.com/art/Ad-infinitum-354203162" class="image full">
-            <img src="images/pic05.jpg" alt="" />
-          </a>
-          <header>
-            <h3>Natoque Vitae</h3>
-          </header>
-        </article>
-      </div>
-      <div class="4u">
-        <article class="item">
-          <a href="http://ineedchemicalx.deviantart.com/art/Elysium-355393900" class="image full">
-            <img src="images/pic06.jpg" alt="" />
-          </a>
-          <header>
-            <h3>Dolor Penatibus</h3>
-          </header>
-        </article>
-        <article class="item">
-          <a href="http://ineedchemicalx.deviantart.com/art/Emperor-of-the-Stars-370265193" class="image full">
-            <img src="images/pic07.jpg" alt="" />
-          </a>
-          <header>
-            <h3>Orci Convallis</h3>
-          </header>
-        </article>
-      </div>
+    
+<%  var projects = public._data.projects;
+    var count = 0;
+    var stackedRows = 2;
+    var numCols = 3;
+    for(var p in projects) {
+      
+      // current project
+      var project = projects[p];
+      
+      // two rows, stacked, per column
+      if(count % stackedRows == 0) { %>
+        
+        <div class="4u">
+        
+<%    } var project2 = projects[project];%>
+      
+      <article class="item">
+        <a href="<%= project.link %>" class="image full">
+          <img src="<%= project.image %>" alt="<%= project.imageAlt %>" />
+        </a>
+        <header>
+          <h3><%= project.tag %></h3>
+        </header>
+      </article>
+      
+<%    if(count % stackedRows == stackedRows - 1) { %>
+        
+        </div>
+      
+<%    }
+      
+      // create new rows for more content
+      if(count % (stackedRows * numCols) == (stackedRows * numCols) - 1) { %>
+        
+        </div>
+        
+        <div class="row">
+        
+<%    }
+      
+      count++;
+    } %>
+    
     </div>
-
+    
   </div>
   </section>
   

@@ -1,34 +1,34 @@
 {
   "projects": {
     "setVis": {
-      "name": "",
-      "image": "",
-      "link": ""
-    },
-    "designActivityFramework": {
-      "name": "",
-      "image": "",
-      "link": ""
-    },
-    "compariSeq": {
-      "name": "",
-      "image": "",
-      "link": ""
-    },
-    "cybersecurityRedesign": {
-      "name": "",
-      "image": "",
-      "link": ""
-    },
-    "socialMediaVirality": {
-      "name": "",
-      "image": "",
-      "link": ""
+      "tag": "understanding set visualization",
+      "image": "projects/setVis/image.png",
+      "imageAlt": "set visualization examples",
+      "link": "projects/setVis/"
     },
     "sCorrPlot": {
-      "name": "",
-      "image": "",
-      "link": ""
+      "tag": "s-CorrPlot: encoding correlation",
+      "image": "projects/sCorrPlot/image.png",
+      "imageAlt": "s-CorrPlot scatterplot for visualization and exploring correlation in multidimensional space",
+      "link": "projects/sCorrPlot/"
+    },
+    "designActivityFramework": {
+      "tag": "the design activity framework",
+      "image": "projects/designActivityFramework/image.png",
+      "imageAlt": "the design activity framework for visualization design decisions",
+      "link": "projects/designActivityFramework/"
+    },
+    "cybersecurityRedesign": {
+      "tag": "redesign of a cybersecurity tool",
+      "image": "projects/cybersecurityRedesign/image.png",
+      "imageAlt": "cybersecurity network security redesign project",
+      "link": "projects/cybersecurityRedesign/"
+    },
+    "compariSeq": {
+      "tag": "compariSeq: rethinking sequence logos",
+      "image": "projects/compariSeq/image.png",
+      "imageAlt": "compariSeq sequence logos visualization",
+      "link": "projects/compariSeq/"
     }
   },
   "code": {
