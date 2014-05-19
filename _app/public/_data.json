@@ -2,71 +2,71 @@
   "projects": {
     "setVis": {
       "tag": "understanding set visualization",
+      "link": "projects/setVis/",
       "image": "projects/setVis/image.png",
-      "imageAlt": "set visualization examples",
-      "link": "projects/setVis/"
+      "imageAlt": "set visualization examples"
     },
     "sCorrPlot": {
       "tag": "s-CorrPlot: encoding correlation",
+      "link": "projects/sCorrPlot/",
       "image": "projects/sCorrPlot/image.png",
-      "imageAlt": "s-CorrPlot scatterplot for visualization and exploring correlation in multidimensional space",
-      "link": "projects/sCorrPlot/"
+      "imageAlt": "s-CorrPlot scatterplot for visualization and exploring correlation in multidimensional space"
     },
     "designActivityFramework": {
       "tag": "the design activity framework",
+      "link": "projects/designActivityFramework/",
       "image": "projects/designActivityFramework/image.png",
-      "imageAlt": "the design activity framework for visualization design decisions",
-      "link": "projects/designActivityFramework/"
+      "imageAlt": "the design activity framework for visualization design decisions"
     },
     "cybersecurityRedesign": {
       "tag": "redesign of a cybersecurity tool",
+      "link": "projects/cybersecurityRedesign/",
       "image": "projects/cybersecurityRedesign/image.png",
-      "imageAlt": "cybersecurity network security redesign project",
-      "link": "projects/cybersecurityRedesign/"
+      "imageAlt": "cybersecurity network security redesign project"
     },
     "compariSeq": {
       "tag": "compariSeq: rethinking sequence logos",
+      "link": "projects/compariSeq/",
       "image": "projects/compariSeq/image.png",
-      "imageAlt": "compariSeq sequence logos visualization",
-      "link": "projects/compariSeq/"
+      "imageAlt": "compariSeq sequence logos visualization"
     }
   },
   "coding": {
     "codeExamples": {
       "tag": "",
+      "link": "",
       "image": "",
-      "imageAlt": "",
-      "link": ""
+      "imageAlt": ""
     },
     "netiquette": {
       "tag": "",
+      "link": "",
       "image": "",
-      "imageAlt": "",
-      "link": ""
+      "imageAlt": ""
     },
     "rayTracer": {
       "tag": "",
+      "link": "",
       "image": "",
-      "imageAlt": "",
-      "link": ""
+      "imageAlt": ""
     },
     "woodShader": {
       "tag": "",
+      "link": "",
       "image": "",
-      "imageAlt": "",
-      "link": ""
+      "imageAlt": ""
     },
     "setoGram": {
       "tag": "",
+      "link": "",
       "image": "",
-      "imageAlt": "",
-      "link": ""
+      "imageAlt": ""
     },
     "mvhpc": {
       "tag": "",
+      "link": "",
       "image": "",
-      "imageAlt": "",
-      "link": ""
+      "imageAlt": ""
     }
   }
 }
