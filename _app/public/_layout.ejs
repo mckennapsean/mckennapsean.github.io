@@ -28,7 +28,12 @@
     <%- partial("_shared/menu") %>
     
     <!-- Content -->
-    <%- yield %>
+<%  if (current.path[0] == 'projects') { %>
+      <%- partial("_shared/project") %>
+      
+<%  } else { %>
+      <%- yield %>
+<%  } %>
     
     <!-- Footer -->
     <%- partial("_shared/footer") %>
