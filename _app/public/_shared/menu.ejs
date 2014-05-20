@@ -15,7 +15,12 @@
 <%  var top = "";
     if (current.path == 'index') {
       top = "#top";
-    } %>
+    } 
+    var projAct = "";
+    if (current.path[0] == 'projects') {
+      projAct = " active";
+    }
+    %>
    
     <!-- Nav -->
     <nav id="nav">
@@ -26,7 +31,7 @@
         <li><a href="/#about" id="about-link" class="skel-panels-ignoreHref">
           <span class="fa fa-user">About</span>
         </a></li>
-        <li><a href="/#projects" id="projects-link" class="skel-panels-ignoreHref">
+        <li><a href="/#projects" id="projects-link" class="skel-panels-ignoreHref<%= projAct %>">
           <span class="fa fa-folder-open">Projects</span>
         </a></li>
         <li><a href="/#code" id="code-link" class="skel-panels-ignoreHref">
