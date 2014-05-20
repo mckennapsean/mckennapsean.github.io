@@ -1,67 +1,86 @@
 {
   "projects": {
+    
     "setVis": {
       "tag": "understanding set visualization",
+      "authors": "Sean McKenna, Nathalie Henry Riche, Nina McCurdy, Zella Urquhart, Miriah Meyer",
       "link": "projects/setVis/",
       "image": "projects/setVis/image.png",
       "imageAlt": "set visualization examples"
     },
+    
     "sCorrPlot": {
       "tag": "s-CorrPlot: encoding correlation",
+      "authors": "Sean McKenna, Miriah Meyer, Christopher Gregg, Samuel Gerber",
       "link": "projects/sCorrPlot/",
       "image": "projects/sCorrPlot/image.png",
       "imageAlt": "s-CorrPlot scatterplot for visualization and exploring correlation in multidimensional space"
     },
+    
     "designActivityFramework": {
       "tag": "the design activity framework",
+      "authors": "Sean McKenna, Dominika Mazur, Jim Agutter, Miriah Meyer",
       "link": "projects/designActivityFramework/",
       "image": "projects/designActivityFramework/image.png",
       "imageAlt": "the design activity framework for visualization design decisions"
     },
+    
     "cybersecurityRedesign": {
       "tag": "redesign of a cybersecurity tool",
+      "authors": "Sean McKenna, Dominika Mazur, Matthew Parkin, Jim Agutter, Miriah Meyer",
       "link": "projects/cybersecurityRedesign/",
       "image": "projects/cybersecurityRedesign/image.png",
       "imageAlt": "cybersecurity network security redesign project"
     },
+    
     "compariSeq": {
       "tag": "compariSeq: rethinking sequence logos",
+      "authors": "Sean McKenna, Philip S. Quinan, Alex Bigelow",
       "link": "projects/compariSeq/",
       "image": "projects/compariSeq/image.png",
       "imageAlt": "compariSeq sequence logos visualization"
     }
   },
+  
+  
+  
   "coding": {
+    
     "codeExamples": {
       "tag": "samples of programming languages",
       "link": "https://github.com/mckennapsean/code-examples",
       "image": "code/codeExamples.png",
       "imageAlt": "code examples various programming languages"
     },
+    
     "rayTracer": {
       "tag": "ray tracer in C++",
       "link": "https://github.com/mckennapsean/ray-tracer",
       "image": "code/rayTracer.png",
       "imageAlt": "ray tracer final render Utah teapot suicide, titled 'One Fateful Night'"
     },
+    
     "netiquette": {
       "tag": "netiquette: how to behave online",
       "link": "https://github.com/mckennapsean/netiquette",
       "image": "code/netiquette.png",
       "imageAlt": "core rules of netiquette: how to behave online"
     },
+    
     "woodShader": {
       "tag": "shader for modeling finished wood",
       "link": "https://github.com/mckennapsean/wood-shader",
       "image": "code/woodShader.png",
       "imageAlt": "GLSL shader for modeling finished wood, implemented from the original paper by Marschner et al."
     },
+    
     "setoGram": {
       "tag": "set-o-gram: visualization of sets",
       "link": "https://github.com/mckennapsean/set-o-gram",
       "image": "code/setoGram.png",
       "imageAlt": "set-o-gram, reimplemented in Processing from original paper by Freiler et al."
     },
+    
     "mvhpc": {
       "tag": "website for the MVHPC",
       "link": "https://github.com/lkorth/MVHPC",
