@@ -12,10 +12,15 @@
       <span class="byline"><%= jobTitle %></span>
     </div>
    
+<%  var top = "";
+    if (current.path == 'index') {
+      top = "#top";
+    } %>
+   
     <!-- Nav -->
     <nav id="nav">
       <ul>
-        <li><a href="/" id="home-link" class="skel-panels-ignoreHref">
+        <li><a href="/<%= top %>" id="top-link" class="skel-panels-ignoreHref">
           <span class="fa fa-home">Home</span>
         </a></li>
         <li><a href="/#about" id="about-link" class="skel-panels-ignoreHref">
