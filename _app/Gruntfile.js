@@ -15,9 +15,7 @@ module.exports = function(grunt) {
     
     clean: {
       vendor: {
-        src: [
-          'www/vendor/'
-        ]
+        src: 'www/vendor/'
       },
       root: {
         src: [
