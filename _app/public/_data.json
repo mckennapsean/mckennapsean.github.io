@@ -1,7 +1,7 @@
 {
   "projects": {
     
-    "setVis": {
+    "set-vis": {
       "tag": "understanding set visualization",
       "authors": "Sean McKenna, Nathalie Henry Riche, Nina McCurdy, Zella Urquhart, Miriah Meyer",
       "link": "projects/set-vis/",
@@ -9,7 +9,7 @@
       "imageAlt": "set visualization examples"
     },
     
-    "sCorrPlot": {
+    "s-corrplot": {
       "tag": "s-CorrPlot: encoding correlation",
       "authors": "Sean McKenna, Miriah Meyer, Christopher Gregg, Samuel Gerber",
       "link": "projects/s-corrplot/",
@@ -17,7 +17,7 @@
       "imageAlt": "s-CorrPlot scatterplot for visualization and exploring correlation in multidimensional space"
     },
     
-    "designActivityFramework": {
+    "design-activity-framework": {
       "tag": "the design activity framework",
       "authors": "Sean McKenna, Dominika Mazur, Jim Agutter, Miriah Meyer",
       "link": "projects/design-activity-framework/",
@@ -25,7 +25,7 @@
       "imageAlt": "the design activity framework for visualization design decisions"
     },
     
-    "cybersecurityRedesign": {
+    "cybersecurity-redesign": {
       "tag": "redesign of a cybersecurity tool",
       "authors": "Sean McKenna, Dominika Mazur, Matthew Parkin, Jim Agutter, Miriah Meyer",
       "link": "projects/cybersecurity-redesign/",
@@ -33,7 +33,7 @@
       "imageAlt": "cybersecurity network security redesign project"
     },
     
-    "compariSeq": {
+    "compariseq": {
       "tag": "compariSeq: rethinking sequence logos",
       "authors": "Sean McKenna, Philip S. Quinan, Alex Bigelow",
       "link": "projects/compariseq/",
