@@ -37,6 +37,27 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+    clean: {
+      vendor: {
+        src: [
+          'www/vendor/'
+        ]
+      },
+      dist: {
+        src: [
+          '../*.html',
+          '../code/',
+          '../css/',
+          '../cv/',
+          '../images/',
+          '../js/',
+          '../projects/'
+        ],
+        options: {
+          force: true
+        }
+      }
     }
     // uglify: {
     //   build: {
@@ -49,6 +70,7 @@ module.exports = function(grunt) {
   // Load all task plugins.
   grunt.loadNpmTasks('grunt-harp');
   grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   //grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Declare all Grunt task(s).
