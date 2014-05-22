@@ -4,40 +4,40 @@
     "setVis": {
       "tag": "understanding set visualization",
       "authors": "Sean McKenna, Nathalie Henry Riche, Nina McCurdy, Zella Urquhart, Miriah Meyer",
-      "link": "projects/setVis/",
-      "image": "projects/setVis/image.png",
+      "link": "projects/set-vis/",
+      "image": "projects/set-vis/image.png",
       "imageAlt": "set visualization examples"
     },
     
     "sCorrPlot": {
       "tag": "s-CorrPlot: encoding correlation",
       "authors": "Sean McKenna, Miriah Meyer, Christopher Gregg, Samuel Gerber",
-      "link": "projects/sCorrPlot/",
-      "image": "projects/sCorrPlot/image.png",
+      "link": "projects/s-corrplot/",
+      "image": "projects/s-corrplot/image.png",
       "imageAlt": "s-CorrPlot scatterplot for visualization and exploring correlation in multidimensional space"
     },
     
     "designActivityFramework": {
       "tag": "the design activity framework",
       "authors": "Sean McKenna, Dominika Mazur, Jim Agutter, Miriah Meyer",
-      "link": "projects/designActivityFramework/",
-      "image": "projects/designActivityFramework/image.png",
+      "link": "projects/design-activity-framework/",
+      "image": "projects/design-activity-framework/image.png",
       "imageAlt": "the design activity framework for visualization design decisions"
     },
     
     "cybersecurityRedesign": {
       "tag": "redesign of a cybersecurity tool",
       "authors": "Sean McKenna, Dominika Mazur, Matthew Parkin, Jim Agutter, Miriah Meyer",
-      "link": "projects/cybersecurityRedesign/",
-      "image": "projects/cybersecurityRedesign/image.png",
+      "link": "projects/cybersecurity-redesign/",
+      "image": "projects/cybersecurity-redesign/image.png",
       "imageAlt": "cybersecurity network security redesign project"
     },
     
     "compariSeq": {
       "tag": "compariSeq: rethinking sequence logos",
       "authors": "Sean McKenna, Philip S. Quinan, Alex Bigelow",
-      "link": "projects/compariSeq/",
-      "image": "projects/compariSeq/image.png",
+      "link": "projects/compariseq/",
+      "image": "projects/compariseq/image.png",
       "imageAlt": "compariSeq sequence logos visualization"
     }
   },
