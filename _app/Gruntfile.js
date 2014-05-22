@@ -115,7 +115,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Declare all Grunt task(s).
-  grunt.registerTask('default', ['harp:compile']);
+  grunt.registerTask('default', ['harp:compile', 'clean:vendor', 'replace', 'uglify', 'cssmin', 'clean:root', 'copy', 'clean:www']);
   grunt.registerTask('serve', 'harp:server');
   grunt.registerTask('test', 'connect');
 };
