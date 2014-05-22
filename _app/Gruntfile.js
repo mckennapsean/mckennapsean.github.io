@@ -7,12 +7,12 @@ module.exports = function(grunt) {
       server: {
         server: true
       },
-      dist: {
+      compile: {
         dest: 'www'
       }
     },
     replace: {
-      dist: {
+      vendor: {
         src: ['www/**/*.html', 'www/**/*.css'],
         overwrite: true,
         replacements: [
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
           'www/vendor/'
         ]
       },
-      dist: {
+      root: {
         src: [
           '../*.html',
           '../code/',
@@ -58,12 +58,12 @@ module.exports = function(grunt) {
           force: true
         }
       },
-      clean: {
+      www: {
         src: 'www/'
       }
     },
     uglify: {
-      dist: {
+      minify: {
         files: [{
           expand: true,
           cwd: 'www/js',
@@ -91,6 +91,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Declare all Grunt task(s).
-  grunt.registerTask('default', ['harp:dist']);
+  grunt.registerTask('default', ['harp:compile']);
   grunt.registerTask('serve', 'harp:server');
 };
