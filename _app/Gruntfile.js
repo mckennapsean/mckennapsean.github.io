@@ -58,23 +58,26 @@ module.exports = function(grunt) {
           force: true
         }
       }
+    },
+    uglify: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'www/js',
+          src: '**/*.js',
+          dest: 'www/js'
+        }]
+      }
     }
-    // uglify: {
-    //   build: {
-    //     src: 'src/*.js',
-    //     dest: 'build/*.min.js'
-    //   }
-    // }
   });
 
   // Load all task plugins.
   grunt.loadNpmTasks('grunt-harp');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  //grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Declare all Grunt task(s).
   grunt.registerTask('default', ['harp:dist']);
   grunt.registerTask('serve', 'harp:server');
-  //grunt.registerTask('default', ['uglify']);
 };
