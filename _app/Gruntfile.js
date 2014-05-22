@@ -57,6 +57,9 @@ module.exports = function(grunt) {
         options: {
           force: true
         }
+      },
+      clean: {
+        src: 'www/'
       }
     },
     uglify: {
