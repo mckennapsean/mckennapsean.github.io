@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    
     harp: {
       server: {
         server: true
@@ -11,6 +12,29 @@ module.exports = function(grunt) {
         dest: 'www'
       }
     },
+    
+    clean: {
+      vendor: {
+        src: [
+          'www/vendor/'
+        ]
+      },
+      root: {
+        src: [
+          '../*',
+          '!../_app/**',
+          '!../.gitignore',
+          '!../.git/**'
+        ],
+        options: {
+          force: true
+        }
+      },
+      www: {
+        src: 'www/'
+      }
+    },
+    
     replace: {
       vendor: {
         src: ['www/**/*.html', 'www/**/*.css'],
@@ -38,27 +62,7 @@ module.exports = function(grunt) {
         ]
       }
     },
-    clean: {
-      vendor: {
-        src: [
-          'www/vendor/'
-        ]
-      },
-      root: {
-        src: [
-          '../*',
-          '!../_app/**',
-          '!../.gitignore',
-          '!../.git/**'
-        ],
-        options: {
-          force: true
-        }
-      },
-      www: {
-        src: 'www/'
-      }
-    },
+    
     uglify: {
       minify: {
         files: [{
@@ -69,6 +73,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+    
     cssmin: {
       minify: {
         expand: true,
@@ -78,6 +83,7 @@ module.exports = function(grunt) {
         ext: '.css'
       }
     },
+    
     copy: {
       www: {
         files: [{
@@ -88,6 +94,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+    
     connect: {
       server: {
         options: {
