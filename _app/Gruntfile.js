@@ -80,6 +80,16 @@ module.exports = function(grunt) {
         dest: 'www/css/',
         ext: '.css'
       }
+    },
+    copy: {
+      www: {
+        files: [{
+          expand: true,
+          cwd: 'www',
+          src: '**',
+          dest: '../'
+        }]
+      }
     }
   });
 
@@ -89,6 +99,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Declare all Grunt task(s).
   grunt.registerTask('default', ['harp:compile']);
