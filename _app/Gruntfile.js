@@ -68,6 +68,15 @@ module.exports = function(grunt) {
           dest: 'www/js'
         }]
       }
+    },
+    cssmin: {
+      minify: {
+        expand: true,
+        cwd: 'www/css/',
+        src: ['**/*.css'],
+        dest: 'www/css/',
+        ext: '.css'
+      }
     }
   });
 
@@ -76,6 +85,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Declare all Grunt task(s).
   grunt.registerTask('default', ['harp:dist']);
