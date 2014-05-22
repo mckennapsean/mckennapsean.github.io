@@ -46,13 +46,10 @@ module.exports = function(grunt) {
       },
       root: {
         src: [
-          '../*.html',
-          '../code/',
-          '../css/',
-          '../cv/',
-          '../images/',
-          '../js/',
-          '../projects/'
+          '../*',
+          '!../_app/**',
+          '!../.gitignore',
+          '!../.git/**'
         ],
         options: {
           force: true
