@@ -18,11 +18,11 @@
     },
     
     "design-activity-framework": {
-      "tag": "the design activity framework",
+      "tag": "design activity framework",
       "authors": "Sean McKenna, Dominika Mazur, Jim Agutter, Miriah Meyer",
       "link": "projects/design-activity-framework/",
       "image": "projects/design-activity-framework/image.png",
-      "imageAlt": "the design activity framework for visualization design decisions"
+      "imageAlt": "design activity framework for visualization design"
     },
     
     "cybersecurity-redesign": {
