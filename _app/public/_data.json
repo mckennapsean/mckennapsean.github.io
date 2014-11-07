@@ -1,6 +1,14 @@
 {
   "projects": {
     
+    "cybersecurity-dashboard": {
+      "tag": "cybersecurity dashboard",
+      "authors": "Sean McKenna, Diane Staheli",
+      "link": "projects/cybersecurity-dashboard/",
+      "image": "projects/cybersecurity-dashboard/image.png",
+      "imageAlt": "STAR cybersecurity dashboard"
+    },
+    
     "set-vis": {
       "tag": "understanding set visualization",
       "authors": "Sean McKenna, Nathalie Henry Riche, Nina McCurdy, Zella Urquhart, Miriah Meyer",
