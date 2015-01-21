@@ -16,9 +16,13 @@
         <%- partial("games.md") %>
       </div>
       <div class="2u"></div>
-      <script src="/js/sorttable.js"></script>
+      <script src="/vendor/jquery.tablesorter/js/jquery.tablesorter.min.js"></script>
+      <link rel="stylesheet" href="/css/table.css" />
       <script>
-        $("table").addClass("sortable");
+        $("table").addClass("tablesorter");
+        $(document).ready(function(){ 
+          $(".tablesorter").tablesorter({sortList: [[1,0]]}); 
+        }); 
       </script>
     </div>
   

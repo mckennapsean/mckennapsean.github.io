@@ -3,6 +3,7 @@
   "version": "1.0",
   "dependencies": {
     "jquery": "latest",
+    "jquery.tablesorter": "latest",
     "html5shiv": "~3.7.2",
     "skeljs": "~0.4.7",
     "font-awesome-bower": "~4.0.3"
