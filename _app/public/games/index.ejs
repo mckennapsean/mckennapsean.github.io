@@ -1,0 +1,28 @@
+<!-- Main -->
+<div id="main">
+<section class="two">
+
+  <div class="container">
+    
+    <header>
+      <h2 class="alt">Board Games</h2>
+    </header>
+    
+    <div class="row"></div>
+    
+    <div class="row" style="text-align: justify;">
+      <div class="2u"></div>
+      <div class="8u">
+        <%- partial("games.md") %>
+      </div>
+      <div class="2u"></div>
+      <script src="/js/sorttable.js"></script>
+      <script>
+        $("table").addClass("sortable");
+      </script>
+    </div>
+  
+  </div>
+
+</section>
+</div>
