@@ -20,9 +20,10 @@
       <link rel="stylesheet" href="/css/table.css" />
       <script>
         $("table").addClass("tablesorter");
-        $(document).ready(function(){ 
-          $(".tablesorter").tablesorter({sortList: [[0,0]]}); 
-        }); 
+        $(document).ready(function(){
+          $(".tablesorter").tablesorter({sortList: [[0,0]]});
+        });
+        $(".tablesorter a").addClass("fa fa-globe solo").attr("style", "font-size: 90%;").attr("target", "_blank");
       </script>
     </div>
   
