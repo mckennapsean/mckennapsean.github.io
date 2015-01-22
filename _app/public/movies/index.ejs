@@ -5,7 +5,7 @@
   <div class="container">
     
     <header>
-      <h2 class="alt">Board Game Collection</h2>
+      <h2 class="alt">Movie &amp; TV Series Collection</h2>
     </header>
     
     <div class="row"></div>
@@ -13,7 +13,7 @@
     <div class="row" style="text-align: justify;">
       <div class="2u"></div>
       <div class="8u">
-        <%- partial("games.md") %>
+        <%- partial("movies.md") %>
       </div>
       <div class="2u"></div>
       <script src="/vendor/jquery.tablesorter/js/jquery.tablesorter.min.js"></script>
@@ -21,7 +21,7 @@
       <script>
         $("table").addClass("tablesorter");
         $(document).ready(function(){ 
-          $(".tablesorter").tablesorter({sortList: [[1,0]]}); 
+          $(".tablesorter").tablesorter({sortList: [[0,0]]}); 
         }); 
       </script>
     </div>
