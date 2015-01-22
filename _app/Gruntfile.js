@@ -43,7 +43,7 @@ module.exports = function(grunt) {
             to: '//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js'
           }, {
             from: '/vendor/jquery.tablesorter/js/jquery.tablesorter.min.js',
-            to: '//cdn.jsdelivr.net/tablesorter/2.17.4/jquery.tablesorter.min.js'
+            to: 'https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.4/js/jquery.tablesorter.min.js'
           }, {
             from: '/vendor/skeljs/dist/skel.min.js',
             to: '//cdn.jsdelivr.net/skeljs/0.4.6/skel.min.js'
