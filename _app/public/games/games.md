@@ -4,11 +4,9 @@
 | Onirim                                   | 1-2     | 0:15 | card     | [](http://boardgamegeek.com/boardgame/71836/onirim)                                           |
 | Urbion                                   | 1-2     | 0:15 | card     | [](http://boardgamegeek.com/boardgame/94389/urbion)                                           |
 | Blokus                                   | 1-4     | 0:30 | strategy | [](http://boardgamegeek.com/boardgame/2453/blokus)                                            |
-| Ruk-Shuk                                 | 1-5     | 0:15 | action   | [](http://boardgamegeek.com/boardgame/24028/rukshuk)                                          |
 | Bananagrams                              | 1-8     | 0:15 | word     | [](http://boardgamegeek.com/boardgame/27225/bananagrams)                                      |
 | Story Cubes                              | 1-12    | 0:20 | dice     | [](http://boardgamegeek.com/boardgame/20545/rorys-story-cubes)                                |
 | Set                                      | 1-20    | 0:30 | puzzle   | [](http://boardgamegeek.com/boardgame/1198/set)                                               |
-| One Tough Puzzle                         | 1-99    | ---- | puzzle   | [](http://www.amazon.com/POOF-Slinky-0X120-Ideal-Puzzle-9-Pieces/dp/B000A32O2E)               |
 | Agricola: All Creatures                  | 2       | 0:30 | strategy | [](http://boardgamegeek.com/boardgame/119890/agricola-all-creatures-big-and-small)            |
 | Android: Netrunner                       | 2       | 0:45 | card     | [](http://boardgamegeek.com/boardgame/124742/android-netrunner)                               |
 | Battleship                               | 2       | 0:30 | family   | [](http://boardgamegeek.com/boardgame/2425/battleship)                                        |
