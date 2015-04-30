@@ -103,6 +103,23 @@ module.exports = function(grunt) {
           keepalive: true
         }
       }
+    },
+    
+    watch: {
+      files: '**/*.*'
+    },
+    
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src: '**/*.*'
+        },
+        options: {
+          proxy: '127.0.0.1:9000',
+          open: true,
+          watchTask: true
+        }
+      }
     }
   });
 
@@ -114,9 +131,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Declare all Grunt task(s).
   grunt.registerTask('default', ['harp:compile', 'clean:vendor', 'replace', 'uglify', 'cssmin', 'clean:root', 'copy', 'clean:www']);
   grunt.registerTask('serve', 'harp:server');
+  grunt.registerTask('sync', ['browserSync', 'watch']);
   grunt.registerTask('test', 'connect');
 };
