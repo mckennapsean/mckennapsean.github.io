@@ -58,6 +58,7 @@
 | Apples to Apples: Jelly Belly            | 3-5     | 0:30 | party    | [](http://boardgamegeek.com/boardgame/155843/apples-apples-jelly-belly-special-edition)       |
 | Battlestar Galactica                     | 3-6     | 3:00 | bluffing | [](http://boardgamegeek.com/boardgame/37111/battlestar-galactica)                             |
 | Clue                                     | 3-6     | 0:45 | family   | [](http://boardgamegeek.com/boardgame/1294/clue)                                              |
+| Dixit                                    | 3-6     | 0:30 | card     | [](https://boardgamegeek.com/boardgame/39856/dixit)                                           |
 | Hex Hex XL                               | 3-6     | 0:20 | card     | [](http://boardgamegeek.com/boardgame/79067/hex-hex-xl)                                       |
 | Munchkin                                 | 3-6     | 1:30 | card     | [](http://boardgamegeek.com/boardgame/1927/munchkin)                                          |
 | Munchkin 6: Demented Dungeons            | 3-6     | 1:30 | card     | [](http://boardgamegeek.com/boardgameexpansion/33493/munchkin-6-demented-dungeons)            |
@@ -68,3 +69,4 @@
 | The Game of Life (vintage)               | 3-6     | 1:00 | family   | [](http://boardgamegeek.com/boardgame/2921/game-life)                                         |
 | Wizard                                   | 3-6     | 0:45 | card     | [](http://boardgamegeek.com/boardgame/1465/wizard)                                            |
 | Cranium                                  | 4-16    | 1:00 | party    | [](http://boardgamegeek.com/boardgame/891/cranium)                                            |
+| Werewolves of Miller's Hollow (mini)     | 8-18    | 0:30 | bluffing | [](https://boardgamegeek.com/boardgame/25821/werewolves-millers-hollow)                       |
