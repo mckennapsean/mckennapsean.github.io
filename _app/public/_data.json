@@ -9,12 +9,12 @@
       "imageAlt": "STAR cybersecurity dashboard"
     },
     
-    "set-vis": {
-      "tag": "understanding set visualization",
-      "authors": "Sean McKenna, Nathalie Henry Riche, Nina McCurdy, Zella Urquhart, Miriah Meyer",
-      "link": "projects/set-vis/",
-      "image": "projects/set-vis/image.png",
-      "imageAlt": "set visualization examples"
+    "vizsec-design-methods": {
+      "tag": "design methods for cyber security",
+      "authors": "Sean McKenna, Diane Staheli, Miriah Meyer",
+      "link": "projects/vizsec-design-methods",
+      "image": "projects/vizsec-design-methods/image.png",
+      "imageAlt": "cyber security personas and data sketches"
     },
     
     "s-corrplot": {
