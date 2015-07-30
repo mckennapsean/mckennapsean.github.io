@@ -1,0 +1,11 @@
+|                           |                                               |
+| ---:                      | ---:                                          |
+| *paper:*                  | [submitted to VizSec 2015](paper.pdf)         |
+| *supplemental materials:* | [qualitative coding](qualitative-coding.xlsx) |
+|                           | [personas](personas.pdf)                      |
+|                           | [data sketches](data-sketches.pdf)            |
+
+User-centered design can aid visualization designers to build better, more practical tools that meet the needs of cyber security users.
+The cyber security visualization research community can adopt a variety of design methods to more efficiently and effectively build tools.
+We demonstrate how previous cyber visualization research has omitted a discussion of effectiveness and process in the explanation of design methods.
+In this paper, we discuss three design methods and illustrate how each method informed two real-world cyber security visualization projects which resulted in successful deployments to users.
