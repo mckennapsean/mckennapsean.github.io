@@ -18,7 +18,7 @@
     },
     
     "s-corrplot": {
-      "tag": "s-CorrPlot: encoding correlation",
+      "tag": "s-CorrPlot: visualizing correlation",
       "authors": "Sean McKenna, Miriah Meyer, Christopher Gregg, Samuel Gerber",
       "link": "projects/s-corrplot/",
       "image": "projects/s-corrplot/image.png",
@@ -87,13 +87,6 @@
       "link": "https://github.com/mckennapsean/set-o-gram",
       "image": "code/setoGram.png",
       "imageAlt": "set-o-gram, reimplemented in Processing from original paper by Freiler et al."
-    },
-    
-    "mvhpc": {
-      "tag": "website for the MVHPC",
-      "link": "https://github.com/lkorth/MVHPC",
-      "image": "code/mvhpc.png",
-      "imageAlt": "Mount Vernon Historic Preservation Commission website, written in PHP"
     }
   }
 }

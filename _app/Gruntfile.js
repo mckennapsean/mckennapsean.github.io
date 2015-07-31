@@ -43,7 +43,7 @@ module.exports = function(grunt) {
             to: '//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js'
           }, {
             from: '/vendor/jquery.tablesorter/js/jquery.tablesorter.min.js',
-            to: '//cdn.jsdelivr.net/tablesorter/2.17.4/jquery.tablesorter.min.js'
+            to: 'https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.4/js/jquery.tablesorter.min.js'
           }, {
             from: '/vendor/skeljs/dist/skel.min.js',
             to: '//cdn.jsdelivr.net/skeljs/0.4.6/skel.min.js'
@@ -103,6 +103,23 @@ module.exports = function(grunt) {
           keepalive: true
         }
       }
+    },
+    
+    watch: {
+      files: '**/*.*'
+    },
+    
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src: '**/*.*'
+        },
+        options: {
+          proxy: '127.0.0.1:9000',
+          open: true,
+          watchTask: true
+        }
+      }
     }
   });
 
@@ -114,9 +131,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Declare all Grunt task(s).
   grunt.registerTask('default', ['harp:compile', 'clean:vendor', 'replace', 'uglify', 'cssmin', 'clean:root', 'copy', 'clean:www']);
   grunt.registerTask('serve', 'harp:server');
+  grunt.registerTask('sync', ['browserSync', 'watch']);
   grunt.registerTask('test', 'connect');
 };
