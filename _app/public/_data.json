@@ -1,20 +1,20 @@
 {
   "projects": {
     
-    "cybersecurity-dashboard": {
-      "tag": "cybersecurity dashboard",
-      "authors": "Sean McKenna, Diane Staheli",
-      "link": "projects/cybersecurity-dashboard/",
-      "image": "projects/cybersecurity-dashboard/image.png",
-      "imageAlt": "STAR cybersecurity dashboard"
-    },
-    
     "vizsec-design-methods": {
       "tag": "design methods for cyber security",
       "authors": "Sean McKenna, Diane Staheli, Miriah Meyer",
       "link": "projects/vizsec-design-methods",
       "image": "projects/vizsec-design-methods/image.png",
       "imageAlt": "cyber security personas and data sketches"
+    },
+    
+    "cybersecurity-dashboard": {
+      "tag": "cybersecurity dashboard",
+      "authors": "Sean McKenna, Diane Staheli",
+      "link": "projects/cybersecurity-dashboard/",
+      "image": "projects/cybersecurity-dashboard/image.png",
+      "imageAlt": "STAR cybersecurity dashboard"
     },
     
     "s-corrplot": {
