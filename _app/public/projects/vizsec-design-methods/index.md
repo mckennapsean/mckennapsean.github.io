@@ -1,6 +1,7 @@
 |                           |                                               |
 | ---:                      | ---:                                          |
-| *paper:*                  | [submitted to VizSec 2015](paper.pdf)         |
+| *paper:*                  | [design methods](paper.pdf)                   |
+| *presentation:*           | [VizSec 2015](presentation.pdf)               |
 | *supplemental materials:* | [qualitative coding](qualitative-coding.xlsx) |
 |                           | [personas](personas.pdf)                      |
 |                           | [data sketches](data-sketches.pdf)            |
