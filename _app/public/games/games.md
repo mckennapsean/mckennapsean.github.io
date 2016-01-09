@@ -4,6 +4,7 @@
 | Onirim                                   | 1-2     | 0:15 | card     | [](http://boardgamegeek.com/boardgame/71836/onirim)                                           |
 | Urbion                                   | 1-2     | 0:15 | card     | [](http://boardgamegeek.com/boardgame/94389/urbion)                                           |
 | Blokus                                   | 1-4     | 0:30 | strategy | [](http://boardgamegeek.com/boardgame/2453/blokus)                                            |
+| Tiny Epic Galaxies                       | 1-5     | 0:30 | strategy | [](https://boardgamegeek.com/boardgame/163967/tiny-epic-galaxies)                             |
 | Bananagrams                              | 1-8     | 0:15 | word     | [](http://boardgamegeek.com/boardgame/27225/bananagrams)                                      |
 | Story Cubes                              | 1-12    | 0:20 | dice     | [](http://boardgamegeek.com/boardgame/20545/rorys-story-cubes)                                |
 | Set                                      | 1-20    | 0:30 | puzzle   | [](http://boardgamegeek.com/boardgame/1198/set)                                               |
@@ -28,8 +29,10 @@
 | Array                                    | 2-5     | 0:15 | puzzle   | [](http://boardgamegeek.com/boardgame/126464/array)                                           |
 | Forbidden Desert                         | 2-5     | 0:45 | co-op    | [](http://boardgamegeek.com/boardgame/136063/forbidden-desert)                                |
 | Guillotine                               | 2-5     | 0:30 | card     | [](http://boardgamegeek.com/boardgame/116/guillotine)                                         |
+| Hanabi                                   | 2-5     | 0:30 | co-op    | [](https://boardgamegeek.com/boardgame/98778/hanabi)                                          |
 | Insidious Sevens                         | 2-5     | 0:30 | card     | [](http://boardgamegeek.com/boardgame/84864/insidious-sevens)                                 |
 | Ticket to Ride                           | 2-5     | 0:45 | family   | [](http://boardgamegeek.com/boardgame/9209/ticket-ride)                                       |
+| Car Wars                                 | 2-6     | 0:20 | card     | [](https://boardgamegeek.com/boardgame/2795/car-wars)                                         |
 | Carcassonne                              | 2-6     | 0:45 | strategy | [](http://boardgamegeek.com/boardgame/822/carcassonne)                                        |
 | Carcassonne: Inns & Cathedrals           | 2-6     | 1:00 | strategy | [](http://boardgamegeek.com/boardgameexpansion/2993/carcassonne-inns-cathedrals)              |
 | Carcassonne: Traders & Builders          | 2-6     | 1:00 | strategy | [](http://boardgamegeek.com/boardgameexpansion/5405/carcassonne-traders-builders)             |
@@ -45,6 +48,7 @@
 | Rook                                     | 2-6     | 0:45 | card     | [](http://boardgamegeek.com/boardgame/1260/rook)                                              |
 | Spectrix                                 | 2-6     | 0:20 | card     | [](http://boardgamegeek.com/boardgame/126463/spectrix)                                        |
 | Star Fluxx                               | 2-6     | 0:10 | card     | [](http://boardgamegeek.com/boardgame/102104/star-fluxx)                                      |
+| 7 Wonders                                | 2-7     | 0:30 | strategy | [](https://boardgamegeek.com/boardgame/68448/7-wonders)                                       |
 | Jenga                                    | 2-8     | 0:20 | action   | [](http://boardgamegeek.com/boardgame/2452/jenga)                                             |
 | Monopoly                                 | 2-8     | 3:00 | family   | [](http://boardgamegeek.com/boardgame/1406/monopoly)                                          |
 | Tsuro                                    | 2-8     | 0:15 | strategy | [](http://boardgamegeek.com/boardgame/16992/tsuro)                                            |
