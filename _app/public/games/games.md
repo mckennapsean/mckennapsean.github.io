@@ -9,8 +9,6 @@
 | Set                                      | 1-20    | 0:30 | puzzle   | [](http://boardgamegeek.com/boardgame/1198/set)                                               |
 | Agricola: All Creatures                  | 2       | 0:30 | strategy | [](http://boardgamegeek.com/boardgame/119890/agricola-all-creatures-big-and-small)            |
 | Android: Netrunner                       | 2       | 0:45 | card     | [](http://boardgamegeek.com/boardgame/124742/android-netrunner)                               |
-| Battleship                               | 2       | 0:30 | family   | [](http://boardgamegeek.com/boardgame/2425/battleship)                                        |
-| Chess                                    | 2       | 1:00 | strategy | [](http://boardgamegeek.com/boardgame/171/chess)                                              |
 | Pentago                                  | 2       | 0:10 | strategy | [](http://boardgamegeek.com/boardgame/19841/pentago)                                          |
 | Stratego                                 | 2       | 0:45 | strategy | [](http://boardgamegeek.com/boardgame/1917/stratego)                                          |
 | Ultimate Mastermind                      | 2       | 0:10 | puzzle   | [](http://boardgamegeek.com/boardgame/3874/ultimate-mastermind)                               |
@@ -69,6 +67,5 @@
 | The Settlers of Catan: 5-6 Player        | 3-6     | 2:00 | strategy | [](http://boardgamegeek.com/boardgameexpansion/2807/settlers-catan-5-6-player-extension)      |
 | The Game of Life (vintage)               | 3-6     | 1:00 | family   | [](http://boardgamegeek.com/boardgame/2921/game-life)                                         |
 | Wizard                                   | 3-6     | 0:45 | card     | [](http://boardgamegeek.com/boardgame/1465/wizard)                                            |
-| Cranium                                  | 4-16    | 1:00 | party    | [](http://boardgamegeek.com/boardgame/891/cranium)                                            |
 | The Resistance                           | 5-10    | 0:30 | bluffing | [](https://boardgamegeek.com/boardgame/41114/resistance)                                      |
 | Werewolves of Miller's Hollow (mini)     | 8-18    | 0:30 | bluffing | [](https://boardgamegeek.com/boardgame/25821/werewolves-millers-hollow)                       |
