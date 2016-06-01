@@ -1,6 +1,14 @@
 {
   "projects": {
     
+    "bubble-net": {
+      "tag": "bubble-net dashboard",
+      "authors": "Sean McKenna, Diane Staheli, Cody Fulcher, Miriah Meyer",
+      "link": "projects/bubble-net",
+      "image": "projects/bubble-net/image.png",
+      "imageAlt": "design of the bubble-net dashboard for cyber security data"
+    },
+    
     "vizsec-design-methods": {
       "tag": "design methods for cyber security",
       "authors": "Sean McKenna, Diane Staheli, Miriah Meyer",
