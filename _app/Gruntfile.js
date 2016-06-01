@@ -124,7 +124,7 @@ module.exports = function(grunt) {
   });
 
   // Load all task plugins.
-  grunt.loadNpmTasks('grunt-harp');
+  // grunt.loadNpmTasks('grunt-harp');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -135,8 +135,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Declare all Grunt task(s).
-  grunt.registerTask('default', ['harp:compile', 'clean:vendor', 'replace', 'uglify', 'cssmin', 'clean:root', 'copy', 'clean:www']);
-  grunt.registerTask('serve', 'harp:server');
+  // grunt.registerTask('default', ['harp:compile', 'clean:vendor', 'replace', 'uglify', 'cssmin', 'clean:root', 'copy', 'clean:www']);
+  grunt.registerTask('default', ['clean:vendor', 'replace', 'uglify', 'cssmin', 'clean:root', 'copy', 'clean:www']);
+  // grunt.registerTask('serve', 'harp:server');
   grunt.registerTask('sync', ['browserSync', 'watch']);
   grunt.registerTask('test', 'connect');
 };
