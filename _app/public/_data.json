@@ -5,7 +5,7 @@
       "tag": "bubble-net dashboard",
       "authors": "Sean McKenna, Diane Staheli, Cody Fulcher, Miriah Meyer",
       "link": "projects/bubble-net",
-      "image": "projects/bubble-net/image.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/bubble-net.png",
       "imageAlt": "design of the bubble-net dashboard for cyber security data"
     },
     
@@ -13,7 +13,7 @@
       "tag": "design methods for cyber security",
       "authors": "Sean McKenna, Diane Staheli, Miriah Meyer",
       "link": "projects/vizsec-design-methods",
-      "image": "projects/vizsec-design-methods/image.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/vizsec-design-methods.png",
       "imageAlt": "cyber security personas and data sketches"
     },
     
@@ -21,7 +21,7 @@
       "tag": "cybersecurity dashboard",
       "authors": "Sean McKenna, Diane Staheli",
       "link": "projects/cybersecurity-dashboard/",
-      "image": "projects/cybersecurity-dashboard/image.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/cybersecurity-dashboard.png",
       "imageAlt": "STAR cybersecurity dashboard"
     },
     
@@ -29,7 +29,7 @@
       "tag": "s-CorrPlot: visualizing correlation",
       "authors": "Sean McKenna, Miriah Meyer, Christopher Gregg, Samuel Gerber",
       "link": "projects/s-corrplot/",
-      "image": "projects/s-corrplot/image.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/s-corrplot.png",
       "imageAlt": "s-CorrPlot scatterplot for visualization and exploring correlation in multidimensional space"
     },
     
@@ -37,7 +37,7 @@
       "tag": "design activity framework",
       "authors": "Sean McKenna, Dominika Mazur, Jim Agutter, Miriah Meyer",
       "link": "projects/design-activity-framework/",
-      "image": "projects/design-activity-framework/image.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/design-activity-framework.png",
       "imageAlt": "design activity framework for visualization design"
     },
     
@@ -45,7 +45,7 @@
       "tag": "redesign of a cybersecurity tool",
       "authors": "Sean McKenna, Dominika Mazur, Matthew Parkin, Jim Agutter, Miriah Meyer",
       "link": "projects/cybersecurity-redesign/",
-      "image": "projects/cybersecurity-redesign/image.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/cybersecurity-redesign.png",
       "imageAlt": "cybersecurity network security redesign project"
     },
     
@@ -53,7 +53,7 @@
       "tag": "compariSeq: rethinking sequence logos",
       "authors": "Sean McKenna, Philip S. Quinan, Alex Bigelow",
       "link": "projects/compariseq/",
-      "image": "projects/compariseq/image.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/compariseq.png",
       "imageAlt": "compariSeq sequence logos visualization"
     }
   },
@@ -65,35 +65,35 @@
     "codeExamples": {
       "tag": "samples of programming languages",
       "link": "https://github.com/mckennapsean/code-examples",
-      "image": "code/codeExamples.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/code-examples.png",
       "imageAlt": "code examples various programming languages"
     },
     
     "rayTracer": {
       "tag": "ray tracer in C++",
       "link": "https://github.com/mckennapsean/ray-tracer",
-      "image": "code/rayTracer.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/ray-tracer.png",
       "imageAlt": "ray tracer final render Utah teapot suicide, titled 'One Fateful Night'"
     },
     
     "netiquette": {
       "tag": "netiquette: how to behave online",
-      "link": "https://github.com/mckennapsean/netiquette",
-      "image": "code/netiquette.png",
+      "link": "https://gist.github.com/mckennapsean/3044ee15b69961f43ecd",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/netiquette.png",
       "imageAlt": "core rules of netiquette: how to behave online"
     },
     
     "woodShader": {
       "tag": "shader for modeling finished wood",
       "link": "https://github.com/mckennapsean/wood-shader",
-      "image": "code/woodShader.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/wood-shader.png",
       "imageAlt": "GLSL shader for modeling finished wood, implemented from the original paper by Marschner et al."
     },
     
     "setoGram": {
       "tag": "set-o-gram: visualization of sets",
       "link": "https://github.com/mckennapsean/set-o-gram",
-      "image": "code/setoGram.png",
+      "image": "http://www.cs.utah.edu/~sean/resources/images/set-o-gram.png",
       "imageAlt": "set-o-gram, reimplemented in Processing from original paper by Freiler et al."
     }
   }
