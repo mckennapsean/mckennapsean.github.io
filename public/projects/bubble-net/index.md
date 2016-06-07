@@ -1,6 +1,7 @@
 |                           |                                               |
 | ---:                      | ---:                                          |
 | *paper:*                  | [bubble-net](paper.pdf)                   |
+| *video:*                  | [dashboard demo](https://youtu.be/8gKNJcIduN8) |
 | *presentation:*           | [EuroVis 2016](presentation.pdf)               |
 
 The field of cyber security is faced with ever-expanding amounts of data and a constant barrage of cyber attacks.
