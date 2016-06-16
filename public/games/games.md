@@ -4,8 +4,10 @@
 | Onirim                                   | 1-2     | 0:15 | card     | [](http://boardgamegeek.com/boardgame/71836/onirim)                                           |
 | Urbion                                   | 1-2     | 0:15 | card     | [](http://boardgamegeek.com/boardgame/94389/urbion)                                           |
 | Blokus                                   | 1-4     | 0:30 | strategy | [](http://boardgamegeek.com/boardgame/2453/blokus)                                            |
+| Agricola                                 | 1-5     | 1:30 | strategy | [](https://boardgamegeek.com/boardgame/31260/agricola)                                        |
 | Tiny Epic Galaxies                       | 1-5     | 0:30 | strategy | [](https://boardgamegeek.com/boardgame/163967/tiny-epic-galaxies)                             |
 | Bananagrams                              | 1-8     | 0:15 | word     | [](http://boardgamegeek.com/boardgame/27225/bananagrams)                                      |
+| Elder Sign                               | 1-8     | 1:30 | co-op    | [](https://boardgamegeek.com/boardgame/100423/elder-sign)                                     |
 | Story Cubes                              | 1-12    | 0:20 | dice     | [](http://boardgamegeek.com/boardgame/20545/rorys-story-cubes)                                |
 | Set                                      | 1-20    | 0:30 | puzzle   | [](http://boardgamegeek.com/boardgame/1198/set)                                               |
 | Agricola: All Creatures                  | 2       | 0:30 | strategy | [](http://boardgamegeek.com/boardgame/119890/agricola-all-creatures-big-and-small)            |
@@ -24,6 +26,7 @@
 | Pente                                    | 2-4     | 0:30 | strategy | [](http://boardgamegeek.com/boardgame/1295/pente)                                             |
 | Qwirkle                                  | 2-4     | 0:45 | strategy | [](http://boardgamegeek.com/boardgame/25669/qwirkle)                                          |
 | Sorry!                                   | 2-4     | 0:30 | family   | [](http://boardgamegeek.com/boardgame/2407/sorry)                                             |
+| Splendor                                 | 2-4     | 0:30 | card     | [](https://boardgamegeek.com/boardgame/148228/splendor)                                       |
 | Tri-Ominos                               | 2-4     | 0:30 | strategy | [](http://boardgamegeek.com/boardgame/4040/tri-ominos)                                        |
 | Vizia                                    | 2-4     | 0:30 | strategy | [](http://boardgamegeek.com/boardgame/94363/vizia)                                            |
 | Array                                    | 2-5     | 0:15 | puzzle   | [](http://boardgamegeek.com/boardgame/126464/array)                                           |
@@ -71,5 +74,6 @@
 | The Settlers of Catan: 5-6 Player        | 3-6     | 2:00 | strategy | [](http://boardgamegeek.com/boardgameexpansion/2807/settlers-catan-5-6-player-extension)      |
 | The Game of Life (vintage)               | 3-6     | 1:00 | family   | [](http://boardgamegeek.com/boardgame/2921/game-life)                                         |
 | Wizard                                   | 3-6     | 0:45 | card     | [](http://boardgamegeek.com/boardgame/1465/wizard)                                            |
+| Concept                                  | 4-12    | 0:40 | party    | [](https://boardgamegeek.com/boardgame/147151/concept)                                        |
 | The Resistance                           | 5-10    | 0:30 | bluffing | [](https://boardgamegeek.com/boardgame/41114/resistance)                                      |
 | Werewolves of Miller's Hollow (mini)     | 8-18    | 0:30 | bluffing | [](https://boardgamegeek.com/boardgame/25821/werewolves-millers-hollow)                       |
