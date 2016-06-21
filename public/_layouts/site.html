@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>{{ site.title }}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- TODO set characteristics for search engines...? -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
+    <!-- TODO fix these to CDNs? or other options? -->
+    <!--[if lte IE 8]><script src="/vendor/html5shiv/dist/html5shiv.min.js"></script><![endif]-->
+    <!--<script src="/vendor/jquery/dist/jquery.min.js"></script>-->
+    <script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+    <!--<script src="/vendor/skeljs/dist/skel.min.js"></script>-->
+    <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel.min.js"></script>
+    <!--<script src="/vendor/skeljs/dist/skel-panels.min.js"></script>-->
+    <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel-panels.min.js"></script>
+    <script src="/js/init.js"></script>
+    <!-- TODO fix to only show on index current path? -->
+      <script src="/js/scrolly.js"></script>
+    <noscript>
+      <!--<link rel="stylesheet" href="/vendor/skeljs/dist/skel-noscript.css" />-->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/skeljs/0.4.6/skel-noscript.css">
+      <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/css/style-wide.css" />
+    </noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+    {% include analytics.html %}
+  </head>
+  <body>
+    
+    <!-- Header/Menu -->
+    {% include menu.html %}
+    
+    <!-- Content -->
+    {{ content }}
+    
+    <!-- Footer -->
+    {% include footer.html %}
+  </body>
+</html>

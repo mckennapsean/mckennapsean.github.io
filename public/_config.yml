@@ -1,0 +1,34 @@
+title: Sean McKenna
+name: Sean McKenna
+email: mckennapsean@gmail.com
+jobTitle: Ph.D. Candidate
+gravatar: http://www.gravatar.com/avatar/f029704e495cdad146ef1e046c428d3b.png
+github: mckennapsean
+otherPlaces: mckennapsean
+analytics: ???
+resources: http://www.cs.utah.edu/~sean/resources/
+
+exclude: [
+  "README.md"
+]
+collections:
+  projectsPath: /projects/:path/
+  codingPath: /coding/:path/
+
+projects: [
+  "bubble-net",
+  "vizsec-design-methods",
+  "cybersecurity-dashboard",
+  "s-corrplot",
+  "design-activity-framework",
+  "cybersecurity-redesign",
+  "compariseq"
+]
+
+coding: [
+  "code-examples",
+  "ray-tracer",
+  "netiquette",
+  "wood-shader",
+  "set-o-gram"
+]

@@ -1,0 +1,169 @@
+---
+layout: site
+---
+
+<!-- Main -->
+<div id="main">
+  
+  <!-- Intro -->
+  <section id="top" class="one">
+  <div class="container">
+  
+    <img class="image featured" src="images/header.jpg" alt="Salt Lake Valley, Utah, mountains and sky" />
+    
+    <!-- About -->
+    <section id="about" class="one">
+    
+    <header>
+      <h2 class="alt">Hello, I'm <strong><a href="mailto:{{ site.email }}">{{ site.name }}</a></strong>.</h2>
+    </header>
+    
+    <p>
+      While pursuing a Ph.D. in Visualization with
+      <a href="http://www.cs.utah.edu/~miriah/">Dr. Miriah Meyer</a>,
+      I investigate the use and creation of visualization prototypes
+      across various domains through a user-centered design process.
+    </p>
+    
+    <footer>
+    <div class="row">
+      <div class="-3u 3u">
+        <p>
+          <a href="cv/cv.pdf">CV &nbsp; <span class="fa fa-file-text solo"></span></a> ,
+          <a href="cv/" class="fa fa-html5 solo">
+            <span>CV (html)</span>
+          </a>
+        </p>
+      </div>
+      <div class="3u">
+        {% include social-media.html %}
+      </div>
+    </div>
+    I love <a href="movies/">movies <span class="fa fa-video-camera solo"></span></a> and <a href="games/">board games <span class="fa fa-puzzle-piece solo"></span></a>.
+    </footer>
+    
+  </div>
+  </section>
+  </section>
+    
+  <!-- Projects -->
+  <section id="projects" class="two">
+  <div class="container">
+    
+    <header>
+      <h2>Projects</h2>
+    </header>
+    
+    <div class="row">
+    
+    {% assign count = 0 %}
+    {% assign stackedRows = 2 %}
+    {% assign numCols = 3; %}
+    {% for project in site.projects %}
+      
+      <!-- two rows, stacked, per column -->
+      {% if count | modulo: stackedRows == 0 %}
+        
+        <div class="4u">
+        
+      {% endif %}
+      
+      <!-- TODO image title, alt, check links, etc. -->
+      <article class="item">
+        <a href="projects/{{ project }}" class="image full">
+          <img src="{{ site.resources }}/images/{{ project }}.png" alt="{{ project }}" />
+        </a>
+        <header>
+          <h3>{{ project }}</h3>
+        </header>
+      </article>
+      
+      {% if count | modulo: stackedRows == stackedRows | minus: 1 %}
+        
+        </div>
+        
+      {% endif %}
+      
+      <!-- create new rows for more content -->
+      {% assign howManyRows = stackedRows | times: numCols %}
+      {% if count | modulo: howManyRows == howManyRows | minus: 1 %}
+        
+        </div>
+        
+        <div class="row">
+        
+      {% endif %}
+      
+      {% increment count %}
+    {% endfor %}
+    
+    </div>
+    
+  </div>
+  </section>
+  
+  <!-- Code -->
+  <section id="code" class="three">
+  <div class="container">
+    
+    <header>
+      <h2>Code</h2>
+    </header>
+    
+    <!-- TODO link to social media data... -->
+    <p>
+      I thoroughly enjoy contributing to and releasing open-source software.
+      <br>
+      Check out my releases below, or follow me
+      <a href="https://www.github.com/mckennapsean">on GitHub</a>.
+    </p>
+    
+    <div class="row">
+    
+    {% assign count = 0 %}
+    {% assign stackedRows = 2 %}
+    {% assign numCols = 3 %}
+    {% for code in site.coding %}
+      
+      <!-- two rows, stacked, per column -->
+      {% if count | modulo: stackedRows == 0 %}
+        
+        <div class="4u">
+        
+      {% endif %}
+      
+      <!-- TODO clean up these, the links, images, alt, and titles -->
+      <article class="item">
+        <a href="/" class="image full">
+          <img src="{{ site.resources }}/images/{{ code }}.png" alt="{{ code }}" />
+        </a>
+        <header>
+          <h3>{{ code }}</h3>
+        </header>
+      </article>
+      
+      {% if count | modulo: stackedRows == stackedRows | minus: 1 %}
+        
+        </div>
+        
+      {% endif %}
+      
+      <!-- create new rows for more content -->
+      {% assign howManyRows = stackedRows | times: numCols %}
+      {% if count | modulo: howManyRows == howManyRows | minus: 1 %}
+        
+        </div>
+        
+        <div class="row">
+        
+      {% endif %}
+      
+      {% increment count %}
+    {% endfor %}
+    
+    </div>
+  
+  </div>
+  </section>
+  
+</div>
