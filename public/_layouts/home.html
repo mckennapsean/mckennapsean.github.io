@@ -58,11 +58,12 @@ layout: site
     
     {% assign count = 0 %}
     {% assign stackedRows = 2 %}
-    {% assign numCols = 3; %}
+    {% assign numCols = 3 %}
     {% for project in site.projects %}
       
       <!-- two rows, stacked, per column -->
-      {% if count | modulo: stackedRows == 0 %}
+      {% assign whereInCol = count | modulo: stackedRows %}
+      {% if whereInCol == 0 %}
         
         <div class="4u">
         
@@ -78,15 +79,18 @@ layout: site
         </header>
       </article>
       
-      {% if count | modulo: stackedRows == stackedRows | minus: 1 %}
+      {% assign stackedRowsOffset = stackedRows | minus: 1 %}
+      {% if whereInCol == stackedRowsOffset %}
         
         </div>
         
       {% endif %}
       
       <!-- create new rows for more content -->
-      {% assign howManyRows = stackedRows | times: numCols %}
-      {% if count | modulo: howManyRows == howManyRows | minus: 1 %}
+      {% assign howManyInRow = stackedRows | times: numCols %}
+      {% assign placeInRow = count | modulo: howManyInRow %}
+      {% assign howManyInRowOffset = howManyInRow | minus: 1 %}
+      {% if placeInRow == howManyInRowOffset %}
         
         </div>
         
@@ -94,7 +98,7 @@ layout: site
         
       {% endif %}
       
-      {% increment count %}
+      {% assign count = count | plus: 1 %}
     {% endfor %}
     
     </div>
@@ -126,7 +130,8 @@ layout: site
     {% for code in site.coding %}
       
       <!-- two rows, stacked, per column -->
-      {% if count | modulo: stackedRows == 0 %}
+      {% assign whereInCol = count | modulo: stackedRows %}
+      {% if whereInCol == 0 %}
         
         <div class="4u">
         
@@ -142,23 +147,26 @@ layout: site
         </header>
       </article>
       
-      {% if count | modulo: stackedRows == stackedRows | minus: 1 %}
+      {% assign stackedRowsOffset = stackedRows | minus: 1 %}
+      {% if whereInCol == stackedRowsOffset %}
         
         </div>
         
       {% endif %}
       
       <!-- create new rows for more content -->
-      {% assign howManyRows = stackedRows | times: numCols %}
-      {% if count | modulo: howManyRows == howManyRows | minus: 1 %}
+      {% assign howManyInRow = stackedRows | times: numCols %}
+      {% assign placeInRow = count | modulo: howManyInRow %}
+      {% assign howManyInRowOffset = howManyInRow | minus: 1 %}
+      {% if placeInRow == howManyInRowOffset %}
         
         </div>
         
         <div class="row">
         
       {% endif %}
-      
-      {% increment count %}
+
+      {% assign count = count | plus: 1 %}
     {% endfor %}
     
     </div>
