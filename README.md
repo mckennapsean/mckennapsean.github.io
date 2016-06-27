@@ -2,6 +2,12 @@
 
 mckennapsean's personal website and portfolio
 
+## Usage
+
+```ShellSession
+$ jekyll serve --watch
+```
+
 ## License
 
 As a derivative work of an HTML5 UP template,
