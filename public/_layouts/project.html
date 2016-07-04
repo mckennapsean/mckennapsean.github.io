@@ -1,0 +1,33 @@
+<!-- Main -->
+<div id="main">
+<section class="two">
+
+  <div class="container">
+    
+    <!-- Project -->
+{% assign name = ? %}
+<!-- TODO how to find path with jekyll? -->
+<!-- var name = current.path[1]; -->
+{% assign project = ? %}
+<!-- TODO find data from these projects... public._data.projects[name] - not yet in jekyll, so how? -->
+    
+    <header>
+      <h2 class="alt">{{ project.tag }}</h2>
+      by {{ project.authors }}
+    </header>
+    
+    <img class="image" style="width:40%;" src="{{ project.image }}" alt="{{ project.imageAlt }}" />
+    <div class="row"></div>
+    
+    <div class="row" style="text-align: justify;">
+      <div class="2u"></div>
+      <div class="8u">
+        {% include "../projects/" + name + "/index.md" %}
+      </div>
+      <div class="2u"></div>
+    </div>
+  
+  </div>
+
+</section>
+</div>
