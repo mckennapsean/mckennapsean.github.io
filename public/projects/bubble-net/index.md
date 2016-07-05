@@ -1,3 +1,12 @@
+---
+layout: project
+tag: bubble-net dashboard
+authors: "Sean McKenna, Diane Staheli, Cody Fulcher, Miriah Meyer"
+link: "projects/bubble-net"
+image: "http://www.cs.utah.edu/~sean/resources/images/bubble-net.png"
+imageAlt: "design of the bubble-net dashboard for cyber security data"
+---
+
 |                           |                                               |
 | ---:                      | ---:                                          |
 | *paper:*                  | [bubble-net](paper.pdf)                   |

@@ -1,3 +1,7 @@
+---
+layout: project
+---
+
 |                           |                                               |
 | ---:                      | ---:                                          |
 | *paper:*                  | [design methods](paper.pdf)                   |

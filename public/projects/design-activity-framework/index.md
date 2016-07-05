@@ -1,3 +1,7 @@
+---
+layout: project
+---
+
 |      |
 | ---: |
 | *paper:* [design activity framework](paper.pdf) |

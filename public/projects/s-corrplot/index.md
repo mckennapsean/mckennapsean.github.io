@@ -1,3 +1,7 @@
+---
+layout: project
+---
+
 The **s-CorrPlot** is a new scatterplot for visually exploring pairwise correlation coefficients between all variables in large datasets.
 
 |      |

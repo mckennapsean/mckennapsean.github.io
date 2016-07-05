@@ -1,3 +1,7 @@
+---
+layout: project
+---
+
 |      |
 | ---: |
 | *poster abstract:* [from VizSec 2014](paper.pdf) |
