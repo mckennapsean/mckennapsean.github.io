@@ -12,28 +12,29 @@
       <span class="byline">{{ site.jobTitle }}</span>
     </div>
    
-   <!-- TODO check current path for menu?
-<%  var top = "";
-    if (current.path == 'index') {
-      top = "#top";
-    } // use top for the home button!
-    var projAct = "";
-    if (current.path[0] == 'projects') {
-      projAct = " active";
-    } // show projects as selected if need-be
-    %>
-  -->
+   <!-- use top for home button -->
+   {% assign top = "" %}
+   {% if page.url == "/" %}
+     {% assign top = "#top" %}
+   {% endif %}
+
+   <!-- show projects as selected if need-be -->
+   {% assign location = page.url | replace: "/", " " | truncatewords: 1, "" %}
+   {% assign projAct = "" %}
+   {% if location == "projects" %}
+     {% assign projAct = " active" %}
+   {% endif %}
    
     <!-- Nav -->
     <nav id="nav">
       <ul>
-        <li><a href="/" id="top-link" class="skel-panels-ignoreHref">
+        <li><a href="/{{ top }}" id="top-link" class="skel-panels-ignoreHref">
           <span class="fa fa-home">Home</span>
         </a></li>
         <li><a href="/#about" id="about-link" class="skel-panels-ignoreHref">
           <span class="fa fa-user">About</span>
         </a></li>
-        <li><a href="/#projects" id="projects-link" class="skel-panels-ignoreHref">
+        <li><a href="/#projects" id="projects-link" class="skel-panels-ignoreHref{{ projAct }}">
           <span class="fa fa-folder-open">Projects</span>
         </a></li>
         <li><a href="/#code" id="code-link" class="skel-panels-ignoreHref">
