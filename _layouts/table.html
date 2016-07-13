@@ -1,0 +1,40 @@
+---
+layout: site
+---
+
+<!-- Main -->
+<div id="main">
+<section class="two">
+
+  <div class="container">
+    
+    <header>
+      <h2 class="alt">{{ page.tableName }}</h2>
+    </header>
+    
+    <div class="row"></div>
+    
+    <div class="row" style="text-align: justify;">
+      <div class="2u"></div>
+      <div class="8u">
+        {{ content }}
+      </div>
+      <div class="2u"></div>
+      <!-- TODO replace with better resource too? -->
+      <!--<script src="/vendor/jquery.tablesorter/js/jquery.tablesorter.min.js"></script>-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.26.6/js/jquery.tablesorter.min.js"></script>
+      <link rel="stylesheet" href="/css/table.css" />
+      <script>
+        $("table").addClass("tablesorter");
+        $(document).ready(function(){
+          // [[0,0]] for movies... TODO how to fix?
+          $(".tablesorter").tablesorter({sortList: [[1,0]]});
+        });
+        $(".tablesorter a").addClass("fa fa-globe solo").attr("style", "font-size: 90%;").attr("target", "_blank");
+      </script>
+    </div>
+  
+  </div>
+
+</section>
+</div>
