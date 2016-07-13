@@ -14,8 +14,9 @@
     <!--<script src="/vendor/skeljs/dist/skel-panels.min.js"></script>-->
     <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel-panels.min.js"></script>
     <script src="/js/init.js"></script>
-    <!-- TODO fix to only show on index current path? -->
+    {% if page.url == "/" %}
       <script src="/js/scrolly.js"></script>
+    {% endif %}
     <noscript>
       <!--<link rel="stylesheet" href="/vendor/skeljs/dist/skel-noscript.css" />-->
       <link rel="stylesheet" href="//cdn.jsdelivr.net/skeljs/0.4.6/skel-noscript.css">
