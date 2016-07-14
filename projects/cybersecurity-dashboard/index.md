@@ -1,5 +1,10 @@
 ---
 layout: project
+tag: cybersecurity dashboard
+authors: "Sean McKenna, Diane Staheli"
+link: "projects/cybersecurity-dashboard"
+image: "http://www.cs.utah.edu/~sean/resources/images/cybersecurity-dashboard.png"
+imageAlt: "STAR cybersecurity dashboard"
 ---
 
 |      |
