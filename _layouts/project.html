@@ -9,16 +9,13 @@ layout: site
   <div class="container">
     
     <!-- Project -->
-<!-- TODO how to find path with jekyll? -->
-<!-- var name = current.path[1]; -->
-<!-- TODO find data from these projects... public._data.projects[name] - not yet in jekyll, so how? -->
     
     <header>
-      <h2 class="alt">{{ project.tag }}</h2>
-      by {{ project.authors }}
+      <h2 class="alt">{{ page.tag }}</h2>
+      by {{ page.authors }}
     </header>
     
-    <img class="image" style="width:40%;" src="{{ project.image }}" alt="{{ project.imageAlt }}" />
+    <img class="image" style="width:40%;" src="{{ page.image }}" alt="{{ page.imageAlt }}" />
     <div class="row"></div>
     
     <div class="row" style="text-align: justify;">
