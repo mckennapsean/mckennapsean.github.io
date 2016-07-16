@@ -33,35 +33,29 @@ coding: [
   "set-o-gram"
 ]
 
-codingData: [
-  "code-examples": [
-    tag: "samples of programming languages",
-    link: "https://github.com/mckennapsean/code-examples",
-    image: "code/codeExamples.png",
+codingData:
+  "code-examples":
+    tag: "samples of programming languages"
+    link: "https://github.com/mckennapsean/code-examples"
+    image: "code/codeExamples.png"
     imageAlt: "code examples various programming languages"
-  ],
-  "ray-tracer": [
-    tag: "ray tracer in C++",
-    link: "https://github.com/mckennapsean/ray-tracer",
-    image: "code/rayTracer.png",
+  "ray-tracer":
+    tag: "ray tracer in C++"
+    link: "https://github.com/mckennapsean/ray-tracer"
+    image: "code/rayTracer.png"
     imageAlt: "ray tracer final render Utah teapot suicide, titled 'One Fateful Night'"
-  ],
-  "netiquette": [
-    tag: "netiquette: how to behave online",
-    link: "https://github.com/mckennapsean/netiquette",
-    image: "code/netiquette.png",
+  "netiquette":
+    tag: "netiquette: how to behave online"
+    link: "https://github.com/mckennapsean/netiquette"
+    image: "code/netiquette.png"
     imageAlt: "core rules of netiquette: how to behave online"
-  ],
-  "wood-shader": [
-    tag: "shader for modeling finished wood",
-    link: "https://github.com/mckennapsean/wood-shader",
-    image: "code/woodShader.png",
+  "wood-shader":
+    tag: "shader for modeling finished wood"
+    link: "https://github.com/mckennapsean/wood-shader"
+    image: "code/woodShader.png"
     imageAlt: "GLSL shader for modeling finished wood, implemented from the original paper by Marschner et al."
-  ],
-  "set-o-gram": [
-    tag: "set-o-gram: visualization of sets",
-    link: "https://github.com/mckennapsean/set-o-gram",
-    image: "code/setoGram.png",
+  "set-o-gram":
+    tag: "set-o-gram: visualization of sets"
+    link: "https://github.com/mckennapsean/set-o-gram"
+    image: "code/setoGram.png"
     imageAlt: "set-o-gram, reimplemented in Processing from original paper by Freiler et al."
-  ]
-]

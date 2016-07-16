@@ -126,8 +126,10 @@ layout: site
     {% assign count = 0 %}
     {% assign stackedRows = 2 %}
     {% assign numCols = 3 %}
-    {% for code in site.coding %}
+    {% for codeName in site.coding %}
       
+      {% assign code = site.codingData[codeName] %}
+
       <!-- two rows, stacked, per column -->
       {% assign whereInCol = count | modulo: stackedRows %}
       {% if whereInCol == 0 %}
@@ -136,13 +138,12 @@ layout: site
         
       {% endif %}
       
-      <!-- TODO clean up these, the links, images, alt, and titles -->
       <article class="item">
-        <a href="/" class="image full">
-          <img src="{{ site.resources }}/images/{{ code }}.png" alt="{{ code }}" />
+        <a href="{{ code.link }}" class="image full">
+          <img src="{{ site.resources }}/images/{{ codeName }}.png" alt="{{ code.imageAlt }}" />
         </a>
         <header>
-          <h3>{{ code }}</h3>
+          <h3>{{ code.tag }}</h3>
         </header>
       </article>
       
