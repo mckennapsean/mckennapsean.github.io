@@ -2,6 +2,12 @@
 layout: site
 ---
 
+{% if jekyll.environment == "production" %}
+  {% assign resources = site.resources %}
+{% else %}
+  {% assign resources = "/resources/" %}
+{% endif %}
+
 <!-- Main -->
 <div id="main">
   
@@ -71,7 +77,7 @@ layout: site
       
       <article class="item">
         <a href="projects/{{ project }}" class="image full">
-          <img src="{{ site.resources }}/images/{{ project }}.png" alt="{{ project }}" />
+          <img src="{{ resources }}/images/{{ project }}.png" alt="{{ project }}" />
         </a>
         <header>
           <h3>{{ project }}</h3>
@@ -140,7 +146,7 @@ layout: site
       
       <article class="item">
         <a href="{{ code.link }}" class="image full">
-          <img src="{{ site.resources }}/images/{{ codeName }}.png" alt="{{ code.imageAlt }}" />
+          <img src="{{ resources }}/images/{{ codeName }}.png" alt="{{ code.imageAlt }}" />
         </a>
         <header>
           <h3>{{ code.tag }}</h3>

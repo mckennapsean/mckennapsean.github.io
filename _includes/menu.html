@@ -2,11 +2,17 @@
 <div id="header" class="skel-panels-fixed">
   
   <div class="top">
-   
+
+    {% if jekyll.environment == "production" %}
+      {% assign gravatar = site.gravatar %}
+    {% else %}
+      {% assign gravatar = "/resources/avatar.jpeg" %}
+    {% endif %}
+    
     <!-- Logo -->
     <div id="logo">
       <span class="image gravatar">
-        <img src="{{ site.gravatar }}" alt="Gravatar profile image" />
+        <img src="{{ gravatar }}" alt="Gravatar profile image" />
       </span>
       <h1 id="title">{{ site.name }}</h1>
       <span class="byline">{{ site.jobTitle }}</span>
