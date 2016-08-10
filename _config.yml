@@ -6,7 +6,7 @@ gravatar: http://www.gravatar.com/avatar/f029704e495cdad146ef1e046c428d3b.png
 github: mckennapsean
 otherPlaces: mckennapsean
 analytics: ???
-resources: http://www.cs.utah.edu/~sean/resources/
+resources: https://raw.githubusercontent.com/mckennapsean/website-resources/master/
 
 exclude: [
   "README.md"
