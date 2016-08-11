@@ -2,19 +2,27 @@
   "name": "mckennapsean.github.io",
   "version": "0.9.0",
   "scripts": {
-    "install": "npm run build && npm run sync",
+    "install": "npm run sync",
     "build": "jekyll build",
-    "start": "jekyll serve",
-    "test": "npm run clean && npm run build && hs _site/",
-    "deploy": "npm run clean && cross-env JEKYLL_ENV=production npm run build && hs _site/",
+    "build:prod": "cross-env JEKYLL_ENV=production npm run build",
+    "watch": "jekyll build --watch",
+    "serve": "jekyll serve",
+    "host": "hs _site/",
+    "reload": "browser-sync start --server _site/ --files '*.html, */*.html, */*.css'",
+    "start": "run-p watch reload",
+    "test": "run-s clean build host",
+    "deploy": "run-s clean build:prod host",
     "sync": "git submodule update --init --recursive",
     "clean": "rm -rf _site/"
   },
-  "devDependencies": {
+  "dependencies": {
+    "browser-sync": "^2.14.0",
     "cross-env": "^2.0.0",
     "font-awesome": "^4.6.3",
     "html5shiv": "^3.7.3",
+    "http-server": "^0.9.0",
     "jquery": "^2.1.1",
+    "npm-run-all": "^2.3.0",
     "source-sans-pro": "^2.0.10",
     "tablesorter": "^2.27.1"
   }
