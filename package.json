@@ -8,7 +8,7 @@
     "watch": "jekyll build --watch",
     "serve": "jekyll serve",
     "host": "hs _site/",
-    "reload": "browser-sync start --server _site/ --files '*.html, */*.html, */*.css'",
+    "reload": "browser-sync start --server _site/ --files '_site/*.html, _site/*/*.html, _site/*/*.css'",
     "start": "run-p watch reload",
     "test": "run-s clean build host",
     "deploy": "run-s clean build:prod host",
