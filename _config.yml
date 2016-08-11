@@ -9,7 +9,8 @@ analytics: ???
 resources: https://raw.githubusercontent.com/mckennapsean/website-resources/master/
 
 exclude: [
-  "README.md"
+  "README.md",
+  "node_modules"
 ]
 collections:
   projectsPath: /projects/:path/
