@@ -1,6 +1,14 @@
 {
   "name": "mckennapsean.github.io",
   "version": "0.9.0",
+  "scripts": {
+    "install": "npm run build && npm run sync",
+    "build": "jekeyll build",
+    "start": "jekyll serve",
+    "test": "npm run clean && npm run build && hs _site/",
+    "sync": "git submodule update --init --recursive",
+    "clean": "rm -rf _site/"
+  },
   "devDependencies": {
     "font-awesome": "^4.6.3",
     "html5shiv": "^3.7.3",
