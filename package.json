@@ -2,8 +2,7 @@
   "name": "mckennapsean.github.io",
   "version": "0.9.0",
   "scripts": {
-    "bower": "bower install skel-old jquery#2.1.1 tablesorter source-sans-pro font-awesome html5shiv --config.directory=vendor",
-    "install": "npm run sync",
+    "install": "run-s sync bower",
     "build": "jekyll build",
     "build:prod": "cross-env JEKYLL_ENV=production npm run build",
     "watch": "jekyll build --watch",
@@ -14,6 +13,7 @@
     "test": "run-s clean build host",
     "deploy": "run-s clean build:prod host",
     "sync": "git submodule update --init --recursive",
+    "bower": "bower install skel jquery#1.11.3 tablesorter source-sans-pro font-awesome html5shiv --config.directory=vendor",
     "clean": "rm -rf _site/"
   },
   "dependencies": {
