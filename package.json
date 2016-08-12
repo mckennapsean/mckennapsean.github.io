@@ -13,7 +13,7 @@
     "test": "run-s clean build host",
     "deploy": "run-s clean build:prod host",
     "sync": "git submodule update --init --recursive",
-    "bower": "bower install skel jquery#1.11.3 tablesorter source-sans-pro font-awesome html5shiv --config.directory=vendor",
+    "bower": "bower install jquery#2.1.1 tablesorter source-sans-pro font-awesome html5shiv --config.directory=vendor",
     "clean": "rm -rf _site/"
   },
   "dependencies": {
