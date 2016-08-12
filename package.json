@@ -2,13 +2,14 @@
   "name": "mckennapsean.github.io",
   "version": "0.9.0",
   "scripts": {
+    "bower": "bower install skel-old jquery#2.1.1 tablesorter source-sans-pro font-awesome html5shiv --config.directory=vendor",
     "install": "npm run sync",
     "build": "jekyll build",
     "build:prod": "cross-env JEKYLL_ENV=production npm run build",
     "watch": "jekyll build --watch",
     "serve": "jekyll serve",
     "host": "hs _site/",
-    "reload": "browser-sync start --server _site/ --files '_site/*.html, _site/*/*.html, _site/*/*.css'",
+    "reload": "browser-sync start --server _site/ -f _site/*.*",
     "start": "run-p watch reload",
     "test": "run-s clean build host",
     "deploy": "run-s clean build:prod host",
@@ -16,14 +17,10 @@
     "clean": "rm -rf _site/"
   },
   "dependencies": {
+    "bower": "^1.7.9",
     "browser-sync": "^2.14.0",
     "cross-env": "^2.0.0",
-    "font-awesome": "^4.6.3",
-    "html5shiv": "^3.7.3",
     "http-server": "^0.9.0",
-    "jquery": "^2.1.1",
-    "npm-run-all": "^2.3.0",
-    "source-sans-pro": "^2.0.10",
-    "tablesorter": "^2.27.1"
+    "npm-run-all": "^2.3.0"
   }
 }

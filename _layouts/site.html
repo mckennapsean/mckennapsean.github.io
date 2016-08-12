@@ -12,10 +12,10 @@
       <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel.min.js"></script>
       <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel-panels.min.js"></script>
     {% else %}
-      <link rel="stylesheet" href="/node_modules/source-sans-pro/source-sans-pro.css">
-      <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="/node_modules/skeljs/skel.min.js"></script>
-      <script src="/node_modules/skeljs/skel-panels.min.js"></script>
+      <link rel="stylesheet" href="/vendor/source-sans-pro/css/source-sans-pro.css">
+      <script src="/vendor/jquery/dist/jquery.min.js"></script>
+      <script src="/vendor/skel/dist/skel.min.js"></script>
+      <script src="/vendor/skel/dist/skel-layers.min.js"></script>
     {% endif %}
     <script src="/js/init.js"></script>
     {% if page.url == "/" %}
@@ -28,8 +28,8 @@
           src: url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.0.1');
           src: url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.svg#fontawesomeregular?v=4.0.1') format('svg');
         {% else %}
-          src: url('/node_modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.0.1');
-          src: url('/node_modules/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('/node_modules/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('/node_modules/font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('/node_modules/font-awesome/fonts/fontawesome-webfont.svg#fontawesomeregular?v=4.0.1') format('svg');
+          src: url('/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.0.1');
+          src: url('/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('/vendor/font-awesome/fonts/fontawesome-webfont.svg#fontawesomeregular?v=4.0.1') format('svg');
         {% endif %}
         font-weight: normal;
         font-style: normal;
@@ -39,7 +39,7 @@
       {% if jekyll.environment == "production" %}
         <link rel="stylesheet" href="//cdn.jsdelivr.net/skeljs/0.4.6/skel-noscript.css">
       {% else %}
-        <link rel="stylesheet" href="/node_modules/skeljs/skel-noscript.css" />
+        <link rel="stylesheet" href="/vendor/skel/dist/skel.css" />
       {% endif %}
       <link rel="stylesheet" href="/css/style.css" />
       <link rel="stylesheet" href="/css/style-wide.css" />
