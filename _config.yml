@@ -10,6 +10,8 @@ resources: https://raw.githubusercontent.com/mckennapsean/website-resources/mast
 
 exclude: [
   "README.md",
+  "LICENSE",
+  "package.json",
   "node_modules"
 ]
 collections:
