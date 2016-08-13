@@ -52,7 +52,7 @@ codingData:
     imageAlt: "ray tracer final render Utah teapot suicide, titled 'One Fateful Night'"
   "netiquette":
     tag: "netiquette: how to behave online"
-    link: "https://github.com/mckennapsean/netiquette"
+    link: "https://gist.github.com/mckennapsean/3044ee15b69961f43ecd"
     image: "code/netiquette.png"
     imageAlt: "core rules of netiquette: how to behave online"
   "wood-shader":
