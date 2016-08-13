@@ -8,6 +8,9 @@ otherPlaces: mckennapsean
 analytics: ???
 resources: https://raw.githubusercontent.com/mckennapsean/website-resources/master/
 
+gems:
+  - jekyll-redirect-from
+
 exclude: [
   "README.md",
   "LICENSE",
