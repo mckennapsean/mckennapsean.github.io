@@ -1,22 +1,19 @@
+# site title & your name
 title: Sean McKenna
 name: Sean McKenna
+
+# information about your site
 email: mckennapsean@gmail.com
+username: mckennapsean
 jobTitle: Ph.D. Candidate
-gravatar: http://www.gravatar.com/avatar/f029704e495cdad146ef1e046c428d3b.png
-github: mckennapsean
-otherPlaces: mckennapsean
-analytics: ???
+
+# external resources to load
 resources: https://raw.githubusercontent.com/mckennapsean/website-resources/master/
+gravatar: http://www.gravatar.com/avatar/f029704e495cdad146ef1e046c428d3b.png
+analytics: 
 
-gems:
-  - jekyll-redirect-from
-
-exclude: [
-  "README.md",
-  "LICENSE",
-  "package.json",
-  "node_modules"
-]
+# generates data from markdown & yaml
+# stored in variable `site.COLLECTION` from `_COLLECTION/`
 collections:
   projects:
     output: true
@@ -24,3 +21,14 @@ collections:
   coding: 
     output: false
     permalink: /coding/:path/
+
+# support custom redirects (to/from)
+gems:
+  - jekyll-redirect-from
+
+# ignore files on building site
+exclude:
+  - "README.md"
+  - "LICENSE"
+  - "package.json"
+  - "node_modules"
