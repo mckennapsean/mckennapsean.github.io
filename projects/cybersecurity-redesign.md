@@ -1,9 +1,9 @@
 ---
 layout: project
-tag: redesign of a cybersecurity tool
+project: cybersecurity-redesign
+title: redesign of a cybersecurity tool
 authors: "Sean McKenna, Dominika Mazur, Matthew Parkin, Jim Agutter, Miriah Meyer"
 link: "projects/cybersecurity-redesign"
-image: "http://www.cs.utah.edu/~sean/resources/images/cybersecurity-redesign.png"
 imageAlt: "cybersecurity network security redesign project"
 ---
 

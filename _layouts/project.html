@@ -2,6 +2,12 @@
 layout: site
 ---
 
+{% if jekyll.environment == "production" %}
+  {% assign resources = site.resources %}
+{% else %}
+  {% assign resources = "/resources/" %}
+{% endif %}
+
 <!-- Main -->
 <div id="main">
 <section class="two">
@@ -11,11 +17,11 @@ layout: site
     <!-- Project -->
     
     <header>
-      <h2 class="alt">{{ page.tag }}</h2>
+      <h2 class="alt">{{ page.title }}</h2>
       by {{ page.authors }}
     </header>
     
-    <img class="image" style="width:40%;" src="{{ page.image }}" alt="{{ page.imageAlt }}" />
+    <img class="image" style="width:40%;" src="{{ resources }}/images/{{ page.project }}.png" alt="{{ page.imageAlt }}" />
     <div class="row"></div>
     
     <div class="row" style="text-align: justify;">

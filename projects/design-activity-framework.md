@@ -1,9 +1,9 @@
 ---
 layout: project
-tag: design activity framework
+project: design-activity-framework
+title: design activity framework
 authors: "Sean McKenna, Dominika Mazur, Jim Agutter, Miriah Meyer"
 link: "projects/design-activity-framework"
-image: "http://www.cs.utah.edu/~sean/resources/images/design-activity-framework.png"
 imageAlt: "design activity framework for visualization design"
 ---
 

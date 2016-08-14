@@ -1,9 +1,9 @@
 ---
 layout: project
-tag: "s-CorrPlot: visualizing correlation"
+project: s-corrplot
+title: "s-CorrPlot: visualizing correlation"
 authors: "Sean McKenna, Miriah Meyer, Christopher Gregg, Samuel Gerber"
 link: "projects/s-corrplot"
-image: "http://www.cs.utah.edu/~sean/resources/images/s-corrplot.png"
 imageAlt: "s-CorrPlot scatterplot for visualization and exploring correlation in multidimensional space"
 ---
 

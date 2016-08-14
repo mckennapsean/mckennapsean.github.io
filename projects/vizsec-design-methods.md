@@ -1,9 +1,9 @@
 ---
 layout: project
-tag: design methods for cyber security
+project: vizsec-design-methods
+title: design methods for cyber security
 authors: "Sean McKenna, Diane Staheli, Miriah Meyer"
 link: "projects/vizsec-design-methods"
-image: "http://www.cs.utah.edu/~sean/resources/images/vizsec-design-methods.png"
 imageAlt: "cyber security personas and data sketches"
 redirect_from: "/vizsec-design-methods"
 ---

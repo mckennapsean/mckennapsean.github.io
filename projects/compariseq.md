@@ -1,9 +1,9 @@
 ---
 layout: project
-tag: "compariSeq: rethinking sequence logos"
+project: compariseq
+title: "compariSeq: rethinking sequence logos"
 authors: "Sean McKenna, Philip S. Quinan, Alex Bigelow"
 link: "projects/compariseq/"
-image: "http://www.cs.utah.edu/~sean/resources/images/compariseq.png"
 imageAlt: "compariSeq sequence logos visualization"
 ---
 
