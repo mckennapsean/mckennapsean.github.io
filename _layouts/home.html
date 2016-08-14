@@ -20,7 +20,7 @@ layout: site
     
     <!-- About -->
     <section id="about" class="one">
-      
+
     <header>
       <h2 class="alt">Hello, I'm <strong><a href="mailto:{{ site.email }}">{{ site.name }}</a></strong>.</h2>
     </header>
@@ -134,9 +134,8 @@ layout: site
     {% assign count = 0 %}
     {% assign stackedRows = 2 %}
     {% assign numCols = 3 %}
-    {% for codeName in site.coding %}
-      
-      {% assign code = site.codingData[codeName] %}
+    {% assign sortedCoding = site.coding | sort: "year" %}
+    {% for code in sortedCoding reversed %}
 
       <!-- two rows, stacked, per column -->
       {% assign whereInCol = count | modulo: stackedRows %}
@@ -148,7 +147,7 @@ layout: site
       
       <article class="item">
         <a href="{{ code.link }}" class="image full">
-          <img src="{{ resources }}/images/{{ codeName }}.png" alt="{{ code.imageAlt }}" />
+          <img src="{{ resources }}/images/{{ code.project }}.png" alt="{{ code.imageAlt }}" />
         </a>
         <header>
           <h3>{{ code.tag }}</h3>
