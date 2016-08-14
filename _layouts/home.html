@@ -6,7 +6,6 @@ layout: site
   {% assign resources = site.resources %}
 {% else %}
   {% assign resources = "/resources/" %}
-  {% assign extension = ".html" %}
 {% endif %}
 
 <!-- Main -->
@@ -78,7 +77,7 @@ layout: site
       {% endif %}
       
       <article class="item">
-        <a href="projects/{{ project.project }}{{ extension }}" class="image full">
+        <a href="projects/{{ project.project }}" class="image full">
           <img src="{{ resources }}/images/{{ project.project }}.png" alt="{{ project.imageAlt }}" />
         </a>
         <header>
