@@ -18,18 +18,10 @@ exclude: [
   "node_modules"
 ]
 collections:
-  projectsPath: /projects/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
   codingPath: /coding/:path/
-
-projects: [
-  "bubble-net",
-  "vizsec-design-methods",
-  "cybersecurity-dashboard",
-  "s-corrplot",
-  "design-activity-framework",
-  "cybersecurity-redesign",
-  "compariseq"
-]
 
 coding: [
   "code-examples",
