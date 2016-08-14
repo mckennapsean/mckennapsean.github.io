@@ -10,7 +10,7 @@ jobTitle: Ph.D. Candidate
 # external resources to load
 resources: https://raw.githubusercontent.com/mckennapsean/website-resources/master/
 gravatar: http://www.gravatar.com/avatar/f029704e495cdad146ef1e046c428d3b.png
-analytics: 
+analytics: UA-53244240-1
 
 # generates data from markdown & yaml
 # stored in variable `site.COLLECTION` from `_COLLECTION/`
