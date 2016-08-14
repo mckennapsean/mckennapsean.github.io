@@ -1,9 +1,10 @@
 ---
 layout: project
 project: cybersecurity-redesign
+
 title: redesign of a cybersecurity tool
 authors: "Sean McKenna, Dominika Mazur, Matthew Parkin, Jim Agutter, Miriah Meyer"
-link: "projects/cybersecurity-redesign"
+
 imageAlt: "cybersecurity network security redesign project"
 ---
 

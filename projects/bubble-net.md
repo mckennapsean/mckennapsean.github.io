@@ -1,17 +1,28 @@
 ---
 layout: project
 project: bubble-net
+
 title: bubble-net dashboard
 authors: "Sean McKenna, Diane Staheli, Cody Fulcher, Miriah Meyer"
-link: "projects/bubble-net"
-imageAlt: "design of the bubble-net dashboard for cyber security data"
----
 
-|                           |                                               |
-| ---:                      | ---:                                          |
-| *paper:*                  | [bubble-net](paper.pdf)                   |
-| *video:*                  | [dashboard demo](https://youtu.be/8gKNJcIduN8) |
-| *presentation:*           | [EuroVis 2016](presentation.pdf)               |
+imageAlt: "design of the bubble-net dashboard for cyber security data"
+
+resources:
+  - resource:
+    - paper
+    - bubble-net
+    - papers/
+    - .pdf
+  - resource:
+    - video
+    - dashboard demo
+    - "https://youtu.be/8gKNJcIduN8"
+  - resource:
+    - presentation
+    - EuroVis 2016
+    - presentations/
+    - .pdf
+---
 
 The field of cyber security is faced with ever-expanding amounts of data and a constant barrage of cyber attacks.
 Within this space, we have designed BubbleNet as a cyber security dashboard to help network analysts identify and summarize patterns within the data.

@@ -27,6 +27,35 @@ layout: site
     <div class="row" style="text-align: justify;">
       <div class="2u"></div>
       <div class="8u">
+
+        <table>
+        <thead>
+          <tr>
+            <th style="text-align: right"> </th>
+            <th style="text-align: right"> </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for resourceObject in page.resources %}
+            {% assign resource = resourceObject.resource %}
+            <tr>
+              <td style="text-align: right">
+                {% if resource[0].size > 1 %}
+                  <em>{{ resource[0] }}:</em>
+                {% endif %}
+              </td>
+              <td style="text-align: right">
+                {% if resource.size < 4 %}
+                  <a href="{{ resource[2] }}">{{ resource[1] }}</a>
+                {% else %}
+                  <a href="{{ resources }}/{{ resource[2] }}{{ page.project }}{{resource[3]}}">{{ resource[1] }}</a>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+         </tbody>
+        </table>
+
         {{ content }}
       </div>
       <div class="2u"></div>

@@ -1,9 +1,10 @@
 ---
 layout: project
 project: compariseq
+
 title: "compariSeq: rethinking sequence logos"
 authors: "Sean McKenna, Philip S. Quinan, Alex Bigelow"
-link: "projects/compariseq/"
+
 imageAlt: "compariSeq sequence logos visualization"
 ---
 
