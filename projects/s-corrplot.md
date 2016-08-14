@@ -4,6 +4,7 @@ project: s-corrplot
 
 title: "s-CorrPlot: visualizing correlation"
 authors: "Sean McKenna, Miriah Meyer, Christopher Gregg, Samuel Gerber"
+year: 2014.1
 
 imageAlt: "s-CorrPlot scatterplot for visualization and exploring correlation in multidimensional space"
 

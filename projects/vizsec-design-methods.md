@@ -4,6 +4,7 @@ project: vizsec-design-methods
 
 title: design methods for cyber security
 authors: "Sean McKenna, Diane Staheli, Miriah Meyer"
+year: 2015
 
 
 imageAlt: "cyber security personas and data sketches"

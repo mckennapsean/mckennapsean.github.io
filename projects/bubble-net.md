@@ -4,6 +4,7 @@ project: bubble-net
 
 title: bubble-net dashboard
 authors: "Sean McKenna, Diane Staheli, Cody Fulcher, Miriah Meyer"
+year: 2016
 
 imageAlt: "design of the bubble-net dashboard for cyber security data"
 

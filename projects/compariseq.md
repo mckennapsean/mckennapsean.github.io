@@ -4,6 +4,7 @@ project: compariseq
 
 title: "compariSeq: rethinking sequence logos"
 authors: "Sean McKenna, Philip S. Quinan, Alex Bigelow"
+year: 2013
 
 imageAlt: "compariSeq sequence logos visualization"
 ---

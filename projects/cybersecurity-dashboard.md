@@ -4,6 +4,7 @@ project: cybersecurity-dashboard
 
 title: cybersecurity dashboard
 authors: "Sean McKenna, Diane Staheli"
+year: 2014
 
 imageAlt: "STAR cybersecurity dashboard"
 

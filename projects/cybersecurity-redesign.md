@@ -4,6 +4,7 @@ project: cybersecurity-redesign
 
 title: redesign of a cybersecurity tool
 authors: "Sean McKenna, Dominika Mazur, Matthew Parkin, Jim Agutter, Miriah Meyer"
+year: 2014.2
 
 imageAlt: "cybersecurity network security redesign project"
 ---
