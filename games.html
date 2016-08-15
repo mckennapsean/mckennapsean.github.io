@@ -4,6 +4,14 @@ title: Board Games
 permalink: /games/
 ---
 
+{% if jekyll.environment == "production" %}
+  {% assign resources = site.resources %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.26.6/js/jquery.tablesorter.min.js"></script>
+{% else %}
+  {% assign resources = "/resources/" %}
+  <script src="/vendor/tablesorter/jquery.tablesorter.min.js"></script>
+{% endif %}
+
 <!-- Main -->
 <div id="main">
 <section class="two">
@@ -47,9 +55,6 @@ permalink: /games/
 
       </div>
       <div class="2u"></div>
-      <!-- TODO replace with better resource too? -->
-      <!--<script src="/vendor/jquery.tablesorter/js/jquery.tablesorter.min.js"></script>-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.26.6/js/jquery.tablesorter.min.js"></script>
       <link rel="stylesheet" href="/css/table.css" />
       <script>
         $("table").addClass("tablesorter");
