@@ -21,6 +21,9 @@ collections:
   coding: 
     output: false
     permalink: /coding/:path/
+  games:
+    output: false
+    permalink: /games/:path/
 
 # support custom redirects (to/from)
 gems:
