@@ -1,4 +1,4 @@
----,
+---
 title:  "Friday"
 players:  1
 time: "0:25"
