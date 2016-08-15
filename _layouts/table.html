@@ -9,7 +9,7 @@ layout: site
   <div class="container">
     
     <header>
-      <h2 class="alt">{{ page.tableName }}</h2>
+      <h2 class="alt">{{ page.title }}</h2>
     </header>
     
     <div class="row"></div>
@@ -17,7 +17,32 @@ layout: site
     <div class="row" style="text-align: justify;">
       <div class="2u"></div>
       <div class="8u">
-        {{ content }}
+
+
+        <table>
+        <thead>
+          <tr>
+            <th style="text-align: left">Title</th>
+            <th style="text-align: left">Players</th>
+            <th style="text-align: left">Time</th>
+            <th style="text-align: left">Type</th>
+            <th style="text-align: right"> </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for game in site.games %}
+            <tr>
+              <td style="text-align: left">{{ game.title }}</td>
+              <td style="text-align: left">{{ game.players }}</td>
+              <td style="text-align: left">{{ game.time }}</td>
+              <td style="text-align: left">{{ game.type }}</td>
+              <td style="text-align: right"><a href="{{ game.link }}"></a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+        </table>
+
+
       </div>
       <div class="2u"></div>
       <!-- TODO replace with better resource too? -->
@@ -27,7 +52,6 @@ layout: site
       <script>
         $("table").addClass("tablesorter");
         $(document).ready(function(){
-          // [[0,0]] for movies... TODO how to fix?
           $(".tablesorter").tablesorter({sortList: [[1,0]]});
         });
         $(".tablesorter a").addClass("fa fa-globe solo").attr("style", "font-size: 90%;").attr("target", "_blank");
