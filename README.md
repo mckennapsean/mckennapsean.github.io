@@ -9,6 +9,8 @@ $ npm install
 # grabs all resources to work offline
 ```
 
+Also, the website template uses an old version of `skel-js`, and these files must be manually copied into the `vendor/skel/dist` folder in order to run the site offline. This is because no other host (bower or npm) stored old enough versions of these files. Updating the website template would help solve this issue.
+
 ## Usage
 
 ```ShellSession
