@@ -1,142 +1,163 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    {% if page.title %}
-      {% assign pageTitle = page.title | append: " | " %}
-    {% endif %}
-    <title>{{ pageTitle }}{{ site.title }}</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Explore Sean's portfolio of projects about data visualization and visualization design." />
-    <!--[if lte IE 8]><script src="/vendor/html5shiv/dist/html5shiv.min.js"></script><![endif]-->
-    {% if jekyll.environment == "production" %}
-      <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
-      <script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
-      <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel.min.js"></script>
-      <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel-panels.min.js"></script>
-    {% else %}
-      <link rel="stylesheet" href="/vendor/source-sans-pro/css/source-sans-pro.css">
-      <script src="/vendor/jquery/dist/jquery.min.js"></script>
-      <script src="/vendor/skel/dist/skel.min.js"></script>
-      <script src="/vendor/skel/dist/skel-panels.min.js"></script>
-    {% endif %}
-    <script src="/js/init.js"></script>
-    {% if page.url == "/" %}
-      <script src="/js/scrolly.js"></script>
-    {% endif %}
-    <style>
-      @font-face {
-        font-family: 'FontAwesome';
-        {% if jekyll.environment == "production" %}
-          src: url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.0.1');
-          src: url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.svg#fontawesomeregular?v=4.0.1') format('svg');
-        {% else %}
-          src: url('/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.0.1');
-          src: url('/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('/vendor/font-awesome/fonts/fontawesome-webfont.svg#fontawesomeregular?v=4.0.1') format('svg');
-        {% endif %}
-        font-weight: normal;
-        font-style: normal;
-      }
-    </style>
-    <noscript>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  {% if page.title %}
+    {% assign pageTitle = page.title | append: " | " %}
+  {% endif %}
+  <title>{{ pageTitle }}{{ site.title }}</title>
+
+  <meta name="description" content="Explore Sean's portfolio of projects about data visualization and visualization design." />
+  <meta name="author" content="Sean McKenna">
+
+  {% if jekyll.environment == "production" %}
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600">
+  {% else %}
+    <link rel="stylesheet" href="/vendor/source-sans-pro/css/source-sans-pro.css">
+  {% endif %}
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+  <style>
+    @font-face {
+      font-family: 'FontAwesome';
       {% if jekyll.environment == "production" %}
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/skeljs/0.4.6/skel-noscript.css">
+        src: url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.0.1');
+        src: url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.svg#fontawesomeregular?v=4.0.1') format('svg');
       {% else %}
-        <link rel="stylesheet" href="/vendor/skel/dist/skel-noscript.css" />
+        src: url('/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.0.1');
+        src: url('/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('/vendor/font-awesome/fonts/fontawesome-webfont.svg#fontawesomeregular?v=4.0.1') format('svg');
       {% endif %}
-      <link rel="stylesheet" href="/css/style.css" />
-      <link rel="stylesheet" href="/css/style-wide.css" />
-    </noscript>
-    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+
+  <noscript>
     {% if jekyll.environment == "production" %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', '{{ site.analytics }}', 'auto');
-        ga('send', 'pageview');
-
-      </script>
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/skeljs/0.4.6/skel-noscript.css">
+    {% else %}
+      <link rel="stylesheet" href="/vendor/skel/dist/skel-noscript.css" />
     {% endif %}
-  </head>
-  <body>
+  </noscript>
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/style-wide.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+
+</head>
+
+<body>
+  
+  <!-- Header/Menu -->
+  <div id="header" class="skel-panels-fixed">
     
-    <!-- Header/Menu -->
-    <div id="header" class="skel-panels-fixed">
-      
-      <div class="top">
+    <div class="top">
 
-        {% if jekyll.environment == "production" %}
-          {% assign gravatar = site.gravatar %}
-        {% else %}
-          {% assign gravatar = "/resources/avatar.jpeg" %}
-        {% endif %}
-        
-        <!-- Logo -->
-        <div id="logo">
-          <span class="image gravatar">
-            <img src="{{ gravatar }}" alt="Gravatar profile image" />
-          </span>
-          <h1 id="title">{{ site.name }}</h1>
-          <span class="byline">{{ site.jobTitle }}</span>
-        </div>
-      
-      <!-- use top for home button -->
-      {% assign top = "" %}
-      {% if page.url == "/" %}
-        {% assign top = "#top" %}
-      {% endif %}
-
-      <!-- show projects as selected if need-be -->
-      {% assign location = page.url | replace: "/", " " | truncatewords: 1, "" %}
-      {% assign projAct = "" %}
-      {% if location == "projects" %}
-        {% assign projAct = " active" %}
+      {% if jekyll.environment == "production" %}
+        {% assign gravatar = site.gravatar %}
+      {% else %}
+        {% assign gravatar = "/resources/avatar.jpeg" %}
       {% endif %}
       
-        <!-- Nav -->
-        <nav id="nav">
-          <ul>
-            <li><a href="/{{ top }}" id="top-link" class="skel-panels-ignoreHref">
-              <span class="fa fa-home">Home</span>
-            </a></li>
-            <li><a href="/#about" id="about-link" class="skel-panels-ignoreHref">
-              <span class="fa fa-user">About</span>
-            </a></li>
-            <li><a href="/#projects" id="projects-link" class="skel-panels-ignoreHref{{ projAct }}">
-              <span class="fa fa-folder-open">Projects</span>
-            </a></li>
-            <li><a href="/#code" id="code-link" class="skel-panels-ignoreHref">
-              <span class="fa fa-code">Code</span>
-            </a></li>
-          </ul>
-        </nav>
-      
+      <!-- Logo -->
+      <div id="logo">
+        <span class="image gravatar">
+          <img src="{{ gravatar }}" alt="Gravatar profile image" />
+        </span>
+        <h1 id="title">{{ site.name }}</h1>
+        <span class="byline">{{ site.jobTitle }}</span>
       </div>
-      
-      <div class="bottom">
-      
-        {% include icons.html %}
-      
-      </div>
-    </div>
-
     
-    <!-- Content -->
-    {{ content }}
-    
+    <!-- use top for home button -->
+    {% assign top = "" %}
+    {% if page.url == "/" %}
+      {% assign top = "#top" %}
+    {% endif %}
 
-    <!-- Footer -->
-    <div id="footer">
-      <!-- Copyright -->
-      <div class="copyright">
-        <p>
-          &copy; {{ "now" | date: "%Y" }} | 
-          <a href="mailto:{{ site.email }}">{{ site.name }}</a>
-        </p>
-      </div>
+    <!-- show projects as selected if need-be -->
+    {% assign location = page.url | replace: "/", " " | truncatewords: 1, "" %}
+    {% assign projAct = "" %}
+    {% if location == "projects" %}
+      {% assign projAct = " active" %}
+    {% endif %}
+    
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="/{{ top }}" id="top-link" class="skel-panels-ignoreHref">
+            <span class="fa fa-home">Home</span>
+          </a></li>
+          <li><a href="/#about" id="about-link" class="skel-panels-ignoreHref">
+            <span class="fa fa-user">About</span>
+          </a></li>
+          <li><a href="/#projects" id="projects-link" class="skel-panels-ignoreHref{{ projAct }}">
+            <span class="fa fa-folder-open">Projects</span>
+          </a></li>
+          <li><a href="/#code" id="code-link" class="skel-panels-ignoreHref">
+            <span class="fa fa-code">Code</span>
+          </a></li>
+        </ul>
+      </nav>
+    
     </div>
-  </body>
+    
+    <div class="bottom">
+    
+      {% include icons.html %}
+    
+    </div>
+  </div>
+
+  
+  <!-- Content -->
+  {{ content }}
+  
+
+  <!-- Footer -->
+  <div id="footer">
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>
+        &copy; {{ "now" | date: "%Y" }} | 
+        <a href="mailto:{{ site.email }}">{{ site.name }}</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Javascript -->
+  {% if jekyll.environment == "production" %}
+    <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel.min.js"></script>
+    <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel-panels.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+  {% else %}
+    <script src="/vendor/skel/dist/skel.min.js"></script>
+    <script src="/vendor/skel/dist/skel-panels.min.js"></script>
+    <script src="/vendor/jquery/dist/jquery.min.js"></script>
+  {% endif %}
+
+  <script src="/js/init.js"></script>
+  {% if page.url == "/" %}
+    <script src="/js/scrolly.js"></script>
+  {% endif %}
+
+  {% if jekyll.environment == "production" %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{ site.analytics }}', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  {% endif %}
+
+</body>
 </html>
