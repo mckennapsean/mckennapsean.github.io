@@ -16,6 +16,7 @@ layout: site
   <div class="container">
   
     <img class="image featured" src="images/header.jpg" alt="Salt Lake Valley, Utah, mountains and sky" />
+    <!-- TODO move into part of the css...? -->
     
     <!-- About -->
     <section id="about" class="one">
@@ -23,6 +24,8 @@ layout: site
     <header>
       <h2 class="alt">Hello, I'm <strong><a href="mailto:{{ site.email }}">{{ site.name }}</a></strong>.</h2>
     </header>
+
+    <!-- TODO redesign with image? -->
     
     <p>
       While pursuing a Ph.D. in Visualization with
@@ -45,9 +48,10 @@ layout: site
     Also, I love <a href="games/">board games. <span class="fa fa-puzzle-piece solo"></span></a>
     </footer>
     
+  </section>
   </div>
   </section>
-  </section>
+  <!-- TODO only have one section here...? -->
     
   <!-- Projects -->
   <section id="projects" class="two">
@@ -57,6 +61,8 @@ layout: site
       <h2>Projects</h2>
     </header>
     
+<!-- TODO explain section with p? -->
+
     <div class="row">
     
     {% assign count = 0 %}
@@ -70,6 +76,7 @@ layout: site
       {% if whereInCol == 0 %}
         
         <div class="4u">
+          <!-- TODO custom classes for mobile and not? -->
         
       {% endif %}
       
@@ -137,6 +144,7 @@ layout: site
       {% if whereInCol == 0 %}
         
         <div class="4u">
+          <!-- TODO custom classes for mobile and not? -->
         
       {% endif %}
       
