@@ -47,10 +47,11 @@
   </noscript>
 -->
 
+<!--
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/style-wide.css" />
+-->
   <link rel="stylesheet" href="/css/main.css" />
-<!-- TODO check for any improved css? -->
 
   <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
@@ -76,8 +77,8 @@
           <img src="{{ gravatar }}" alt="Gravatar profile image" />
         </span>
         <h1 id="title">{{ site.name }}</h1>
-        <span class="byline">{{ site.jobTitle }}</span>
-        <!-- TODO switch to p? -->
+        <!--<span class="byline">{{ site.jobTitle }}</span>-->
+        <p>{{ site.jobTitle }}</p>
       </div>
     
     <!-- use top for home button -->
@@ -128,13 +129,11 @@
   <!-- Footer -->
   <div id="footer">
     <!-- Copyright -->
-    <div class="copyright">
-      <p>
-        &copy; {{ "now" | date: "%Y" }} | 
-        <a href="mailto:{{ site.email }}">{{ site.name }}</a>
-      </p>
-    </div>
-    <!-- TODO only use ul & li instead of div, p, and a? -->
+    <ul class="copyright">
+      <li>&copy; {{ "now" | date: "%Y" }}</li>
+      <!--<li> | </li>-->
+      <li> <a href="mailto:{{ site.email }}">{{ site.name }}</a> </li>
+    </ul>
   </div>
 
   <!-- Javascript -->
