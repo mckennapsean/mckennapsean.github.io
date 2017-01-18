@@ -14,28 +14,17 @@
 
   {% if jekyll.environment == "production" %}
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
   {% else %}
     <link rel="stylesheet" href="/vendor/source-sans-pro/css/source-sans-pro.css">
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css">
   {% endif %}
+
+  <link rel="stylesheet" href="/css/main.css" />
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-
-  <style>
-    @font-face {
-      font-family: 'FontAwesome';
-      {% if jekyll.environment == "production" %}
-        src: url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.0.1');
-        src: url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('//cdn.jsdelivr.net/fontawesome/4.1.0/fonts/fontawesome-webfont.svg#fontawesomeregular?v=4.0.1') format('svg');
-      {% else %}
-        src: url('/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.0.1');
-        src: url('/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('/vendor/font-awesome/fonts/fontawesome-webfont.svg#fontawesomeregular?v=4.0.1') format('svg');
-      {% endif %}
-      font-weight: normal;
-      font-style: normal;
-    }
-  </style>
 
 <!--
   <noscript>
@@ -51,7 +40,6 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/style-wide.css" />
 -->
-  <link rel="stylesheet" href="/css/main.css" />
 
   <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
@@ -77,7 +65,6 @@
           <img src="{{ gravatar }}" alt="Gravatar profile image" />
         </span>
         <h1 id="title">{{ site.name }}</h1>
-        <!--<span class="byline">{{ site.jobTitle }}</span>-->
         <p>{{ site.jobTitle }}</p>
       </div>
     
@@ -98,16 +85,20 @@
       <nav id="nav">
         <ul>
           <li><a href="/{{ top }}" id="top-link" class="skel-panels-ignoreHref">
-            <span class="fa fa-home">Home</span>
+            <span class="fa fa-home"></span>
+            <span class="nav">Home</span>
           </a></li>
           <li><a href="/#about" id="about-link" class="skel-panels-ignoreHref">
-            <span class="fa fa-user">About</span>
+            <span class="fa fa-user"></span>
+            <span class="nav">About</span>
           </a></li>
           <li><a href="/#projects" id="projects-link" class="skel-panels-ignoreHref{{ projAct }}">
-            <span class="fa fa-folder-open">Projects</span>
+            <span class="fa fa-folder-open"></span>
+            <span class="nav">Projects</span>
           </a></li>
           <li><a href="/#code" id="code-link" class="skel-panels-ignoreHref">
-            <span class="fa fa-code">Code</span>
+            <span class="fa fa-code"></span>
+            <span class="nav">Code</span>
           </a></li>
         </ul>
       </nav>
@@ -131,7 +122,6 @@
     <!-- Copyright -->
     <ul class="copyright">
       <li>&copy; {{ "now" | date: "%Y" }}</li>
-      <!--<li> | </li>-->
       <li> <a href="mailto:{{ site.email }}">{{ site.name }}</a> </li>
     </ul>
   </div>
