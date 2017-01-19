@@ -39,10 +39,10 @@
   font-weight: 600;
 }
 .tablesorter .tablesorter-headerDesc {
-  background-image: url(images/desc.png);
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
 }
 .tablesorter .tablesorter-headerAsc {
-  background-image: url(images/asc.png);
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
 }
 .tablesorter .tablesorter-header {
   background-repeat: no-repeat;
