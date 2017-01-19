@@ -15,35 +15,36 @@ permalink: /games/
 {% endif %}
 <link rel="stylesheet" href="/css/table.css" />
 
-<!-- TODO move styling into css? -->
 <div id="main">
 
   <section class="two">
-  <div class="container" style="width:80%;">
+  <div id="games" class="container">
 
     <header>
       <h2 class="alt">{{ page.title }}</h2>
     </header>
 
-    <table>
+    <table class="tablesorter">
     <thead>
       <tr>
-        <th style="text-align: left">Title</th>
-        <th style="text-align: left">Players</th>
-        <th style="text-align: left">Time</th>
-        <th style="text-align: left">Type</th>
-        <th style="text-align: right"> </th>
+        <th>Title</th>
+        <th>Players</th>
+        <th>Time</th>
+        <th>Type</th>
+        <th class="game-link">Site</th>
       </tr>
     </thead>
     <tbody>
 
       {% for game in site.games %}
         <tr>
-          <td style="text-align: left">{{ game.title }}</td>
-          <td style="text-align: left">{{ game.players }}</td>
-          <td style="text-align: left">{{ game.time }}</td>
-          <td style="text-align: left">{{ game.type }}</td>
-          <td style="text-align: right"><a href="{{ game.link }}"></a></td>
+          <td>{{ game.title }}</td>
+          <td>{{ game.players }}</td>
+          <td>{{ game.time }}</td>
+          <td>{{ game.type }}</td>
+          <td class="game-link">
+            <a href="{{ game.link }}" class="fa fa-globe icon fa-lg" target="_blank"></a>
+          </td>
         </tr>
       {% endfor %}
 
@@ -51,11 +52,9 @@ permalink: /games/
     </table>
 
     <script>
-      $("table").addClass("tablesorter");
       $(document).ready(function(){
         $(".tablesorter").tablesorter({sortList: [[1,0]]});
       });
-      $(".tablesorter a").addClass("fa fa-globe solo").attr("style", "font-size: 90%;").attr("target", "_blank");
     </script>
   </div>
   </section>

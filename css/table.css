@@ -24,7 +24,6 @@
   font-weight: normal;
   line-height: 29px;
   color: #2281CF;
-  text-align: left;
 }
 .tablesorter .header,
 .tablesorter thead tr,
@@ -74,7 +73,6 @@
   padding: 5px 6px;
   line-height: 32px;
   color: #555;
-  text-align: left;
   border-top: 1px solid #edf1f5;
   border-bottom: 1px solid #edf1f5;
 }
@@ -89,4 +87,8 @@
   border-color: #c6d8e4;
   /* trick to do border-top and bottom colors */
   border-style: double;
+}
+
+.game-link {
+  text-align: right;
 }

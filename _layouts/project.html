@@ -8,18 +8,17 @@ layout: site
   {% assign resources = "/resources" %}
 {% endif %}
 
-<!-- TODO must clean up project page! flexbox, layout, css -->
 <div id="main">
 
   <section class="two">
-  <div class="container" style="width:80%;">
+  <div id="project" class="container">
 
     <header>
       <h2 class="alt">{{ page.title }}</h2>
       by {{ page.authors }}
     </header>
 
-    <img class="image" style="width:40%;" src="{{ resources }}/images/{{ page.project }}.png" alt="{{ page.imageAlt }}" />
+    <img class="image" src="{{ resources }}/images/{{ page.project }}.png" alt="{{ page.imageAlt }}" />
 
     <div>
       {% for resourceObject in page.resources %}
@@ -30,7 +29,7 @@ layout: site
               <em>{{ resource[0] }}:</em>
             {% endif %}
           </span>
-          <span class="links flex-item" style="text-align: right">
+          <span class="links flex-item">
             {% if resource.size < 4 %}
               <a href="{{ resource[2] }}">{{ resource[1] }}</a>
             {% else %}
