@@ -89,17 +89,11 @@
     background: #f4f4f4;
   }
 
-/* TODO check out .image.full and .image.gravatar? */
 /*** Images ***/
 
   .image {
     display: inline-block;
     border: 0;
-  }
-
-  .image img {
-    display: block;
-    width: 100%;
   }
 
   .image.featured {
