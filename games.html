@@ -6,66 +6,57 @@ permalink: /games/
 
 {% if jekyll.environment == "production" %}
   {% assign resources = site.resources %}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.26.6/js/jquery.tablesorter.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/tablesorter/2.28.4/js/jquery.tablesorter.min.js"></script>
 {% else %}
   {% assign resources = "/resources/" %}
+  <script src="/vendor/jquery/dist/jquery.min.js"></script>
   <script src="/vendor/tablesorter/jquery.tablesorter.min.js"></script>
 {% endif %}
+<link rel="stylesheet" href="/css/table.css" />
 
-<!-- Main -->
+<!-- TODO move styling into css? -->
 <div id="main">
-<section class="two">
 
-  <div class="container">
-    
+  <section class="two">
+  <div class="container" style="width:80%;">
+
     <header>
       <h2 class="alt">{{ page.title }}</h2>
     </header>
-    
-    <div class="row"></div>
-    
-    <div class="row" style="text-align: justify;">
-      <div class="2u"></div>
-      <div class="8u">
 
+    <table>
+    <thead>
+      <tr>
+        <th style="text-align: left">Title</th>
+        <th style="text-align: left">Players</th>
+        <th style="text-align: left">Time</th>
+        <th style="text-align: left">Type</th>
+        <th style="text-align: right"> </th>
+      </tr>
+    </thead>
+    <tbody>
 
-        <table>
-        <thead>
-          <tr>
-            <th style="text-align: left">Title</th>
-            <th style="text-align: left">Players</th>
-            <th style="text-align: left">Time</th>
-            <th style="text-align: left">Type</th>
-            <th style="text-align: right"> </th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for game in site.games %}
-            <tr>
-              <td style="text-align: left">{{ game.title }}</td>
-              <td style="text-align: left">{{ game.players }}</td>
-              <td style="text-align: left">{{ game.time }}</td>
-              <td style="text-align: left">{{ game.type }}</td>
-              <td style="text-align: right"><a href="{{ game.link }}"></a></td>
-            </tr>
-          {% endfor %}
-        </tbody>
-        </table>
+      {% for game in site.games %}
+        <tr>
+          <td style="text-align: left">{{ game.title }}</td>
+          <td style="text-align: left">{{ game.players }}</td>
+          <td style="text-align: left">{{ game.time }}</td>
+          <td style="text-align: left">{{ game.type }}</td>
+          <td style="text-align: right"><a href="{{ game.link }}"></a></td>
+        </tr>
+      {% endfor %}
 
+    </tbody>
+    </table>
 
-      </div>
-      <div class="2u"></div>
-      <link rel="stylesheet" href="/css/table.css" />
-      <script>
-        $("table").addClass("tablesorter");
-        $(document).ready(function(){
-          $(".tablesorter").tablesorter({sortList: [[1,0]]});
-        });
-        $(".tablesorter a").addClass("fa fa-globe solo").attr("style", "font-size: 90%;").attr("target", "_blank");
-      </script>
-    </div>
-  
+    <script>
+      $("table").addClass("tablesorter");
+      $(document).ready(function(){
+        $(".tablesorter").tablesorter({sortList: [[1,0]]});
+      });
+      $(".tablesorter a").addClass("fa fa-globe solo").attr("style", "font-size: 90%;").attr("target", "_blank");
+    </script>
   </div>
-
-</section>
+  </section>
 </div>
