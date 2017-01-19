@@ -13,9 +13,11 @@
   <meta name="author" content="Sean McKenna">
 
   {% if jekyll.environment == "production" %}
+    {% assign gravatar = site.gravatar %}
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
   {% else %}
+    {% assign gravatar = "/resources/avatar.jpeg" %}
     <link rel="stylesheet" href="/vendor/source-sans-pro/css/source-sans-pro.css">
     <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css">
   {% endif %}
@@ -25,41 +27,12 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-
-<!--
-  <noscript>
-    {% if jekyll.environment == "production" %}
-      <link rel="stylesheet" href="//cdn.jsdelivr.net/skeljs/0.4.6/skel-noscript.css">
-    {% else %}
-      <link rel="stylesheet" href="/vendor/skel/dist/skel-noscript.css" />
-    {% endif %}
-  </noscript>
--->
-
-<!--
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/style-wide.css" />
--->
-
-  <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
-  <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
-
 </head>
 
 <body>
-  
-  <!-- Header/Menu -->
-  <div id="header">
-    
-    <div class="top">
 
-      {% if jekyll.environment == "production" %}
-        {% assign gravatar = site.gravatar %}
-      {% else %}
-        {% assign gravatar = "/resources/avatar.jpeg" %}
-      {% endif %}
-      
-      <!-- Logo -->
+  <div id="header">
+    <div class="top">
       <div id="logo">
         <span class="image gravatar">
           <img src="{{ gravatar }}" alt="Gravatar profile image" />
@@ -67,21 +40,24 @@
         <h1 id="title">{{ site.name }}</h1>
         <p>{{ site.jobTitle }}</p>
       </div>
-    
-    <!-- use top for home button -->
+
+    {% comment %}
+      use top menu link as a home button
+    {% endcomment %}
     {% assign top = "" %}
     {% if page.url == "/" %}
       {% assign top = "#top" %}
     {% endif %}
 
-    <!-- show projects as selected if need-be -->
+    {% comment %}
+      show projects as selected if on a project page
+    {% endcomment %}
     {% assign location = page.url | replace: "/", " " | truncatewords: 1, "" %}
     {% assign projAct = "" %}
     {% if location == "projects" %}
-      {% assign projAct = " active" %}
+      {% assign projAct = "active" %}
     {% endif %}
-    
-      <!-- Nav -->
+
       <nav id="nav">
         <ul>
           <li><a href="/{{ top }}" id="top-link">
@@ -92,7 +68,7 @@
             <span class="fa fa-user"></span>
             <span class="nav">About</span>
           </a></li>
-          <li><a href="/#projects" id="projects-link">
+          <li><a href="/#projects" id="projects-link" class="{{ projAct }}">
             <span class="fa fa-folder-open"></span>
             <span class="nav">Projects</span>
           </a></li>
@@ -102,47 +78,21 @@
           </a></li>
         </ul>
       </nav>
-    
     </div>
-    
+
     <div class="bottom">
-    
       {% include icons.html %}
-    
     </div>
   </div>
 
-  
-  <!-- Content -->
   {{ content }}
-  
 
-  <!-- Footer -->
   <div id="footer">
-    <!-- Copyright -->
     <ul class="copyright">
       <li>&copy; {{ "now" | date: "%Y" }}</li>
       <li> <a href="mailto:{{ site.email }}">{{ site.name }}</a> </li>
     </ul>
   </div>
-
-  <!-- Javascript -->
-<!--
-  {% if jekyll.environment == "production" %}
-    <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel.min.js"></script>
-    <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel-panels.min.js"></script>
-    <script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
-  {% else %}
-    <script src="/vendor/skel/dist/skel.min.js"></script>
-    <script src="/vendor/skel/dist/skel-panels.min.js"></script>
-    <script src="/vendor/jquery/dist/jquery.min.js"></script>
-  {% endif %}
-
-  <script src="/js/init.js"></script>
-  {% if page.url == "/" %}
-    <script src="/js/scrolly.js"></script>
-  {% endif %}
--->
 
   {% if jekyll.environment == "production" %}
     <script>
@@ -150,10 +100,8 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', '{{ site.analytics }}', 'auto');
       ga('send', 'pageview');
-
     </script>
   {% endif %}
 
