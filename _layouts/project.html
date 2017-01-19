@@ -8,62 +8,41 @@ layout: site
   {% assign resources = "/resources" %}
 {% endif %}
 
-<!-- TODO must clean up project page! -->
-
-<!-- Main -->
+<!-- TODO must clean up project page! flexbox, layout, css -->
 <div id="main">
-<section class="two">
 
-  <div class="container">
-    
-    <!-- Project -->
-    
+  <section class="two">
+  <div class="container" style="width:80%;">
+
     <header>
       <h2 class="alt">{{ page.title }}</h2>
       by {{ page.authors }}
     </header>
-    
+
     <img class="image" style="width:40%;" src="{{ resources }}/images/{{ page.project }}.png" alt="{{ page.imageAlt }}" />
-    <div class="row"></div>
-    
-    <div class="row" style="text-align: justify;">
-      <div class="2u"></div>
-      <div class="8u">
 
-        <table>
-        <thead>
-          <tr>
-            <th style="text-align: right"> </th>
-            <th style="text-align: right"> </th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for resourceObject in page.resources %}
-            {% assign resource = resourceObject.resource %}
-            <tr>
-              <td style="text-align: right">
-                {% if resource[0].size > 1 %}
-                  <em>{{ resource[0] }}:</em>
-                {% endif %}
-              </td>
-              <td style="text-align: right">
-                {% if resource.size < 4 %}
-                  <a href="{{ resource[2] }}">{{ resource[1] }}</a>
-                {% else %}
-                  <a href="{{ resources }}/{{ resource[2] }}{{ page.project }}{{resource[3]}}">{{ resource[1] }}</a>
-                {% endif %}
-              </td>
-            </tr>
-          {% endfor %}
-         </tbody>
-        </table>
+    <div>
+      {% for resourceObject in page.resources %}
+        {% assign resource = resourceObject.resource %}
+        <div class="links flex">
+          <span class="links flex-item">
+            {% if resource[0].size > 1 %}
+              <em>{{ resource[0] }}:</em>
+            {% endif %}
+          </span>
+          <span class="links flex-item" style="text-align: right">
+            {% if resource.size < 4 %}
+              <a href="{{ resource[2] }}">{{ resource[1] }}</a>
+            {% else %}
+              <a href="{{ resources }}/{{ resource[2] }}{{ page.project }}{{resource[3]}}">{{ resource[1] }}</a>
+            {% endif %}
+          </span>
+        </div>
+      {% endfor %}
 
-        {{ content }}
-      </div>
-      <div class="2u"></div>
+      {{ content }}
+
     </div>
-  
   </div>
-
-</section>
+  </section>
 </div>
