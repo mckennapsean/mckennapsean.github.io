@@ -1,3 +1,110 @@
 ---
-layout: home
+layout: site
 ---
+
+{% if jekyll.environment == "production" %}
+  {% assign resources = site.resources %}
+{% else %}
+  {% assign resources = "/resources" %}
+{% endif %}
+
+<div id="main">
+
+  <section id="top" class="one">
+  <div class="container">
+
+    <img class="image featured" src="images/header.jpg" alt="Salt Lake Valley, Utah, mountains and sky" />
+
+    <section id="about" class="one">
+    <header>
+      <h2 class="alt">Hello, I'm <strong><a href="mailto:{{ site.email }}">{{ site.name }}</a></strong>.</h2>
+    </header>
+
+    <p>
+      While pursuing a Ph.D. in Visualization with
+      <a href="http://www.cs.utah.edu/~miriah/">Dr. Miriah Meyer</a>,
+      I investigate the use and creation of visualization prototypes
+      across various domains through a user-centered design process.
+    </p>
+    
+    <footer>
+      <div class="links flex">
+        <div class="links flex-item">
+          <p>
+            <a href="{{ site.cv }}">
+              CV
+              <span class="fa fa-file-text fa-lg"></span>
+            </a>
+          </p>
+        </div>
+        <div class="links flex-item">
+          {% include icons.html %}
+        </div>
+      </div>
+      Also, I love <a href="games/">board games.
+        <span class="fa fa-puzzle-piece fa-lg"></span>
+      </a>
+    </footer>
+    </section>
+  </div>
+  </section>
+
+  <section id="projects" class="two">
+  <div class="container">
+    <header>
+      <h2>Projects</h2>
+    </header>
+
+    <div class="article flex">
+
+    {% assign sortedProjects = site.projects | sort: "year" %}
+    {% for project in sortedProjects reversed %}
+      <div class="article flex-item">
+      <article class="item">
+        <a href="projects/{{ project.project }}" class="image full">
+          <img src="{{ resources }}/images/{{ project.project }}.png" alt="{{ project.imageAlt }}" />
+        </a>
+        <header>
+          <h3>{{ project.title }}</h3>
+        </header>
+      </article>
+      </div>
+    {% endfor %}
+
+    </div>
+  </div>
+  </section>
+
+  <section id="code" class="three">
+  <div class="container">
+    <header>
+      <h2>Code</h2>
+    </header>
+
+    <p>
+      I thoroughly enjoy contributing to and releasing open-source software.
+      <br>
+      Check out my releases below, or follow me
+      <a href="https://www.github.com/{{ site.username }}">on GitHub</a>.
+    </p>
+
+    <div class="article flex">
+
+    {% assign sortedCoding = site.coding | sort: "year" %}
+    {% for code in sortedCoding reversed %}
+      <div class="article flex-item">
+      <article class="item">
+        <a href="{{ code.link }}" class="image full">
+          <img src="{{ resources }}/images/{{ code.project }}.png" alt="{{ code.imageAlt }}" />
+        </a>
+        <header>
+          <h3>{{ code.tag }}</h3>
+        </header>
+      </article>
+      </div>
+    {% endfor %}
+
+    </div>
+  </div>
+  </section>
+</div>
