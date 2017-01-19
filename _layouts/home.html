@@ -8,26 +8,20 @@ layout: site
   {% assign resources = "/resources" %}
 {% endif %}
 
-<!-- Main -->
+<!-- TODO redesign with image of me? -->
+<!-- TODO explain projects section with p? -->
 <div id="main">
-  
-  <!-- Intro -->
-  <section id="top" class="one">
-  <!-- TODO anything specific to "about" id ? -->
-  <div class="container">
-  
-    <img class="image featured" src="images/header.jpg" alt="Salt Lake Valley, Utah, mountains and sky" />
-    <!-- TODO move into part of the css...? -->
-    
-    <!-- About -->
-    <!--<section id="about" class="one">-->
 
+  <section id="top" class="one">
+  <div class="container">
+
+    <img class="image featured" src="images/header.jpg" alt="Salt Lake Valley, Utah, mountains and sky" />
+
+    <section id="about" class="one">
     <header>
       <h2 class="alt">Hello, I'm <strong><a href="mailto:{{ site.email }}">{{ site.name }}</a></strong>.</h2>
     </header>
 
-    <!-- TODO redesign with image? -->
-    
     <p>
       While pursuing a Ph.D. in Visualization with
       <a href="http://www.cs.utah.edu/~miriah/">Dr. Miriah Meyer</a>,
@@ -36,54 +30,37 @@ layout: site
     </p>
     
     <footer>
-    <div class="links flex">
-      <div class="links flex-item">
-        <p>
-          <a href="{{ site.cv }}">
-            CV
-            <span class="fa fa-file-text fa-lg"></span>
-          </a>
-        </p>
+      <div class="links flex">
+        <div class="links flex-item">
+          <p>
+            <a href="{{ site.cv }}">
+              CV
+              <span class="fa fa-file-text fa-lg"></span>
+            </a>
+          </p>
+        </div>
+        <div class="links flex-item">
+          {% include icons.html %}
+        </div>
       </div>
-      <div class="links flex-item">
-        {% include icons.html %}
-      </div>
-    </div>
-    Also, I love <a href="games/">board games.
-      <span class="fa fa-puzzle-piece fa-lg"></span>
-    </a>
+      Also, I love <a href="games/">board games.
+        <span class="fa fa-puzzle-piece fa-lg"></span>
+      </a>
     </footer>
-    
+    </section>
   </div>
   </section>
-    
-  <!-- Projects -->
+
   <section id="projects" class="two">
   <div class="container">
-    
     <header>
       <h2>Projects</h2>
     </header>
-    
-<!-- TODO explain section with p? -->
-<!-- TODO custom classes for mobile and not? -->
 
     <div class="article flex">
-    
-    {% assign count = 0 %}
-    {% assign stackedRows = 2 %}
-    {% assign numCols = 3 %}
+
     {% assign sortedProjects = site.projects | sort: "year" %}
     {% for project in sortedProjects reversed %}
-      
-      <!-- two rows, stacked, per column -->
-      {% assign whereInCol = count | modulo: stackedRows %}
-      {% if whereInCol == 0 %}
-        
-        <!--<div class="4u">-->
-          
-        
-      {% endif %}
       <div class="article flex-item">
       <article class="item">
         <a href="projects/{{ project.project }}" class="image full">
@@ -94,66 +71,29 @@ layout: site
         </header>
       </article>
       </div>
-      
-      {% assign stackedRowsOffset = stackedRows | minus: 1 %}
-      {% if whereInCol == stackedRowsOffset %}
-        
-        <!--</div>-->
-        
-      {% endif %}
-      
-      <!-- create new rows for more content -->
-      {% assign howManyInRow = stackedRows | times: numCols %}
-      {% assign placeInRow = count | modulo: howManyInRow %}
-      {% assign howManyInRowOffset = howManyInRow | minus: 1 %}
-      {% if placeInRow == howManyInRowOffset %}
-        
-        <!--</div>-->
-        
-        <!--<div class="article flex">-->
-        
-      {% endif %}
-      
-      {% assign count = count | plus: 1 %}
     {% endfor %}
-    
+
     </div>
-    
   </div>
   </section>
-  
-  <!-- Code -->
+
   <section id="code" class="three">
   <div class="container">
-    
     <header>
       <h2>Code</h2>
     </header>
-    
+
     <p>
       I thoroughly enjoy contributing to and releasing open-source software.
       <br>
       Check out my releases below, or follow me
       <a href="https://www.github.com/{{ site.username }}">on GitHub</a>.
     </p>
-    
+
     <div class="article flex">
-    
-    {% assign count = 0 %}
-    {% assign stackedRows = 2 %}
-    {% assign numCols = 3 %}
+
     {% assign sortedCoding = site.coding | sort: "year" %}
     {% for code in sortedCoding reversed %}
-
-      <!-- two rows, stacked, per column -->
-      {% assign whereInCol = count | modulo: stackedRows %}
-      {% if whereInCol == 0 %}
-        
-        <!--<div class="4u">-->
-          <!-- TODO custom classes for mobile and not? -->
-        
-      {% endif %}
-      
       <div class="article flex-item">
       <article class="item">
         <a href="{{ code.link }}" class="image full">
@@ -164,32 +104,9 @@ layout: site
         </header>
       </article>
       </div>
-      
-      {% assign stackedRowsOffset = stackedRows | minus: 1 %}
-      {% if whereInCol == stackedRowsOffset %}
-        
-        <!--</div>-->
-        
-      {% endif %}
-      
-      <!-- create new rows for more content -->
-      {% assign howManyInRow = stackedRows | times: numCols %}
-      {% assign placeInRow = count | modulo: howManyInRow %}
-      {% assign howManyInRowOffset = howManyInRow | minus: 1 %}
-      {% if placeInRow == howManyInRowOffset %}
-        
-        <!--</div>-->
-        
-        <!--<div class="article flex">-->
-        
-      {% endif %}
-
-      {% assign count = count | plus: 1 %}
     {% endfor %}
-    
+
     </div>
-  
   </div>
   </section>
-  
 </div>
