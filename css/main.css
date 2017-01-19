@@ -19,14 +19,18 @@
   }
 
   h1, h2, h3 {
-    font-weight: 300;
+    font-weight: 200;
     color: #666;
     line-height: 1.5em;
   }
 
   h2 {
     font-size: 2em;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
+  }
+
+  h2.alt {
+    color: #888;
   }
 
   h3 {
@@ -101,7 +105,7 @@
   .image.featured {
     display: block;
     width: 100%;
-    margin: 0 0 2em 0;
+    margin: 0 0 3em 0;
   }
 
   .image.avatar {
@@ -115,7 +119,7 @@
 
   .item img {
     min-width: 170px;
-    max-width: 440px;
+    max-width: 375px;
   }
 
   .links.flex {
@@ -134,7 +138,7 @@
   }
 
   .article.flex-item {
-    margin: 0 10px 30px 0;
+    margin: 0 20px 30px 0;
     align-self: flex-end;
   }
 
@@ -282,9 +286,13 @@
   #main > section {
     margin: 0;
     overflow: hidden;
-    padding: 4em 0;
+    padding: 3em 0;
     box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
     text-align: center;
+  }
+
+  #about > footer {
+    margin-bottom: 1em;
   }
 
   #main > section.one {
@@ -307,9 +315,10 @@
     margin-left: 300px;
     text-align: center;
     background-color: #dce3e2;
-    padding: 3em 0 4em 0;
+    padding: 3em 0 2em 0;
     box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
     font-size: 0.8em;
+    max-height: 50px;
   }
 
   #footer .copyright li {
