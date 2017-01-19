@@ -11,7 +11,8 @@
   body {
     background: #fff;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 19pt;
+    font-size: 17pt;
+    /*font-size: 19pt;*/
     font-weight: 300;
     line-height: 1.75em;
     color: #888;
@@ -166,7 +167,8 @@
     position: fixed;
     text-align: right;
     top: 0;
-    width: 375px;
+    /*width: 375px;*/
+    width: 300px;
   }
 
   #header .top {
@@ -273,7 +275,8 @@
 /*** Page Content / Sections ***/
 
   #main {
-    margin-left: 375px;
+    /*margin-left: 375px;*/
+    margin-left: 300px;
   }
 
   #main > section {
@@ -297,44 +300,11 @@
     background-color: #ecf1f1;
   }
 
-/*** Containers ***/
-
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1400px;
-  }
-
-  @media screen and (min-width: 961px) and (max-width: 1880px) {
-    .container {
-      width: 1200px;
-    }
-  }
-  @media screen and (min-width: 961px) and (max-width: 1620px) {
-    .container {
-      width: 960px;
-    }
-  }
-  @media screen and (min-width: 961px) and (max-width: 1320px) {
-    .container {
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 960px) {
-    .container {
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 736px) {
-    .container {
-      width: 100% !important;
-    }
-  }
-
 /*** Footer ***/
 
   #footer {
-    margin-left: 375px;
+    /*margin-left: 375px;*/
+    margin-left: 300px;
     text-align: center;
     background-color: #dce3e2;
     padding: 3em 0 4em 0;
@@ -354,29 +324,39 @@
     border-left: 0;
   }
 
-/*** Display Variations ***/
+/*** Containers ***/
 
-  @media screen and (min-width: 992px) and (max-width: 1880px) {
-    body {
-      font-size: 17pt;
-    }
-    #header {
-      width: 300px;
-    }
-    #main {
-      margin-left: 300px;
-    }
-    #footer {
-      margin-left: 300px;
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 1400px;*/
+    width: 1200px;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+      width: 960px;
     }
   }
-  @media screen and (min-width: 992px) and (max-width: 1620px) {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .container {
+      width: 100% !important;
+    }
+  }
+
+/*** Display Variations ***/
+
+  /* large, medium, small, & x-small */
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
     #main > section {
       padding: 3em 0;
     }
   }
-  /* large, medium, small, & x-small */
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     body {
       font-size: 16pt;
     }
@@ -416,24 +396,32 @@
       margin-left: 20%;
     }
   }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 767px) {
     html, body {
       overflow-x: hidden;
     }
     body {
-      font-size: 16pt;
+      /*font-size: 16pt;*/
+      font-size: 14pt;
+    }
+    h2 {
+      font-size: 1.5em;
+      letter-spacing: 0;
+      font-weight: 300;
     }
     header br {
       display: none;
     }
     .container {
-      padding: 0 2em;
+      /*padding: 0 2em;*/
+      padding: 0 15px;
     }
     .item {
       margin-bottom: 15px;
     }
     ul.icons a {
-      width: 1.75em;
+      /*width: 1.75em;*/
+      width: 2em;
       font-size: 1.25em;
     }
     #header {
@@ -454,13 +442,6 @@
     #header .top {
       position: relative;
     }
-    #header .bottom {
-      border-top: solid 1px rgba(255, 255, 255, 0.05);
-      box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
-      padding-top: 2em;
-      margin-top: 2em;
-      position: relative;
-    }
     #logo {
       margin: 1.5em 1.25em 1.25em 1.25em;
     }
@@ -473,29 +454,10 @@
       margin-left: 0;
     }
     #main > section {
-      padding: 3em 0;
+      /*padding: 3em 0;*/
+      padding: 2em 0;
     }
     #footer {
       margin-left: 0;
-    }
-  }
-  @media screen and (max-width: 767px) {
-    body {
-      font-size: 14pt;
-    }
-    h2 {
-      font-size: 1.5em;
-      letter-spacing: 0;
-      font-weight: 300;
-    }
-    .container {
-      padding: 0 15px;
-    }
-    ul.icons a {
-      width: 2em;
-      font-size: 1.25em;
-    }
-    #main > section {
-      padding: 2em 0;
     }
   }
