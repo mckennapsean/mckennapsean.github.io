@@ -36,8 +36,8 @@ layout: site
     </p>
     
     <footer>
-    <div class="row">
-      <div class="-3u 3u">
+    <div class="links flex">
+      <div class="links flex-item">
         <p>
           <a href="{{ site.cv }}">
             CV
@@ -45,7 +45,7 @@ layout: site
           </a>
         </p>
       </div>
-      <div class="3u">
+      <div class="links flex-item">
         {% include icons.html %}
       </div>
     </div>
@@ -66,8 +66,9 @@ layout: site
     </header>
     
 <!-- TODO explain section with p? -->
+<!-- TODO custom classes for mobile and not? -->
 
-    <div class="row">
+    <div class="article flex">
     
     {% assign count = 0 %}
     {% assign stackedRows = 2 %}
@@ -79,11 +80,11 @@ layout: site
       {% assign whereInCol = count | modulo: stackedRows %}
       {% if whereInCol == 0 %}
         
-        <div class="4u">
-          <!-- TODO custom classes for mobile and not? -->
+        <!--<div class="4u">-->
+          
         
       {% endif %}
-      
+      <div class="article flex-item">
       <article class="item">
         <a href="projects/{{ project.project }}" class="image full">
           <img src="{{ resources }}/images/{{ project.project }}.png" alt="{{ project.imageAlt }}" />
@@ -92,11 +93,12 @@ layout: site
           <h3>{{ project.title }}</h3>
         </header>
       </article>
+      </div>
       
       {% assign stackedRowsOffset = stackedRows | minus: 1 %}
       {% if whereInCol == stackedRowsOffset %}
         
-        </div>
+        <!--</div>-->
         
       {% endif %}
       
@@ -106,9 +108,9 @@ layout: site
       {% assign howManyInRowOffset = howManyInRow | minus: 1 %}
       {% if placeInRow == howManyInRowOffset %}
         
-        </div>
+        <!--</div>-->
         
-        <div class="row">
+        <!--<div class="article flex">-->
         
       {% endif %}
       
@@ -135,7 +137,7 @@ layout: site
       <a href="https://www.github.com/{{ site.username }}">on GitHub</a>.
     </p>
     
-    <div class="row">
+    <div class="article flex">
     
     {% assign count = 0 %}
     {% assign stackedRows = 2 %}
@@ -147,11 +149,12 @@ layout: site
       {% assign whereInCol = count | modulo: stackedRows %}
       {% if whereInCol == 0 %}
         
-        <div class="4u">
+        <!--<div class="4u">-->
           <!-- TODO custom classes for mobile and not? -->
         
       {% endif %}
       
+      <div class="article flex-item">
       <article class="item">
         <a href="{{ code.link }}" class="image full">
           <img src="{{ resources }}/images/{{ code.project }}.png" alt="{{ code.imageAlt }}" />
@@ -160,11 +163,12 @@ layout: site
           <h3>{{ code.tag }}</h3>
         </header>
       </article>
+      </div>
       
       {% assign stackedRowsOffset = stackedRows | minus: 1 %}
       {% if whereInCol == stackedRowsOffset %}
         
-        </div>
+        <!--</div>-->
         
       {% endif %}
       
@@ -174,9 +178,9 @@ layout: site
       {% assign howManyInRowOffset = howManyInRow | minus: 1 %}
       {% if placeInRow == howManyInRowOffset %}
         
-        </div>
+        <!--</div>-->
         
-        <div class="row">
+        <!--<div class="article flex">-->
         
       {% endif %}
 
