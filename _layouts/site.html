@@ -31,7 +31,7 @@
 
 <body>
 
-  <div id="header">
+  <div id="header" class="header">
     <div class="top">
       <div id="logo">
         <span class="image gravatar">
@@ -41,40 +41,40 @@
         <p>{{ site.jobTitle }}</p>
       </div>
 
-    {% comment %}
-      use top menu link as a home button
-    {% endcomment %}
-    {% assign top = "" %}
-    {% if page.url == "/" %}
-      {% assign top = "#top" %}
-    {% endif %}
+      {% comment %}
+        use top menu link as a home button
+      {% endcomment %}
+      {% assign top = "" %}
+      {% if page.url == "/" %}
+        {% assign top = "#top" %}
+      {% endif %}
 
-    {% comment %}
-      show projects as selected if on a project page
-    {% endcomment %}
-    {% assign location = page.url | replace: "/", " " | truncatewords: 1, "" %}
-    {% assign projAct = "" %}
-    {% if location == "projects" %}
-      {% assign projAct = "active" %}
-    {% endif %}
+      {% comment %}
+        show projects as selected if on a project page
+      {% endcomment %}
+      {% assign location = page.url | replace: "/", " " | truncatewords: 1, "" %}
+      {% assign projAct = "" %}
+      {% if location == "projects" %}
+        {% assign projAct = "active" %}
+      {% endif %}
 
-      <nav id="nav">
+      <nav id="nav" class="nav">
         <ul>
           <li><a href="/{{ top }}" id="top-link">
             <span class="fa fa-home"></span>
-            <span class="nav">Home</span>
+            <span class="nav-item">Home</span>
           </a></li>
           <li><a href="/#about" id="about-link">
             <span class="fa fa-user"></span>
-            <span class="nav">About</span>
+            <span class="nav-item">About</span>
           </a></li>
           <li><a href="/#projects" id="projects-link" class="{{ projAct }}">
             <span class="fa fa-folder-open"></span>
-            <span class="nav">Projects</span>
+            <span class="nav-item">Projects</span>
           </a></li>
           <li><a href="/#code" id="code-link">
             <span class="fa fa-code"></span>
-            <span class="nav">Code</span>
+            <span class="nav-item">Code</span>
           </a></li>
         </ul>
       </nav>
@@ -84,6 +84,24 @@
       {% include icons.html %}
     </div>
   </div>
+
+  {% if page.url != "/" %}
+  <div class="header mobile">
+    <h1 class="title">
+      <a href="mailto:{{ site.email }}">
+        {{ site.name }}
+      </a>
+    </h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="/{{ top }}">
+          <span class="fa fa-home"></span>
+          <span class="nav-item">Home</span>
+        </a></li>
+      </ul>
+    </nav>
+  </div>
+  {% endif %}
 
   {{ content }}
 
