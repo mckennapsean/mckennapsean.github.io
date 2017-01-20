@@ -1,17 +1,16 @@
 
 /*** Reset Elements ***/
-  html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strong, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, figure, figcaption, footer, header, menu, nav, section, audio, video {
+  body, section, ul, li, span, a, p, h1, h2, h3 {
     margin: 0;
     padding: 0;
   }
 
-/*** Basic Styling ***/
+/*** Fonts & Colors ***/
 
   body {
     background: #fff;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 17pt;
-    /*font-size: 19pt;*/
+    font-size: 19pt;
     font-weight: 300;
     line-height: 1.75em;
     color: #888;
@@ -36,18 +35,6 @@
     font-size: 1.5em;
   }
 
-  header {
-    margin: 0 0 2em 0;
-  }
-
-  header > p {
-    margin: 1em 0 0 0;
-  }
-
-  footer {
-    margin: 2em 0 0 0;
-  }
-
   strong, b {
     font-weight: 300;
     color: #666;
@@ -69,12 +56,26 @@
     border-bottom-color: rgba(255, 255, 255, 0);
   }
 
-  p, ul, ol, dl, table {
-    margin-bottom: 2em;
-  }
-
   .icon {
     border: 0;
+  }
+
+/*** Element Boxing and Display ***/
+
+  header {
+    margin: 0 0 2em 0;
+  }
+
+  header > p {
+    margin: 1em 0 0 0;
+  }
+
+  footer {
+    margin: 2em 0 0 0;
+  }
+
+  p, ul, ol, dl, table {
+    margin-bottom: 2em;
   }
 
   ul.icons li {
@@ -89,7 +90,6 @@
 
   table {
     width: 100%;
-    background: #f4f4f4;
   }
 
 /*** Images ***/
@@ -110,31 +110,11 @@
     height: 48px;
   }
 
-/*** Sections, Articles, Cards ***/
+/*** Cards / Articles ***/
 
   .item img {
     min-width: 170px;
     max-width: 375px;
-  }
-
-  .links.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .links.flex-item {
-    margin: 0 5%;
-  }
-
-  .article.flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .article.flex-item {
-    margin: 0 20px 30px 0;
-    align-self: flex-end;
   }
 
   .item {
@@ -151,7 +131,78 @@
     font-size: 0.8em;
   }
 
-/*** Header & Nav Menu ***/
+  .article.flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .article.flex-item {
+    margin: 0 20px 30px 0;
+    align-self: flex-end;
+  }
+
+/*** Page Layout ***/
+
+  .container {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em;
+    width: 100%;
+  }
+
+  #main {
+    margin-left: 300px;
+  }
+
+  #main > section {
+    margin: 0;
+    overflow: hidden;
+    padding: 3em 0;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+    text-align: center;
+  }
+
+  #about > footer {
+    margin-bottom: 1em;
+  }
+
+  #main > section.one {
+    background-color: #fff;
+    padding-top: 0;
+  }
+
+  #main > section.two {
+    background-color: #f5fafa;
+  }
+
+  #main > section.three {
+    background-color: #ecf1f1;
+  }
+
+  #project {
+    width: 80%;
+  }
+
+  #project > img {
+    width: 40%;
+  }
+
+  #games {
+    width: 80%;
+  }
+
+  .links.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .links.flex-item {
+    margin: 0 5%;
+  }
+
+/*** Navigation Menu ***/
 
   .header {
     display: flex;
@@ -159,9 +210,6 @@
     background: #222629;
     box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
     color: #fff;
-    /*left: 0;*/
-    /*overflow-y: auto;*/
-    /*top: 0;*/
   }
 
   #header {
@@ -296,42 +344,9 @@
     border: 0;
   }
 
-/*** Page Content / Sections ***/
-
-  #main {
-    /*margin-left: 375px;*/
-    margin-left: 300px;
-  }
-
-  #main > section {
-    margin: 0;
-    overflow: hidden;
-    padding: 3em 0;
-    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
-    text-align: center;
-  }
-
-  #about > footer {
-    margin-bottom: 1em;
-  }
-
-  #main > section.one {
-    background-color: #fff;
-    padding-top: 0;
-  }
-
-  #main > section.two {
-    background-color: #f5fafa;
-  }
-
-  #main > section.three {
-    background-color: #ecf1f1;
-  }
-
 /*** Footer ***/
 
   #footer {
-    /*margin-left: 375px;*/
     margin-left: 300px;
     text-align: center;
     background-color: #dce3e2;
@@ -353,37 +368,15 @@
     border-left: 0;
   }
 
-/*** Containers ***/
+/*** Media Queries for Responsive Design ***/
 
-  .container {
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 2em;
-    width: 100%;
-  }
-
-  /* fix main page width after a certain size */
+  /* extra-large, desktop (fix page width) */
   @media screen and (min-width: 1799px) {
     .container {
       padding: 0;
       width: 1400px;
     }
   }
-
-  #project {
-    width: 80%;
-  }
-
-  #project > img {
-    width: 40%;
-  }
-
-  #games {
-    width: 80%;
-  }
-
-/*** Media Queries for Responsive Design ***/
 
   /* medium, desktop (default is large) */
   @media screen and (min-width: 992px) and (max-width: 1199px) {}
@@ -394,24 +387,24 @@
       font-size: 17pt;
     }
 
-    #logo .image {
-      position: relative;
-    }
-
-    #nav .nav-item {
-      font-size: 0.75em;
-    }
-
-    #header {
-      width: 20%;
-    }
-
     #main {
       margin-left: 20%;
     }
 
     .container {
       padding: 0 1.25em;
+    }
+
+    #header {
+      width: 20%;
+    }
+
+    #logo .image {
+      position: relative;
+    }
+
+    #nav .nav-item {
+      font-size: 0.75em;
     }
 
     #footer {
@@ -433,6 +426,14 @@
       font-size: 1.25em;
     }
 
+    #main {
+      margin-left: 0;
+    }
+
+    .container {
+      padding: 0 0.6em;
+    }
+
     .mobile {
       display: flex;
     }
@@ -440,14 +441,6 @@
     #header {
       width: 20%;
       display: none;
-    }
-
-    #main {
-      margin-left: 0;
-    }
-
-    .container {
-      padding: 0 0.6em;
     }
 
     #footer {
