@@ -8,13 +8,13 @@ layout: site
   {% assign resources = "/resources" %}
 {% endif %}
 
-<div id="main">
+<div class="page">
 
   <section class="two">
-  <div id="project" class="container">
+  <div class="project box">
 
     <header>
-      <h2 class="alt">{{ page.title }}</h2>
+      <h2 class="intro">{{ page.title }}</h2>
       by {{ page.authors }}
     </header>
 
@@ -23,13 +23,13 @@ layout: site
     <div>
       {% for resourceObject in page.resources %}
         {% assign resource = resourceObject.resource %}
-        <div class="links flex">
-          <span class="links flex-item">
+        <div class="links">
+          <span class="link">
             {% if resource[0].size > 1 %}
               <em>{{ resource[0] }}:</em>
             {% endif %}
           </span>
-          <span class="links flex-item">
+          <span class="link">
             {% if resource.size < 4 %}
               <a href="{{ resource[2] }}">{{ resource[1] }}</a>
             {% else %}

@@ -8,10 +8,10 @@ layout: site
   {% assign resources = "/resources" %}
 {% endif %}
 
-<div id="main">
+<div class="page">
 
   <section id="top" class="one">
-  <div class="container">
+  <div class="box">
 
     <img class="image featured" src="images/header.jpg" alt="Salt Lake Valley, Utah, mountains and sky" />
 
@@ -54,17 +54,16 @@ layout: site
   </section>
 
   <section id="projects" class="two">
-  <div class="container">
+  <div class="box">
     <header>
       <h2>Projects</h2>
     </header>
 
-    <div class="article flex">
+    <div class="cards">
 
     {% assign sortedProjects = site.projects | sort: "year" %}
     {% for project in sortedProjects reversed %}
-      <div class="article flex-item">
-      <article class="item">
+      <article class="card">
         <a href="projects/{{ project.project }}" class="image full">
           <img src="{{ resources }}/images/{{ project.project }}.png" alt="{{ project.imageAlt }}" />
         </a>
@@ -72,7 +71,6 @@ layout: site
           <h3>{{ project.title }}</h3>
         </header>
       </article>
-      </div>
     {% endfor %}
 
     </div>
@@ -80,7 +78,7 @@ layout: site
   </section>
 
   <section id="code" class="three">
-  <div class="container">
+  <div class="box">
     <header>
       <h2>Code</h2>
     </header>
@@ -92,12 +90,11 @@ layout: site
       <a href="https://www.github.com/{{ site.username }}">on GitHub</a>.
     </p>
 
-    <div class="article flex">
+    <div class="cards">
 
     {% assign sortedCoding = site.coding | sort: "year" %}
     {% for code in sortedCoding reversed %}
-      <div class="article flex-item">
-      <article class="item">
+      <article class="card">
         <a href="{{ code.link }}" class="image full">
           <img src="{{ resources }}/images/{{ code.project }}.png" alt="{{ code.imageAlt }}" />
         </a>
@@ -105,7 +102,6 @@ layout: site
           <h3>{{ code.tag }}</h3>
         </header>
       </article>
-      </div>
     {% endfor %}
 
     </div>

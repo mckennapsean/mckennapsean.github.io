@@ -94,38 +94,35 @@
 
 /*** Cards / Articles ***/
 
-  .item img {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    align-self: flex-end;
+    margin: 0 20px 30px 0;
+    box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .card img {
     min-width: 170px;
     max-width: 375px;
   }
-
-  .item {
-    box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-  }
   
-  .item header {
+  .card header {
     background: #fff;
     margin: -0.6em 0 0 0;
     padding: 0.8em 0 0.8em 0;
   }
 
-  .item header h3 {
-    font-size: 0.8em;
-  }
-
-  .article.flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .article.flex-item {
-    margin: 0 20px 30px 0;
-    align-self: flex-end;
+  .card header h3 {
+    font-size: 1em;
   }
 
 /*** Page Layout ***/
 
-  .container {
+  .box {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
@@ -133,54 +130,55 @@
     width: 100%;
   }
 
-  #main {
+  .page {
     margin-left: 300px;
   }
 
-  #main > section {
-    margin: 0;
-    overflow: hidden;
-    padding: 3em 0;
-    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+  .page > section {
     text-align: center;
+    margin: 0;
+    padding: 3em 0;
+    overflow: hidden;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+    
   }
 
-  #about > footer {
+  .about > footer {
     margin-bottom: 1em;
   }
 
-  #main > section.one {
+  .page > section.one {
     background-color: #fff;
     padding-top: 0;
   }
 
-  #main > section.two {
+  .page > section.two {
     background-color: #f5fafa;
   }
 
-  #main > section.three {
+  .page > section.three {
     background-color: #ecf1f1;
   }
 
-  #project {
+  .project {
     width: 80%;
   }
 
-  #project > img {
+  .project > img {
     width: 40%;
   }
 
-  #games {
+  .games {
     width: 80%;
   }
 
-  .links.flex {
+  .links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .links.flex-item {
+  .link {
     margin: 0 5%;
   }
 
@@ -354,7 +352,7 @@
 
   /* extra-large, desktop (fix page width) */
   @media screen and (min-width: 1799px) {
-    .container {
+    .box {
       padding: 0;
       width: 1400px;
     }
@@ -369,11 +367,11 @@
       font-size: 17pt;
     }
 
-    #main {
+    .page {
       margin-left: 20%;
     }
 
-    .container {
+    .box {
       padding: 0 1.25em;
     }
 
@@ -408,11 +406,11 @@
       font-size: 1.25em;
     }
 
-    #main {
+    .page {
       margin-left: 0;
     }
 
-    .container {
+    .box {
       padding: 0 0.6em;
     }
 
