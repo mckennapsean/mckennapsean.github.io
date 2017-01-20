@@ -31,13 +31,13 @@
 
 <body>
 
-  <div id="header" class="header">
+  <div class="menu panel">
     <div class="top">
-      <div id="logo">
-        <span class="image gravatar">
+      <div class="about">
+        <span class="image">
           <img src="{{ gravatar }}" alt="Gravatar profile image" />
         </span>
-        <h1 id="title">{{ site.name }}</h1>
+        <h1>{{ site.name }}</h1>
         <p>{{ site.jobTitle }}</p>
       </div>
 
@@ -58,7 +58,7 @@
         {% assign projAct = "active" %}
       {% endif %}
 
-      <nav id="nav" class="nav">
+      <nav class="nav pages">
         <ul>
           <li><a href="/{{ top }}" id="top-link">
             <span class="fa fa-home"></span>
@@ -86,8 +86,8 @@
   </div>
 
   {% if page.url != "/" %}
-  <div class="header mobile">
-    <h1 class="title">
+  <div class="menu bar">
+    <h1>
       <a href="mailto:{{ site.email }}">
         {{ site.name }}
       </a>
@@ -105,8 +105,8 @@
 
   {{ content }}
 
-  <div id="footer">
-    <ul class="copyright">
+  <div class="footer">
+    <ul class="info">
       <li>&copy; {{ "now" | date: "%Y" }}</li>
       <li> <a href="mailto:{{ site.email }}">{{ site.name }}</a> </li>
     </ul>

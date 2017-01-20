@@ -123,11 +123,11 @@
 /*** Page Layout ***/
 
   .box {
-    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding: 0 2em;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .page {
@@ -143,7 +143,7 @@
     
   }
 
-  .about > footer {
+  section.one > footer {
     margin-bottom: 1em;
   }
 
@@ -184,74 +184,73 @@
 
 /*** Navigation Menu ***/
 
-  .header {
+  .menu {
+    background: #222629;
+    color: #fff;
     display: flex;
     justify-content: space-around;
-    background: #222629;
     box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
-    color: #fff;
   }
 
-  #header {
-    flex-direction: column;
-    height: 100%;
-    position: fixed;
+  .panel {
     text-align: right;
+    flex-direction: column;
+    position: fixed;
     width: 300px;
+    height: 100%;
   }
 
-  .header .top {
+  .menu .top {
     flex-grow: 1;
   }
 
-  .header .bottom {
+  .menu .bottom {
     flex-shrink: 0;
     padding: 1.5em 0 0.75em 0;
   }
 
-  .header .bottom > :last-child {
+  .menu .bottom > :last-child {
     margin-bottom: 0;
   }
 
-  .header .icons {
+  .menu .icons {
     font-size: 0.8em;
     text-align: center;
   }
 
-  .header .icons a {
+  .menu .icons a {
     color: #41484c;
     transition: color 0.35s ease-in-out;
   }
 
-  .header .icons a:hover {
+  .menu .icons a:hover {
     color: #fff;
   }
 
-  #logo {
-    position: relative;
-    margin: 1.75em 1.5em 1.5em 1.5em;
-    min-height: 48px;
-    cursor: default;
-  }
-
-  .header h1 {
-    position: relative;
+  .menu h1 {
     color: #fff;
     font-weight: 600;
     font-size: 1em;
     line-height: 1em;
+    position: relative;
   }
 
-  #logo p {
+  .about {
+    min-height: 48px;
     position: relative;
-    display: block;
-    font-size: 0.6em;
+    margin: 1.75em 1.5em 1.5em 1.5em;
+  }
+
+  .about p {
     color: rgba(255, 255, 255, 0.5);
+    font-size: 0.6em;
     line-height: 1.25em;
+    display: block;
+    position: relative;
     margin: 0.5em 0 0 0;
   }
 
-  #logo .image {
+  .about .image {
     position: absolute;
     left: 0;
     top: 0;
@@ -263,88 +262,87 @@
   }
 
   .nav ul li a {
-    display: block;
-    padding: 0.5em 1.5em 0.5em 1.5em;
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
-    outline: 0;
+    display: block;
+    padding: 0.5em 1.5em 0.5em 1.5em;
     border: 0;
     transition: none;
   }
 
-  #nav ul li a span {
-    position: relative;
+  .pages ul li a span {
     display: block;
+    position: relative;
   }
 
-  #nav ul li a span:before {
-    position: absolute;
-    left: 0;
+  .pages ul li a span:before {
     color: #41484c;
     text-align: center;
-    width: 1.25em;
     line-height: 1.75em;
+    position: absolute;
+    left: 0;
+    width: 1.25em;
   }
 
-  #nav ul li a.active {
+  .pages ul li a.active {
     background: rgba(0, 0, 0, 0.15);
-    box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
     color: #fff;
+    box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
   }
 
-  #nav ul li a.active span:before {
+  .pages ul li a.active span:before {
     color: #e27689;
   }
 
-  #nav ul li a .nav-item {
+  .pages ul li a .nav-item {
     font-size: 0.8em;
   }
 
-  .mobile {
-    display: none;
-    height: 56px;
-    margin: auto 0;
-    margin-bottom: 5px;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  .bar {
     background-color: #2C3236;
     font-size: 0.9em;
-  }
-
-  .mobile h1 {
+    display: none;
     margin: auto 0;
-    font-size: 1.1em;
+    margin-bottom: 5px;
+    height: 56px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
   }
 
-  .mobile span {
+  .bar h1 {
+    font-size: 1.1em;
+    margin: auto 0;
+  }
+
+  .bar span {
     color: #C8C8C8;
     margin-top: 0.6em;
   }
 
-  .mobile a {
+  .bar a {
     border: 0;
   }
 
 /*** Footer ***/
 
-  #footer {
-    margin-left: 300px;
-    text-align: center;
+  .footer {
     background-color: #dce3e2;
-    padding: 3em 0 2em 0;
-    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
     font-size: 0.8em;
+    text-align: center;
+    margin-left: 300px;
+    padding: 3em 0 2em 0;
     max-height: 50px;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
   }
 
-  #footer .copyright li {
-    display: inline-block;
+  .footer .info li {
     line-height: 1em;
-    border-left: solid 1px rgba(128, 128, 128, 0.35);
-    padding: 0 0 0 0.5em;
+    display: inline-block;
     margin: 0 0 0 0.5em;
+    padding: 0 0 0 0.5em;
+    border-left: solid 1px rgba(128, 128, 128, 0.35);
   }
 
-  #footer .copyright li:first-child {
+  .footer .info li:first-child {
     border-left: 0;
   }
 
@@ -375,19 +373,19 @@
       padding: 0 1.25em;
     }
 
-    #header {
+    .panel {
       width: 20%;
     }
 
-    #logo .image {
+    .about .image {
       position: relative;
     }
 
-    #nav .nav-item {
+    .pages .nav-item {
       font-size: 0.75em;
     }
 
-    #footer {
+    .footer {
       margin-left: 20%;
     }
   }
@@ -414,16 +412,16 @@
       padding: 0 0.6em;
     }
 
-    .mobile {
+    .bar {
       display: flex;
     }
 
-    #header {
-      width: 20%;
+    .panel {
       display: none;
+      width: 20%;
     }
 
-    #footer {
+    .footer {
       margin-left: 0;
     }
   }
