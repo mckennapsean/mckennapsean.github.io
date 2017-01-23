@@ -13,7 +13,7 @@
     "host": "hs _site/",
     "reload": "browser-sync --no-notify start --server _site/ -f _site/*.*",
     "sync": "git submodule update --init --recursive",
-    "bower": "bower install source-sans-pro font-awesome jquery jquery.tablesorter --config.directory=vendor",
+    "bower": "bower install font-awesome jquery jquery.tablesorter --config.directory=vendor",
     "clean": "rm -rf _site/"
   },
   "dependencies": {
