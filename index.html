@@ -17,11 +17,11 @@ layout: site
 
     <section id="about" class="one">
     <header>
-      <h2 class="intro">
-        Hello, I'm
-        <span><a href="mailto:{{ site.email }}">
-          {{ site.name }}</a></span>.
-      </h2>
+      <h1>
+        <span class="intro">Hello, I'm</span>
+        <a href="mailto:{{ site.email }}">
+          {{ site.name }}</a>.
+      </h1>
     </header>
 
     <p>
@@ -68,7 +68,7 @@ layout: site
           <img src="{{ resources }}/images/{{ project.project }}.png" alt="{{ project.imageAlt }}" />
         </a>
         <header>
-          <h3>{{ project.title }}</h3>
+          {{ project.title }}
         </header>
       </article>
     {% endfor %}
@@ -99,7 +99,7 @@ layout: site
           <img src="{{ resources }}/images/{{ code.project }}.png" alt="{{ code.imageAlt }}" />
         </a>
         <header>
-          <h3>{{ code.tag }}</h3>
+          {{ code.tag }}
         </header>
       </article>
     {% endfor %}
