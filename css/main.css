@@ -17,24 +17,18 @@
 
   h1, h2, h3 {
     font-family: "Lora", serif;
-    font-weight: 200;
+    font-weight: 500;
     line-height: 1.5em;
     color: #666;
   }
 
   h2 {
     font-size: 2em;
-    letter-spacing: -1px;
+    letter-spacing: -0.03em;
   }
 
   .intro {
     color: #888;
-  }
-
-  .intro span {
-    font-family: "Adamina", serif;
-    font-size: 0.9em;
-    letter-spacing: 0px;
   }
 
   h3 {
@@ -42,7 +36,7 @@
   }
 
   strong, b {
-    font-weight: 300;
+    /*font-weight: 300;*/
     color: #666;
   }
 
@@ -236,7 +230,8 @@
 
   .menu h1 {
     color: #fff;
-    font-weight: 600;
+    /*font-weight: 600;*/
+    /*font-family: "Lora", serif;*/
     font-size: 1em;
     line-height: 1em;
     position: relative;
