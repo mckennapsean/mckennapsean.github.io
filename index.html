@@ -13,12 +13,13 @@ layout: site
   <section id="top" class="one">
   <div class="box">
 
-    <img class="image featured" src="images/header.jpg" alt="Salt Lake Valley, Utah, mountains and sky" />
+    <img class="image featured" src="{{ resources }}/header.jpg" alt="Salt Lake Valley, Utah, mountains and sky" />
 
     <section id="about" class="one">
     <header>
-      <h1>
-        <span class="intro">Hello, I'm</span>
+      <img src="{{ resources }}/profile.jpg" class="profile" alt="profile picture" />
+      <h1 class="intro">
+        <span class="introText">Hello, I'm</span>
         <a href="mailto:{{ site.email }}">
           {{ site.name }}</a>.
       </h1>

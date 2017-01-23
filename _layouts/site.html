@@ -15,10 +15,8 @@
 
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Lora">
   {% if jekyll.environment == "production" %}
-    {% assign gravatar = site.gravatar %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
   {% else %}
-    {% assign gravatar = "/resources/avatar.jpeg" %}
     <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css">
   {% endif %}
 
@@ -34,9 +32,6 @@
   <div class="menu panel">
     <div class="top">
       <div class="about">
-        <span class="image">
-          <img src="{{ gravatar }}" alt="Gravatar profile image" />
-        </span>
         <h1>{{ site.name }}</h1>
         <p>{{ site.jobTitle }}</p>
       </div>

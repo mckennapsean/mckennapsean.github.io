@@ -24,7 +24,7 @@
     letter-spacing: -0.03em;
   }
 
-  .intro {
+  .introText {
     color: #888;
   }
 
@@ -77,6 +77,21 @@
     margin: 0 0 3em 0;
   }
 
+  .profile {
+    display: inline-block;
+    width: 20%;
+    min-width: 100px;
+    margin-left: 2em;
+    margin-top: -7em;
+    margin-right: 0.5em;
+    border-radius: 50%;
+    box-shadow: 0 0.5em 0.75em 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .intro {
+    display: inline-block;
+  }
+
 /*** Cards / Articles ***/
 
   .cards {
@@ -121,7 +136,7 @@
   }
 
   .page > section {
-    text-align: center;
+    /*text-align: center;*/
     margin: 0;
     padding: 3em 0;
     overflow: hidden;
@@ -358,6 +373,10 @@
       padding: 0 1.25em;
     }
 
+    .profile {
+      margin-left: 1.5em;
+    }
+
     .panel {
       width: 20%;
     }
@@ -395,6 +414,10 @@
 
     .box {
       padding: 0 0.6em;
+    }
+
+    .profile {
+      margin-left: 1em;
     }
 
     .bar {
