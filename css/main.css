@@ -8,22 +8,19 @@
 /*** Fonts & Colors ***/
 
   body {
+    color: #888;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     font-size: 19pt;
     line-height: 1.75em;
-    color: #888;
   }
 
   h1, h2, h3 {
+    color: #666;
     font-family: "Lora", serif;
     font-weight: 500;
-    line-height: 1.5em;
-    color: #666;
-  }
-
-  h2 {
     font-size: 2em;
+    line-height: 1.5em;
     letter-spacing: -0.03em;
   }
 
@@ -31,12 +28,15 @@
     color: #888;
   }
 
+  .intro a{
+    color: #666;
+  }
+
   h3 {
     font-size: 1.5em;
   }
 
   strong, b {
-    /*font-weight: 300;*/
     color: #666;
   }
 
@@ -52,7 +52,7 @@
   }
 
   a:hover {
-    color: #E27689;
+    color: #FA44AA;
     border-bottom-color: rgba(255, 255, 255, 0);
   }
 
@@ -230,8 +230,6 @@
 
   .menu h1 {
     color: #fff;
-    /*font-weight: 600;*/
-    /*font-family: "Lora", serif;*/
     font-size: 1em;
     line-height: 1em;
     position: relative;
@@ -293,7 +291,7 @@
   }
 
   .pages ul li a.active span:before {
-    color: #e27689;
+    color: #FA44AA;
   }
 
   .pages ul li a .nav-item {
