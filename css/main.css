@@ -16,7 +16,7 @@
   }
 
   h1, h2, h3 {
-    color: #666;
+    color: #674B8C;
     font-family: "Lora", serif;
     font-weight: 500;
     font-size: 2em;
@@ -30,14 +30,18 @@
 
   a {
     text-decoration: none;
-    color: inherit;
-    border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+    color: #674B8C;
+    border-bottom: dotted 1px #674B8C;
     transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
   }
 
   a:hover {
     color: #FA44AA;
     border-bottom-color: rgba(255, 255, 255, 0);
+  }
+
+  .intro a {
+    font-weight: 600;
   }
 
 /*** Element Boxing and Display ***/
@@ -84,6 +88,7 @@
     margin-left: 2em;
     margin-top: -7em;
     margin-right: 0.5em;
+    border: solid 3px #674B8C;
     border-radius: 50%;
     box-shadow: 0 0.5em 0.75em 0 rgba(0, 0, 0, 0.25);
   }
@@ -111,7 +116,7 @@
   }
   
   .card header {
-    background: #fff;
+    background: #FFF;
     margin: -0.6em 0 0 0;
     padding: 0.8em 0 0.8em 0;
     font-size: 1.1em;
@@ -149,16 +154,11 @@
   }
 
   .page > section.one {
-    background-color: #fff;
     padding-top: 0;
   }
 
-  .page > section.two {
-    background-color: #f5fafa;
-  }
-
-  .page > section.three {
-    background-color: #ecf1f1;
+  .page > section {
+    background-color: #F5F9FA;
   }
 
   .project {
@@ -187,7 +187,7 @@
 
   .menu {
     background: #222629;
-    color: #fff;
+    color: #FFF;
     display: flex;
     justify-content: space-around;
     box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
@@ -220,40 +220,30 @@
   }
 
   .menu .icons a {
-    color: #41484c;
+    color: #5B5A67;
     transition: color 0.35s ease-in-out;
   }
 
   .menu .icons a:hover {
-    color: #fff;
+    color: #FA44AA;
   }
 
   .menu h1 {
-    color: #fff;
+    color: #FFF;
     font-size: 1em;
     line-height: 1em;
     position: relative;
   }
 
   .about {
-    min-height: 48px;
-    position: relative;
     margin: 1.75em 1.5em 1.5em 1.5em;
   }
 
   .about p {
-    color: rgba(255, 255, 255, 0.5);
+    color: #888;
     font-size: 0.6em;
     line-height: 1.25em;
-    display: block;
-    position: relative;
     margin: 0.5em 0 0 0;
-  }
-
-  .about .image {
-    position: absolute;
-    left: 0;
-    top: 0;
   }
 
   .nav ul {
@@ -262,7 +252,7 @@
   }
 
   .nav ul li a {
-    color: rgba(255, 255, 255, 0.5);
+    color: #888;
     text-decoration: none;
     display: block;
     padding: 0.5em 1.5em 0.5em 1.5em;
@@ -276,7 +266,7 @@
   }
 
   .pages ul li a span:before {
-    color: #41484c;
+    color: #5B5A67;
     text-align: center;
     line-height: 1.75em;
     position: absolute;
@@ -286,7 +276,7 @@
 
   .pages ul li a.active {
     background: rgba(0, 0, 0, 0.15);
-    color: #fff;
+    color: #FFF;
     box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
   }
 
@@ -308,24 +298,25 @@
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
   }
 
-  .bar h1 {
+  .bar h1{
     font-size: 1.1em;
     margin: auto 0;
   }
 
   .bar span {
-    color: #C8C8C8;
+    color: #C3C3C3;
     margin-top: 0.6em;
   }
 
   .bar a {
     border: 0;
+    color: #FFF;
   }
 
 /*** Footer ***/
 
   .footer {
-    background-color: #dce3e2;
+    background-color: #C3C3C3;
     font-size: 0.8em;
     text-align: center;
     margin-left: 300px;
@@ -335,6 +326,7 @@
   }
 
   .footer .info li {
+    color: #674B8C;
     line-height: 1em;
     display: inline-block;
     margin: 0 0 0 0.5em;
