@@ -97,6 +97,11 @@
     display: inline-block;
   }
 
+  .projectImage {
+    width: 100%;
+    max-width: 600px;
+  }
+
 /*** Cards / Articles ***/
 
   .cards {
@@ -161,11 +166,9 @@
   }
 
   .project {
-    width: 80%;
-  }
-
-  .project > img {
-    width: 40%;
+    max-width: 800px;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .games {
