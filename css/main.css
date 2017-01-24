@@ -167,6 +167,20 @@
 
   .project {
     max-width: 800px;
+  }
+
+  .project .links {
+    padding-bottom: 2em;
+    padding-right: 10%;
+  }
+
+  .projectLink {
+    width: 40%;
+    text-align: right;
+    line-height: 1.3em;
+  }
+
+  .project p {
     text-align: justify;
     text-justify: inter-word;
   }
@@ -349,6 +363,10 @@
     .card img {
       width: 400px;
     }
+
+    .project .links {
+      padding-right: 10%;
+    }
   }
 
   /* medium, desktop (default is large) */
@@ -378,6 +396,10 @@
 
     .card header {
       font-size: 1.1em;
+    }
+
+    .project .links {
+      padding-right: 15%;
     }
 
     .panel {
@@ -430,6 +452,10 @@
 
     .card header {
       font-size: 1.1em;
+    }
+
+    .project .links {
+      padding-right: 0;
     }
 
     .bar {

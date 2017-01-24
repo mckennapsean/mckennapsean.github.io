@@ -21,23 +21,23 @@ layout: site
     <img class="projectImage" src="{{ resources }}/images/{{ page.project }}.png" alt="{{ page.imageAlt }}" />
 
     <div>
+      <div class="links">
       {% for resourceObject in page.resources %}
         {% assign resource = resourceObject.resource %}
-        <div class="links">
-          <span class="link">
+          <span class="link projectLink">
             {% if resource[0].size > 1 %}
               <em>{{ resource[0] }}:</em>
             {% endif %}
           </span>
-          <span class="link">
+          <span class="link projectLink">
             {% if resource.size < 4 %}
               <a href="{{ resource[2] }}">{{ resource[1] }}</a>
             {% else %}
               <a href="{{ resources }}/{{ resource[2] }}{{ page.project }}{{resource[3]}}">{{ resource[1] }}</a>
             {% endif %}
           </span>
-        </div>
       {% endfor %}
+      </div>
 
       {{ content }}
 
