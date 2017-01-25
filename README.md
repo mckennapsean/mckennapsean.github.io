@@ -9,7 +9,7 @@ $ npm install
 # grabs all resources to work offline
 ```
 
-Also, the website template uses an old version of `skel-js`, and these files must be manually copied into the `vendor/skel/dist` folder in order to run the site offline. This is because no other host (bower or npm) stored old enough versions of these files. Updating the website template would help solve this issue.
+However, fonts will fallback to system defaults without an internet connection. You can download the [Lora](https://fonts.google.com/specimen/Lora) and [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) fonts for offline use, which I would recommend using [SkyFonts](https://www.fonts.com/web-fonts/google) to do so easily.
 
 ## Usage
 
@@ -26,13 +26,10 @@ $ npm run deploy
 
 ## License
 
-Portions of this website are a derivative work of an HTML5 UP template,
-so currently this project is under the Creative Commons Attribution license.
+This website's code is covered under the MIT License.
 
 ## Credit
 
-Sean McKenna for setting up the build scripts and porting files from Harp to Jekyll.
+The code for my website has been rewritten from scratch to work and look better with less Javascript.
 
-[AJ](http://n33.co)
-for the [Prologue template](http://html5up.net/prologue)
-from [HTML5 UP](http://html5up.net/)
+The inspiration for this website's design came from [AJ](http://n33.co)'s [Prologue template](http://html5up.net/prologue) from [HTML5 UP](http://html5up.net/).
