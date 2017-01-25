@@ -1,6 +1,6 @@
 {
   "name": "mckennapsean.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "install": "run-s sync bower",
     "start": "run-p watch reload",
