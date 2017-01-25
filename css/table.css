@@ -1,42 +1,25 @@
 /*************
   Dropbox Theme (by thezoggy)
+  heavily modifed by Sean
  *************/
 /* overall */
 .tablesorter {
-  color: #555;
+  background-color: #F5F9FA;
+  color: #666;
   text-align: left;
-  background-color: #fff;
   border-collapse: collapse;
-  border-top: 1px solid #82cffa;
   border-spacing: 0;
 }
-
 /* header */
 .tablesorter th,
 .tablesorter thead td,
 .tablesorter tfoot th,
 .tablesorter tfoot td {
-  background-color: #f0f9ff;
-  border-color: #82cffa #e7f2fb #96c4ea;
-  border-style: solid;
-  border-width: 1px;
+  color: #674B8C;
+  font-family: "Lora", serif;
+  border: 1px solid #888888;
+  border-top: 0;
   padding: 3px 16px 3px 6px;
-  font-weight: normal;
-  line-height: 29px;
-  color: #2281CF;
-}
-.tablesorter .header,
-.tablesorter thead tr,
-.tablesorter .tablesorter-headerRow {
-  background-color: #f0f9ff;
-  border-bottom: 1px solid #96c4ea;
-  white-space: normal;
-}
-.tablesorter .tablesorter-headerSortUp,
-.tablesorter .tablesorter-headerSortDown,
-.tablesorter .tablesorter-headerAsc,
-.tablesorter .tablesorter-headerDesc {
-  font-weight: 600;
 }
 .tablesorter .tablesorter-headerDesc {
   background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
@@ -47,44 +30,26 @@
 .tablesorter .tablesorter-header {
   background-repeat: no-repeat;
   background-position: center right;
+  background-size: 1em 0.25em;
   cursor: pointer;
-}
-.tablesorter .tablesorter-header i.tablesorter-icon {
-  width: 9px;
-  height: 9px;
-  padding: 0 10px 0 4px;
-  display: inline-block;
-  background-position: center right;
-  background-repeat: no-repeat;
-  content: "";
 }
 .tablesorter thead .sorter-false {
   cursor: default;
 }
-
-.tablesorter thead .sorter-false i.tablesorter-icon,
-.tablesorter thead .sorter-false:hover i.tablesorter-icon {
-  background-image: none;
-  padding: 4px;
-}
-
 /* tbody */
 .tablesorter td {
   padding: 5px 6px;
-  line-height: 32px;
-  color: #555;
-  border-top: 1px solid #edf1f5;
-  border-bottom: 1px solid #edf1f5;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
 }
-
 /* hovered row colors */
 .tablesorter tbody > tr:hover > td,
 .tablesorter tbody > tr.even:hover > td,
 .tablesorter tbody > tr.odd:hover > td {
-  background-color: rgba(230, 245, 255, 0.3);
+  background-color: rgba(250, 68, 170, 0.15);
   border-right: 0;
   border-left: 0;
-  border-color: #c6d8e4;
+  border-color: #FA44AA;
   /* trick to do border-top and bottom colors */
   border-style: double;
 }
