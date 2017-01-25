@@ -9,9 +9,7 @@ jobTitle: Ph.D. Candidate
 
 # external resources to load
 resources: http://mckennapsean.com/website-resources
-gravatar: http://www.gravatar.com/avatar/f029704e495cdad146ef1e046c428d3b.png
 analytics: UA-53244240-1
-cv: http://www.cs.utah.edu/~sean/resources/cv.pdf
 
 # generates data from markdown & yaml
 # stored in variable `site.COLLECTION` from `_COLLECTION/`
