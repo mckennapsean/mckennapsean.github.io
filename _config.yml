@@ -8,7 +8,7 @@ username: mckennapsean
 jobTitle: Ph.D. Candidate
 
 # external resources to load
-resources: http://mckennapsean.com/website-resources
+resources: //mckennapsean.com/website-resources
 analytics: UA-53244240-1
 
 # generates data from markdown & yaml
