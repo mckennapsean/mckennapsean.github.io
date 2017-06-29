@@ -69,7 +69,7 @@ layout: site
     {% assign sortedProjects = site.projects | sort: "year" %}
     {% for project in sortedProjects reversed %}
       <article class="card">
-        <a href="projects/{{ project.project }}" class="image full">
+        <a href="projects/{{ project.project }}/" class="image full">
           <img src="{{ resources }}/images/{{ project.project }}.png" alt="{{ project.imageAlt }}" />
         <header>
           {{ project.title }}
