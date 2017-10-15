@@ -15,6 +15,15 @@ resources:
     - papers/
     - .pdf
   - resource:
+    - video
+    - fast-forward
+    - "https://www.youtube.com/watch?v=ss7HN6HfrQQ"
+  - resource:
+    - presentation
+    - EuroVis '17
+    - presentations/
+    - .pdf
+  - resource:
     - supplemental materials
     - corpus, example story, study materials
     - "https://narrative-flow.github.io/"
