@@ -15,10 +15,30 @@ resources:
     - dissertation/
     - .pdf
   - resource:
+    - defense
+    - Univ. of Utah '17
+    - dissertation/
+    - -defense.pdf
+  - resource:
     - paper
     - design activity framework
     - papers/
     - .pdf
+  - resource:
+    - short paper
+    - design worksheets
+    - papers/
+    - -worksheets.pdf
+  - resource:
+    - presentation
+    - InfoVis '14
+    - presentations/
+    - .pdf
+  - resource:
+    - short presentation
+    - Pedagogy of Data Vis '17
+    - presentations/
+    - -worksheets.pdf
   - resource:
     - supplemental materials
     - methods
@@ -28,11 +48,6 @@ resources:
     - 
     - design worksheets
     - "https://design-worksheets.github.io/"
-  - resource:
-    - InfoVis 2014 presentation
-    - slides
-    - presentations/
-    - .pdf
 ---
 
 
