@@ -1,6 +1,6 @@
 ---
 title: "The Settlers of Catan"
-players: 3-4
+players: 3-6
 time: "1:30"
 type: strategy
 link: "http://boardgamegeek.com/boardgame/13/settlers-catan"
