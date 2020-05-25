@@ -21,7 +21,7 @@ permalink: /games/
   <div class="games box">
 
     <header>
-      <h1>{{ page.title }}</h1>
+      <h1>{{ title }}</h1>
     </header>
 
     <table class="tablesorter">
@@ -36,14 +36,14 @@ permalink: /games/
     </thead>
     <tbody>
 
-      {% for game in site.games %}
+      {% for game in collections.games %}
         <tr>
-          <td>{{ game.title }}</td>
-          <td>{{ game.players }}</td>
-          <td>{{ game.time }}</td>
-          <td>{{ game.type }}</td>
+          <td>{{ game.data.title }}</td>
+          <td>{{ game.data.players }}</td>
+          <td>{{ game.data.time }}</td>
+          <td>{{ game.data.type }}</td>
           <td class="game-link">
-            <a href="{{ game.link }}" class="fa fa-globe icon fa-lg" target="_blank"></a>
+            <a href="{{ game.data.link }}" class="fa fa-globe icon fa-lg" target="_blank"></a>
           </td>
         </tr>
       {% endfor %}

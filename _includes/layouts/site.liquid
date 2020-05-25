@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% if page.title %}
-    {% assign pageTitle = page.title | append: " | " %}
+  {% if title %}
+    {% assign pageTitle = title | append: " | " %}
   {% endif %}
   <title>{{ pageTitle }}{{ site.title }}</title>
 

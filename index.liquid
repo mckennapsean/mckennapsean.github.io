@@ -41,7 +41,6 @@ layout: site
           </p>
         </div>
         <div class="link">
-          {% include icons.html %}
         </div>
       </div>
       Also, I love <a href="games/">board games.
@@ -64,13 +63,13 @@ layout: site
 
     <div class="cards">
 
-    {% assign sortedProjects = site.projects | sort: "year" %}
-    {% for project in sortedProjects reversed %}
+    {% assign sortedProjects = collections.projects %}
+    {% for proj in sortedProjects reversed %}
       <article class="card">
-        <a href="projects/{{ project.project }}/" class="image full">
-          <img src="{{ resources }}/images/{{ project.project }}.png" alt="{{ project.imageAlt }}" />
+        <a href="projects/{{ proj.data.project }}/" class="image full">
+          <img src="{{ resources }}/images/{{ proj.data.project }}.png" alt="{{ proj.data.imageAlt }}" />
         <header>
-          {{ project.title }}
+          {{ proj.data.title }}
         </header>
         </a>
       </article>
@@ -95,13 +94,13 @@ layout: site
 
     <div class="cards">
 
-    {% assign sortedCoding = site.coding | sort: "year" %}
+    {% assign sortedCoding = collections.coding %}
     {% for code in sortedCoding reversed %}
       <article class="card">
-        <a href="{{ code.link }}" class="image full">
-          <img src="{{ resources }}/images/{{ code.project }}.png" alt="{{ code.imageAlt }}" />
+        <a href="{{ code.data.link }}" class="image full">
+          <img src="{{ resources }}/images/{{ code.data.project }}.png" alt="{{ code.data.imageAlt }}" />
         <header>
-          {{ code.tag }}
+          {{ code.data.tag }}
         </header>
         </a>
       </article>
