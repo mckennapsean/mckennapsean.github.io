@@ -11,14 +11,14 @@ layout: site
 
     <header>
       <h1>{{ title }}</h1>
-      by {{ page.authors }}
+      by {{ authors }}
     </header>
 
-    <img class="projectImage" src="{{ resources }}/images/{{ page.project }}.png" alt="{{ page.imageAlt }}" />
+    <img class="projectImage" src="{{ resources }}/images/{{ project }}.png" alt="{{ imageAlt }}" />
 
     <div>
       <div class="links">
-      {% for resourceObject in page.resources %}
+      {% for resourceObject in links %}
         {% assign resource = resourceObject.resource %}
           <span class="link projectLink">
             {% if resource[0].size > 1 %}
@@ -29,7 +29,7 @@ layout: site
             {% if resource.size < 4 %}
               <a href="{{ resource[2] }}">{{ resource[1] }}</a>
             {% else %}
-              <a href="{{ resources }}/{{ resource[2] }}{{ page.project }}{{resource[3]}}">{{ resource[1] }}</a>
+              <a href="{{ resources }}/{{ resource[2] }}{{ project }}{{resource[3]}}">{{ resource[1] }}</a>
             {% endif %}
           </span>
       {% endfor %}

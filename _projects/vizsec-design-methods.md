@@ -9,7 +9,7 @@ year: 2015
 
 imageAlt: "cyber security personas and data sketches"
 
-resources:
+links:
   - resource:
     - paper
     - design methods

@@ -8,7 +8,7 @@ year: 2016
 
 imageAlt: "design of the bubble-net dashboard for cyber security data"
 
-resources:
+links:
   - resource:
     - paper
     - bubble-net

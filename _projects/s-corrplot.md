@@ -8,7 +8,7 @@ year: 2014.1
 
 imageAlt: "s-CorrPlot scatterplot for visualization and exploring correlation in multidimensional space"
 
-resources:
+links:
   - resource:
     - code
     - open source code

@@ -8,7 +8,7 @@ year: 2017.1
 
 imageAlt: "design activity framework for visualization design"
 
-resources:
+links:
   - resource:
     - dissertation
     - current draft

@@ -8,7 +8,7 @@ year: 2014
 
 imageAlt: "STAR cybersecurity dashboard"
 
-resources:
+links:
   - resource:
     - poster abstract
     - from VizSec 2014

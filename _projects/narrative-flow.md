@@ -8,7 +8,7 @@ year: 2017
 
 imageAlt: "exploring factors that affect the visual narrative flow of visual data-driven stories"
 
-resources:
+links:
   - resource:
     - paper
     - narrative-flow
