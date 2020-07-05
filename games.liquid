@@ -4,15 +4,8 @@ title: board games
 permalink: /games/
 ---
 
-{% if jekyll.environment == "production" %}
-  {% assign resources = site.resources %}
-  <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/tablesorter/2.28.4/js/jquery.tablesorter.min.js"></script>
-{% else %}
-  {% assign resources = "/resources/" %}
-  <script src="/vendor/jquery/dist/jquery.js"></script>
-  <script src="/vendor/tablesorter/dist/js/jquery.tablesorter.js"></script>
-{% endif %}
+<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/tablesorter/2.28.4/js/jquery.tablesorter.min.js"></script>
 <link rel="stylesheet" href="/css/table.css" />
 
 <div class="page">

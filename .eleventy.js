@@ -13,9 +13,9 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob('_games/*.md');
   });
 
+  eleventyConfig.addPassthroughCopy('favicon.ico');
   eleventyConfig.addPassthroughCopy('css');
   eleventyConfig.addPassthroughCopy('resources');
-  eleventyConfig.addPassthroughCopy('vendor');
 
   return {
     dir: {

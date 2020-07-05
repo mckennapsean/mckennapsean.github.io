@@ -2,11 +2,7 @@
 layout: site
 ---
 
-{% if jekyll.environment == "production" %}
-  {% assign resources = site.resources %}
-{% else %}
-  {% assign resources = "/resources" %}
-{% endif %}
+{% assign resources = site.resources %}
 
 <div class="page">
 
