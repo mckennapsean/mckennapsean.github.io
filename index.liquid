@@ -64,8 +64,7 @@ layout: site
 
     <div class="cards">
 
-    {% assign sortedProjects = collections.projects %}
-    {% for proj in sortedProjects reversed %}
+    {% for proj in collections.projects reversed %}
       <article class="card">
         <a href="projects/{{ proj.data.project }}/" class="image full">
           <img src="{{ resources }}/images/{{ proj.data.project }}.png" alt="{{ proj.data.imageAlt }}" />
@@ -95,8 +94,7 @@ layout: site
 
     <div class="cards">
 
-    {% assign sortedCoding = collections.coding %}
-    {% for code in sortedCoding reversed %}
+    {% for code in collections.coding reversed %}
       <article class="card">
         <a href="{{ code.data.link }}" class="image full">
           <img src="{{ resources }}/images/{{ code.data.project }}.png" alt="{{ code.data.imageAlt }}" />
