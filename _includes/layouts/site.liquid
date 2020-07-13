@@ -54,7 +54,7 @@
       {% comment %}
         show projects as selected if on a project page
       {% endcomment %}
-      {% assign location = page.url | replace: "/", " " | truncatewords: 1, "" %}
+      {% assign location = page.url | replace: "/", " " | strip | truncatewords: 1, "" %}
       {% assign projAct = "" %}
       {% if location == "projects" %}
         {% assign projAct = " active" %}
