@@ -1,7 +1,7 @@
 Projects tab not highlighted when on project page
-Custom build scripts in `package.json`
+Project order is not the same
+Custom build scripts in `package.json`; test production flow
 Remove references to Jekyll there
 Remove the jekyll config.yml file
-What did jekyll-redirect-from do?
+What did jekyll-redirect-from do? couple pages can forward to other content... 11ty equiv?
 Find a place to test hosting
-Is it possible to have local dev working again? website-resources + vendor flow - analytics
