@@ -1,7 +1,7 @@
+Page title bug (extra ")
+Get Project/Code dates & delete year (?)
 Custom build scripts in `package.json`; test production flow
 Remove references to Jekyll there
 Remove the jekyll config.yml file
-What did jekyll-redirect-from do? couple pages can forward to other content... 11ty equiv? --> this was only used in one-place (vizsec design methods), so we can probably just drop or figure that out. Netlify has a way to do this. other hosts may too. https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+Find a place to test hosting: + redirect of /vizsec-design-methods
 Verify 404 page works
-Find a place to test hosting
-Get Project/Code dates & delete year (?)
