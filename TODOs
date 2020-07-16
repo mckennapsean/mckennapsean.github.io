@@ -1,4 +1,3 @@
-Get Project/Code dates & delete year (?)
 Custom build scripts in `package.json`; test production flow
 Remove references to Jekyll there
 Remove the jekyll config.yml file

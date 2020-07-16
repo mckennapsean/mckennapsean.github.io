@@ -4,8 +4,7 @@ project: vizsec-design-methods
 
 title: design methods for cyber security
 authors: "Sean McKenna, Diane Staheli, Miriah Meyer"
-year: 2015
-date: 2015-01-09T04:10:17.000Z
+date: 2015-10-26T00:00:00.000Z
 
 imageAlt: "cyber security personas and data sketches"
 
@@ -36,7 +35,6 @@ links:
     - supplemental/
     - -data-sketches.pdf
 
-redirect_from: "/vizsec-design-methods"
 ---
 
 User-centered design can aid visualization designers to build better, more practical tools that meet the needs of cyber security users.
