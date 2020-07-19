@@ -2,10 +2,10 @@
 layout: site
 ---
 
-{% if site.environment == "production" %}
-  {% assign resources = site.resources %}
-{% else %}
+{% if site.environment == "development" %}
   {% assign resources = "/resources" %}
+{% else %}
+  {% assign resources = site.resources %}
 {% endif %}
 
 <div class="page">
