@@ -19,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('css');
   eleventyConfig.addPassthroughCopy('resources');
   eleventyConfig.addPassthroughCopy('CNAME');
+  eleventyConfig.addPassthroughCopy('_redirects');
 
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
