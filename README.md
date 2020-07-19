@@ -6,23 +6,23 @@ Sean McKenna's personal website and portfolio
 
 ```ShellSession
 $ npm install
-# grabs all resources to work offline
+$ npm run resources
+# grabs all media resources locally
 ```
-
-However, fonts will fallback to system defaults without an internet connection. You can download the [Lora](https://fonts.google.com/specimen/Lora) and [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) fonts for offline use, which I would recommend using [SkyFonts](https://www.fonts.com/web-fonts/google) to do so easily.
 
 ## Usage
 
 ```ShellSession
 $ npm start
-# sync browser and watch for changes (offline mode)
+# build, watch for changes, and refresh browser on change
 
-$ npm test
-# build and test on a web server (offline mode)
-
-$ npm run deploy
-# build for production environment (online mode)
+$ npm run prod
+# build for production environment (static)
 ```
+
+## Caveats
+
+Without an internet connection, some resources will not be available, like Font Awesome icons, smooth-scroll, or table-sorter. Also, fonts will fallback to system defaults. You can download the [Lora](https://fonts.google.com/specimen/Lora) and [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) fonts for offline use, which I would recommend using [SkyFonts](https://www.fonts.com/web-fonts/google) to do so easily.
 
 ## License
 
