@@ -2,7 +2,7 @@
 layout: site
 ---
 
-{% if site.environment == "development" %}
+{% if project.environment == "development" %}
   {% assign resources = "/resources" %}
 {% else %}
   {% assign resources = site.resources %}
