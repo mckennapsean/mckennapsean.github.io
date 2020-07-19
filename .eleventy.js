@@ -18,6 +18,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('favicon.ico');
   eleventyConfig.addPassthroughCopy('css');
   eleventyConfig.addPassthroughCopy('resources');
+  eleventyConfig.addPassthroughCopy('CNAME');
 
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
