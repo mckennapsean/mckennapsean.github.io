@@ -1,4 +1,3 @@
 Custom build scripts in `package.json`; test production flow
 Remove references to Jekyll there
 Find a place to test hosting: + redirect of /vizsec-design-methods
-Verify 404 page works
