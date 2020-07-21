@@ -1,0 +1,54 @@
+---
+layout: site
+title: board games
+permalink: /games/
+---
+
+<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/tablesorter/2.28.4/js/jquery.tablesorter.min.js"></script>
+<link rel="stylesheet" href="/css/table.css" />
+
+<div class="page">
+
+  <section>
+  <div class="games box">
+
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+
+    <table class="tablesorter">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Players</th>
+        <th>Time</th>
+        <th>Type</th>
+        <th class="game-link">Site</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {% for game in collections.games %}
+        <tr>
+          <td>{{ game.data.title }}</td>
+          <td>{{ game.data.players }}</td>
+          <td>{{ game.data.time }}</td>
+          <td>{{ game.data.type }}</td>
+          <td class="game-link">
+            <a href="{{ game.data.link }}" class="fa fa-globe icon fa-lg" target="_blank"></a>
+          </td>
+        </tr>
+      {% endfor %}
+
+    </tbody>
+    </table>
+
+    <script>
+      $(document).ready(function(){
+        $(".tablesorter").tablesorter({sortList: [[1,0]]});
+      });
+    </script>
+  </div>
+  </section>
+</div>

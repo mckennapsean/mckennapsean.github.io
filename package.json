@@ -2,25 +2,17 @@
   "name": "mckennapsean.github.io",
   "version": "2.0.0",
   "scripts": {
-    "install": "run-s sync bower",
-    "start": "run-p watch reload",
-    "test": "run-s clean build host",
-    "deploy": "run-s clean build:prod host",
-    "build": "jekyll build",
-    "build:prod": "cross-env JEKYLL_ENV=production npm run build",
-    "watch": "jekyll build --watch",
-    "serve": "jekyll serve",
-    "host": "hs _site/",
-    "reload": "browser-sync --no-notify start --server _site/ -f _site/*.*",
-    "sync": "git submodule update --init --recursive",
-    "bower": "bower install font-awesome smooth-scroll.js jquery jquery.tablesorter --config.directory=vendor",
-    "clean": "rm -rf _site/"
+    "resources": "git submodule update --init --recursive",
+    "start": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "prod": "run-s clean build host",
+    "clean": "rm -rf _site/",
+    "build": "cross-env ELEVENTY_ENV=production eleventy",
+    "host": "hs _site/"
   },
-  "dependencies": {
-    "bower": "^1.7.9",
-    "browser-sync": "^2.14.0",
-    "cross-env": "^2.0.0",
-    "http-server": "^0.9.0",
-    "npm-run-all": "^2.3.0"
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "cross-env": "^7.0.2",
+    "http-server": "^0.12.3",
+    "npm-run-all": "^4.1.5"
   }
 }

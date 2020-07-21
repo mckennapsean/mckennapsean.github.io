@@ -4,11 +4,11 @@ project: design-activity-framework
 
 title: design activity framework
 authors: "Sean McKenna, Dominika Mazur, Jim Agutter, Miriah Meyer"
-year: 2017.1
+date: 2017-07-31T00:00:00.000Z
 
 imageAlt: "design activity framework for visualization design"
 
-resources:
+links:
   - resource:
     - dissertation
     - current draft

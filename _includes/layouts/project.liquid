@@ -2,10 +2,10 @@
 layout: site
 ---
 
-{% if jekyll.environment == "production" %}
-  {% assign resources = site.resources %}
-{% else %}
+{% if project.environment == "development" %}
   {% assign resources = "/resources" %}
+{% else %}
+  {% assign resources = site.resources %}
 {% endif %}
 
 <div class="page">
@@ -14,15 +14,15 @@ layout: site
   <div class="project box">
 
     <header>
-      <h1>{{ page.title }}</h1>
-      by {{ page.authors }}
+      <h1>{{ title }}</h1>
+      by {{ authors }}
     </header>
 
-    <img class="projectImage" src="{{ resources }}/images/{{ page.project }}.png" alt="{{ page.imageAlt }}" />
+    <img class="projectImage" src="{{ resources }}/images/{{ project }}.png" alt="{{ imageAlt }}" />
 
     <div>
       <div class="links">
-      {% for resourceObject in page.resources %}
+      {% for resourceObject in links %}
         {% assign resource = resourceObject.resource %}
           <span class="link projectLink">
             {% if resource[0].size > 1 %}
@@ -33,7 +33,7 @@ layout: site
             {% if resource.size < 4 %}
               <a href="{{ resource[2] }}">{{ resource[1] }}</a>
             {% else %}
-              <a href="{{ resources }}/{{ resource[2] }}{{ page.project }}{{resource[3]}}">{{ resource[1] }}</a>
+              <a href="{{ resources }}/{{ resource[2] }}{{ project }}{{resource[3]}}">{{ resource[1] }}</a>
             {% endif %}
           </span>
       {% endfor %}
