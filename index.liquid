@@ -13,11 +13,11 @@ layout: site
   <section id="home" class="one">
   <div class="box">
 
-    <img class="image featured" src="{{ resources }}/header.jpg" alt="Salt Lake Valley, Utah, mountains and sky" />
+    <img class="image featured" src="{{ resources }}/header.jpg" alt="Salt Lake Valley, Utah, mountains and sky"/>
 
     <section id="about" class="one">
     <header>
-      <img src="{{ resources }}/profile.jpg" class="profile" alt="profile picture" />
+      <img src="{{ resources }}/profile.jpg" class="profile" alt="profile picture"/>
       <h1 class="intro">
         <span class="introText">Hello, I'm</span>
         <a href="mailto:{{ site.email }}">
@@ -29,7 +29,7 @@ layout: site
       I investigate the use and creation of data visualization prototypes
       across various domains through a human-centered design process.
     </p>
-    
+
     <footer>
       <div class="links">
         <div class="link">
@@ -67,7 +67,7 @@ layout: site
     {% for proj in collections.projects reversed %}
       <article class="card">
         <a href="projects/{{ proj.data.project }}/" class="image full">
-          <img src="{{ resources }}/images/{{ proj.data.project }}.png" alt="{{ proj.data.imageAlt }}" />
+          <img src="{{ resources }}/images/{{ proj.data.project }}.png" alt="{{ proj.data.imageAlt }}"/>
         <header>
           {{ proj.data.title }}
         </header>
@@ -97,7 +97,7 @@ layout: site
     {% for code in collections.coding reversed %}
       <article class="card">
         <a href="{{ code.data.link }}" class="image full">
-          <img src="{{ resources }}/images/{{ code.data.project }}.png" alt="{{ code.data.imageAlt }}" />
+          <img src="{{ resources }}/images/{{ code.data.project }}.png" alt="{{ code.data.imageAlt }}"/>
         <header>
           {{ code.data.tag }}
         </header>
