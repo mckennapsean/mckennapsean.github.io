@@ -8,7 +8,7 @@
 /*** Fonts & Colors ***/
 
   body {
-    color: #888;
+    color: #8C8C8C;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     font-size: 19pt;
@@ -25,7 +25,7 @@
   }
 
   .introText {
-    color: #888;
+    color: #8C8C8C;
   }
 
   a {
@@ -258,7 +258,7 @@
   }
 
   .about p {
-    color: #888;
+    color: #8C8C8C;
     font-size: 0.6em;
     text-align: right;
     line-height: 1.25em;
@@ -271,7 +271,7 @@
   }
 
   .nav ul li a {
-    color: #888;
+    color: #8C8C8C;
     text-decoration: none;
     display: block;
     padding: 0.5em 1.5em 0.5em 1.5em;
@@ -324,7 +324,7 @@
   }
 
   .bar span {
-    color: #C3C3C3;
+    color: #DEDEDE;
     margin-top: 0.6em;
   }
 
@@ -336,7 +336,7 @@
 /*** Footer ***/
 
   .footer {
-    background-color: #C3C3C3;
+    background-color: #DEDEDE;
     font-size: 0.8em;
     text-align: center;
     margin-left: 250px;
