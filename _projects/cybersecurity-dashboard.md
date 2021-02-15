@@ -6,6 +6,8 @@ title: cybersecurity dashboard
 authors: "Sean McKenna, Diane Staheli"
 date: 2014-11-10T00:00:00.000Z
 
+imageWidth: 600
+imageHeight: 348
 imageAlt: "STAR cybersecurity dashboard"
 
 links:

@@ -6,6 +6,8 @@ title: design methods for cyber security
 authors: "Sean McKenna, Diane Staheli, Miriah Meyer"
 date: 2015-10-26T00:00:00.000Z
 
+imageWidth: 600
+imageHeight: 382
 imageAlt: "cyber security personas and data sketches"
 
 links:
@@ -25,12 +27,12 @@ links:
     - supplemental/
     - -qualitative-coding.xlsx
   - resource:
-    - 
+    -
     - personas
     - supplemental/
     - -personas.pdf
   - resource:
-    - 
+    -
     - data sketches
     - supplemental/
     - -data-sketches.pdf

@@ -97,12 +97,14 @@ table {
 .featured {
   display: block;
   width: 100%;
+  height: auto;
   margin: 0 0 3em 0;
 }
 
 .profile {
   display: inline-block;
   width: 20%;
+  height: auto;
   min-width: 100px;
   margin-left: 2em;
   margin-top: -7em;
@@ -144,6 +146,7 @@ table {
   width: 375px;
   min-width: 170px;
   max-width: 600px;
+  height: auto;
 }
 
 .card header {

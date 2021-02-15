@@ -6,6 +6,8 @@ title: visual narrative flow
 authors: "Sean McKenna, Nathalie Henry Riche, Bongshin Lee, Jeremy Boy, Miriah Meyer"
 date: 2017-06-12T00:00:00.000Z
 
+imageWidth: 600
+imageHeight: 298
 imageAlt: "exploring factors that affect the visual narrative flow of visual data-driven stories"
 
 links:

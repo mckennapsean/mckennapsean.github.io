@@ -6,6 +6,8 @@ title: design activity framework
 authors: "Sean McKenna, Dominika Mazur, Jim Agutter, Miriah Meyer"
 date: 2017-07-31T00:00:00.000Z
 
+imageWidth: 600
+imageHeight: 487
 imageAlt: "design activity framework for visualization design"
 
 links:
@@ -45,7 +47,7 @@ links:
     - supplemental/
     - .pdf
   - resource:
-    - 
+    -
     - design worksheets
     - "https://design-worksheets.github.io/"
 ---
