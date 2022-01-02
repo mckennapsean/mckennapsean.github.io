@@ -5,5 +5,5 @@ time: "0:15"
 type: card
 link: "https://boardgamegeek.com/boardgame/322703/death-valley"
 expansions:
-  - Panamint City
+  - [Panamint City](https://boardgamegeek.com/boardgame/334042/death-valley-panamint-city)
 ---
