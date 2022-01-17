@@ -40,7 +40,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      includes: "_includes",
+      includes: "./_includes",
       input: "./",
       output: "./_site"
     }
