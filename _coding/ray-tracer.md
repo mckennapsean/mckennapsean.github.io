@@ -1,5 +1,5 @@
 ---
-project: ray-tracer
+name: ray-tracer
 tag: ray tracer in C++
 link: "https://github.com/mckennapsean/ray-tracer"
 imageWidth: 600

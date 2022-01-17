@@ -66,8 +66,8 @@ layout: site
 
     {% for proj in collections.projects reversed %}
       <article class="card">
-        <a href="projects/{{ proj.data.project }}/" class="image full">
-          <img src="{{ resources }}/images/{{ proj.data.project }}.png" width="{{ proj.data.imageWidth }}" height="{{ proj.data.imageHeight }}" alt="{{ proj.data.imageAlt }}"/>
+        <a href="projects/{{ proj.data.name }}/" class="image full">
+          <img src="{{ resources }}/images/{{ proj.data.name }}.png" width="{{ proj.data.imageWidth }}" height="{{ proj.data.imageHeight }}" alt="{{ proj.data.imageAlt }}"/>
         <header>
           {{ proj.data.title }}
         </header>
@@ -97,7 +97,7 @@ layout: site
     {% for code in collections.coding reversed %}
       <article class="card">
         <a href="{{ code.data.link }}" class="image full">
-          <img src="{{ resources }}/images/{{ code.data.project }}.png" width="{{ code.data.imageWidth }}" height="{{ code.data.imageHeight }}" alt="{{ code.data.imageAlt }}"/>
+          <img src="{{ resources }}/images/{{ code.data.name }}.png" width="{{ code.data.imageWidth }}" height="{{ code.data.imageHeight }}" alt="{{ code.data.imageAlt }}"/>
         <header>
           {{ code.data.tag }}
         </header>

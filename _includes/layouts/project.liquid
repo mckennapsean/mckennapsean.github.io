@@ -18,7 +18,7 @@ layout: site
       by {{ authors }}
     </header>
 
-    <img class="projectImage" src="{{ resources }}/images/{{ project }}.png" width="{{ proj.data.imageWidth }}" height="{{ proj.data.imageHeight }}" alt="{{ imageAlt }}"/>
+    <img class="projectImage" src="{{ resources }}/images/{{ name }}.png" width="{{ proj.data.imageWidth }}" height="{{ proj.data.imageHeight }}" alt="{{ imageAlt }}"/>
 
     <div>
       <div class="links">
@@ -33,7 +33,7 @@ layout: site
             {% if resource.size < 4 %}
               <a href="{{ resource[2] }}">{{ resource[1] }}</a>
             {% else %}
-              <a href="{{ resources }}/{{ resource[2] }}{{ project }}{{resource[3]}}">{{ resource[1] }}</a>
+              <a href="{{ resources }}/{{ resource[2] }}{{ name }}{{resource[3]}}">{{ resource[1] }}</a>
             {% endif %}
           </span>
       {% endfor %}

@@ -1,5 +1,5 @@
 {
     "layout": "project",
     "tag": "projects",
-    "permalink": "projects/{{ project }}/index.html"
+    "permalink": "projects/{{ name }}/index.html"
 }

@@ -1,6 +1,6 @@
 ---
 layout: project
-project: narrative-flow
+name: narrative-flow
 
 title: visual narrative flow
 authors: "Sean McKenna, Nathalie Henry Riche, Bongshin Lee, Jeremy Boy, Miriah Meyer"

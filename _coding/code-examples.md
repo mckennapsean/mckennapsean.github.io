@@ -1,5 +1,5 @@
 ---
-project: code-examples
+name: code-examples
 tag: samples of programming languages
 link: "https://github.com/mckennapsean/code-examples"
 imageWidth: 600

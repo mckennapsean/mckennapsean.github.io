@@ -1,6 +1,6 @@
 ---
 layout: project
-project: design-activity-framework
+name: design-activity-framework
 
 title: design activity framework
 authors: "Sean McKenna, Dominika Mazur, Jim Agutter, Miriah Meyer"

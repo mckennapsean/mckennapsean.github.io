@@ -1,5 +1,5 @@
 ---
-project: wood-shader
+name: wood-shader
 tag: shader for modeling finished wood
 link: "https://github.com/mckennapsean/wood-shader"
 imageWidth: 600

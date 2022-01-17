@@ -1,6 +1,6 @@
 ---
 layout: project
-project: bubble-net
+name: bubble-net
 
 title: bubble-net dashboard
 authors: "Sean McKenna, Diane Staheli, Cody Fulcher, Miriah Meyer"

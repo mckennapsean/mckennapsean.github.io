@@ -1,5 +1,5 @@
 ---
-project: compariseq
+name: compariseq
 tag: "compariSeq: sequence logos"
 link: "https://github.com/visdesignlab/compariSeq"
 imageWidth: 600

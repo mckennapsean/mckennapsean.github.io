@@ -1,6 +1,6 @@
 ---
 layout: project
-project: cybersecurity-dashboard
+name: cybersecurity-dashboard
 
 title: cybersecurity dashboard
 authors: "Sean McKenna, Diane Staheli"

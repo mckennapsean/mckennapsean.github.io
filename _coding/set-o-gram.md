@@ -1,5 +1,5 @@
 ---
-project: set-o-gram
+name: set-o-gram
 tag: "set-o-gram: visualization of sets"
 link: "https://github.com/mckennapsean/set-o-gram"
 imageWidth: 600

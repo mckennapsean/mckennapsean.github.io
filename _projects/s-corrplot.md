@@ -1,6 +1,6 @@
 ---
 layout: project
-project: s-corrplot
+name: s-corrplot
 
 title: "s-CorrPlot: visualizing correlation"
 authors: "Sean McKenna, Miriah Meyer, Christopher Gregg, Samuel Gerber"
