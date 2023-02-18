@@ -13,11 +13,19 @@ layout: site
   <section id="home" class="one">
   <div class="box">
 
-    <img class="image featured" src="{{ resources }}/header.jpg" width="1200" height="380" alt="Salt Lake Valley, Utah, mountains and sky"/>
+    <picture >
+      <source type="image/webp" srcset="{{ resources }}/header.webp">
+      <source type="image/jpeg" srcset="{{ resources }}/header.jpg">
+      <img class="image featured" src="{{ resources }}/header.jpg" width="1200" height="380" alt="Salt Lake Valley, Utah, mountains and sky">
+    </picture>
 
     <section id="about" class="one">
     <header>
-      <img src="{{ resources }}/profile.jpg" class="profile" width="300" height="300" alt="profile picture"/>
+      <picture>
+        <source type="image/webp" srcset="{{ resources }}/profile.webp">
+        <source type="image/jpeg" srcset="{{ resources }}/profile.jpg">
+        <img src="{{ resources }}/profile.jpg" class="profile" width="300" height="300" alt="profile picture">
+      </picture>
       <h1 class="intro">
         <span class="introText">Hello, I'm</span>
         <a href="mailto:{{ site.email }}">
@@ -67,7 +75,11 @@ layout: site
     {% for proj in collections.projects reversed %}
       <article class="card">
         <a href="projects/{{ proj.data.name }}/" class="image full">
-          <img src="{{ resources }}/images/{{ proj.data.name }}.png" width="{{ proj.data.imageWidth }}" height="{{ proj.data.imageHeight }}" alt="{{ proj.data.imageAlt }}"/>
+          <picture>
+            <source type="image/webp" srcset="{{ resources }}/images/{{ proj.data.name }}.webp">
+            <source type="image/png" srcset="{{ resources }}/images/{{ proj.data.name }}.png">
+            <img src="{{ resources }}/images/{{ proj.data.name }}.png" width="{{ proj.data.imageWidth }}" height="{{ proj.data.imageHeight }}" alt="{{ proj.data.imageAlt }}">
+          </picture>
         <header>
           {{ proj.data.title }}
         </header>
@@ -97,7 +109,11 @@ layout: site
     {% for code in collections.coding reversed %}
       <article class="card">
         <a href="{{ code.data.link }}" class="image full">
-          <img src="{{ resources }}/images/{{ code.data.name }}.png" width="{{ code.data.imageWidth }}" height="{{ code.data.imageHeight }}" alt="{{ code.data.imageAlt }}"/>
+          <picture>
+            <source type="image/webp" srcset="{{ resources }}/images/{{ code.data.name }}.webp">
+            <source type="image/png" srcset="{{ resources }}/images/{{ code.data.name }}.png">
+            <img src="{{ resources }}/images/{{ code.data.name }}.png" width="{{ code.data.imageWidth }}" height="{{ code.data.imageHeight }}" alt="{{ code.data.imageAlt }}">
+          </picture>
         <header>
           {{ code.data.tag }}
         </header>

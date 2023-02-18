@@ -18,7 +18,11 @@ layout: site
       by {{ authors }}
     </header>
 
-    <img class="projectImage" src="{{ resources }}/images/{{ name }}.png" width="{{ proj.data.imageWidth }}" height="{{ proj.data.imageHeight }}" alt="{{ imageAlt }}"/>
+    <picture>
+      <source type="image/webp" srcset="{{ resources }}/images/{{ name }}.webp">
+      <source type="image/png" srcset="{{ resources }}/images/{{ name }}.png">
+      <img class="projectImage" src="{{ resources }}/images/{{ name }}.png" width="{{ proj.data.imageWidth }}" height="{{ proj.data.imageHeight }}" alt="{{ imageAlt }}">
+    </picture>
 
     <div>
       <div class="links">
