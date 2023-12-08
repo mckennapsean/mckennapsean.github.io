@@ -22,7 +22,7 @@ $ npm run prod
 
 ## Caveats
 
-Without an internet connection, some resources will not be available, like Font Awesome icons, smooth-scroll, or table-sorter. Also, fonts will fallback to system defaults. You can download the [Lora](https://fonts.google.com/specimen/Lora) and [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) fonts for offline use, which I would recommend using [SkyFonts](https://www.fonts.com/web-fonts/google) to do so easily.
+Without an internet connection, some resources will not be available, like Font Awesome icons or table-sorter. Also, fonts will fallback to system defaults. You can download the [Lora](https://fonts.google.com/specimen/Lora) and [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) fonts for offline use, which I would recommend using [SkyFonts](https://www.fonts.com/web-fonts/google) to do so easily.
 
 ## License
 

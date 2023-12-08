@@ -48,26 +48,26 @@
         show projects as selected if on a project page
       {% endcomment %}
       {% assign location = page.url | replace: "/", " " | strip | truncatewords: 1, "" %}
-      {% assign projAct = "" %}
+      {% assign activeProjectClass = "" %}
       {% if location == "projects" %}
-        {% assign projAct = " active" %}
+        {% assign activeProjectClass = "active" %}
       {% endif %}
 
       <nav class="nav pages">
         <ul>
-          <li><a href="/{{ top }}" id="home-link" class="navLink">
+          <li><a href="/{{ top }}" id="home-link">
             <span class="fas fa-home"></span>
             <span class="nav-item">Home</span>
           </a></li>
-          <li><a href="/#about" id="about-link" class="navLink">
+          <li><a href="/#about" id="about-link">
             <span class="fas fa-user"></span>
             <span class="nav-item">About</span>
           </a></li>
-          <li><a href="/#projects" id="projects-link" class="navLink{{ projAct }}">
+          <li><a href="/#projects" id="projects-link" class={{activeProjectClass}}>
             <span class="fas fa-folder-open"></span>
             <span class="nav-item">Projects</span>
           </a></li>
-          <li><a href="/#code" id="code-link" class="navLink">
+          <li><a href="/#code" id="code-link">
             <span class="fas fa-code"></span>
             <span class="nav-item">Code</span>
           </a></li>
@@ -107,28 +107,26 @@
     </ul>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/smooth-scroll/10.2.1/smooth-scroll.min.js"></script>
-
   {% if page.url == "/" %}
   <script>
-    smoothScroll.init({
-      selector: '[class="navLink"]',
-      offset: 0,
-      callback: function(anchor, toggle){
-        var allLinks = document.querySelectorAll(".navLink");
-        for(var i = 0; i < allLinks.length; i++){
-          allLinks[i].className = "navLink";
-        }
-        document.querySelector("#" + anchor.id + "-link").className += " active";
+    function updateActiveSection() {
+      if (!window.location.hash) {
+        return;
       }
-    });
-
-    if(window.location.hash){
       var anchor = document.querySelector(window.location.hash);
-      var toggle = document.querySelector('a[href*="' + window.location.hash + '"]');
-      var options = {};
-      smoothScroll.animateScroll(anchor, toggle, options);
+      var allLinks = document.querySelectorAll("nav a");
+      for (var link of allLinks) {
+        if (link.id === anchor.id + '-link') {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      }
     }
+    addEventListener("hashchange", (event) => {
+      updateActiveSection();
+    });
+    updateActiveSection();
   </script>
   {% endif %}
 
