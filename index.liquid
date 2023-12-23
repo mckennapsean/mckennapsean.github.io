@@ -78,7 +78,7 @@ layout: site
           <picture>
             <source type="image/webp" srcset="{{ resources }}/images/{{ proj.data.name }}.webp">
             <source type="image/png" srcset="{{ resources }}/images/{{ proj.data.name }}.png">
-            <img src="{{ resources }}/images/{{ proj.data.name }}.png" width="{{ proj.data.imageWidth }}" height="{{ proj.data.imageHeight }}" alt="{{ proj.data.imageAlt }}">
+            <img src="{{ resources }}/images/{{ proj.data.name }}.png" width="{{ proj.data.imageWidth }}" height="{{ proj.data.imageHeight }}" alt="{{ proj.data.imageAlt }}" loading="lazy">
           </picture>
         <header>
           {{ proj.data.title }}
@@ -112,7 +112,7 @@ layout: site
           <picture>
             <source type="image/webp" srcset="{{ resources }}/images/{{ code.data.name }}.webp">
             <source type="image/png" srcset="{{ resources }}/images/{{ code.data.name }}.png">
-            <img src="{{ resources }}/images/{{ code.data.name }}.png" width="{{ code.data.imageWidth }}" height="{{ code.data.imageHeight }}" alt="{{ code.data.imageAlt }}">
+            <img src="{{ resources }}/images/{{ code.data.name }}.png" width="{{ code.data.imageWidth }}" height="{{ code.data.imageHeight }}" alt="{{ code.data.imageAlt }}" loading="lazy">
           </picture>
         <header>
           {{ code.data.tag }}
