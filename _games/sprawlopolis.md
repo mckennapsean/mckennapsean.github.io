@@ -9,8 +9,12 @@ expansions:
   - Agropolis: https://boardgamegeek.com/boardgame/314088/agropolis
   - Agropolis Invasion: https://boardgamegeek.com/boardgame/321696/agropolis-invasion
   - Agropolis Seasons: https://boardgamegeek.com/boardgame/354898/agropolis-seasons
+  - Agropolis Harvest: https://boardgamegeek.com/boardgame/431965/agropolis-harvest
   - Combopolis Expansions: https://boardgamegeek.com/boardgameexpansion/371025/combopolis-expansion-collection
   - Naturopolis: https://boardgamegeek.com/boardgame/352606/naturopolis
   - Naturopolis Nessie: https://boardgamegeek.com/boardgameexpansion/371357/naturopolis-nessie
+  - Naturopolis Elevation: https://boardgamegeek.com/boardgame/431970/naturopolis-elevation
+  - Casinopolis: https://boardgamegeek.com/boardgame/408828/casinopolis
+  - Casinopolis Place Your Bets: https://boardgamegeek.com/boardgame/438783/casinopolis-place-your-bets
   - Ultimopolis: https://boardgamegeek.com/boardgame/371019/ultimopolis
 ---
